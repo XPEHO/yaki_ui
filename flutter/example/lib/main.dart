@@ -1,53 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:yaki_ui/yaki_ui.dart';
+import 'package:widgetbook/widgetbook.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
+
+import 'main.directories.g.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
+@widgetbook.App()
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return Widgetbook.material(
+      directories: directories,
+      addons: [
+      DeviceFrameAddon(
+        devices: [
+          Devices.android.samsungGalaxyS20,
+          Devices.ios.iPhone13,
+        ],
       ),
-      home: const YakiUIExample(),
-    );
-  }
-}
-
-class YakiUIExample extends StatelessWidget {
-  const YakiUIExample({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Yaki UI Example'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Button(
-                text: 'SE CONNECTER',
-                onPressed: () => debugPrint('button pressed'),
-              ),
-              Button.secondary(
-                text: 'MOT DE PASSE OUBLIÉ',
-                onPressed: () => debugPrint('button pressed'),
-              )
-            ],
-          ),
-        ),
-      ),
+    ]
     );
   }
 }
