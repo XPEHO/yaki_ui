@@ -1,0 +1,28 @@
+name: Main CI on merge
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  flutter-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+      - name: Build web
+        run: |
+          cd flutter/example
+          flutter pub get
+          flutter build web --base-href "/yaki_ui/"
+      - name: Copy built files
+        run: |
+          mkdir docs
+          cp -R flutter/example/build/web/* docs
+      - name: Commit changes
+        run: |
+          git config user.name "YakiBot"
+          git config user.email "yaki@xpeho.fr"
+          git checkout -b chore/widgetbook
+          git add .
+          git commit -m "new build to deploy"
+          git push -f -u origin chore/widgetbook
