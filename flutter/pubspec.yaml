@@ -42,7 +42,7 @@ flutter:
   fonts:
     - family: SF Pro Rounded
       fonts:
-        - asset: fonts/SF-Pro-Rounded-Regular.ttf
+        - asset: lib/fonts/SF-Pro-Rounded-Regular.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
