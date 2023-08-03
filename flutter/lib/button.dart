@@ -82,10 +82,11 @@ class _ButtonState extends State<Button> {
             child: Text(
               widget.text,
               style: const TextStyle(
-                  color: kTextColor,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w600,
-                  fontFamily: 'SF Pro Rounded'),
+                color: kTextColor,
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'SF Pro Rounded',
+              ),
             ),
           ),
         ),
