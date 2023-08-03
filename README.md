@@ -68,3 +68,9 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+
+## Widgetbook
+
+This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
+
+More information about Widgetbook can be found on [widgetbook.io](https://www.widgetbook.io/)

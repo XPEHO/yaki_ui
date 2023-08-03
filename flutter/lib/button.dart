@@ -46,7 +46,9 @@ class _ButtonState extends State<Button> {
       onTapUp: _onButtonUp,
       onTap: _onButtonPressed,
       child: Container(
-        padding: _pressed ? const EdgeInsets.only(top: 4) : const EdgeInsets.only(bottom:4),
+        padding: _pressed
+            ? const EdgeInsets.only(top: 4)
+            : const EdgeInsets.only(bottom: 4),
         child: Container(
           height: 72,
           width: double.infinity,
