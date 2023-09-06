@@ -1,5 +1,5 @@
 import 'package:golden_toolkit/golden_toolkit.dart';
-import 'package:yaki_ui/button.dart';
+import 'package:yaki_ui/yaki_ui.dart';
 
 void main() {
   testGoldens('Button should look correct', (tester) async {

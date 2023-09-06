@@ -12,8 +12,10 @@ import 'dart:core';
 import 'package:example/button_usecase.dart';
 import 'package:example/cell_usecase.dart';
 import 'package:example/icon_chip_usecase.dart';
+import 'package:example/team_selection_card_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
+import 'package:yaki_ui/colors.dart';
 import 'package:yaki_ui/yaki_ui.dart';
 
 final directories = [
@@ -27,6 +29,15 @@ final directories = [
       WidgetbookUseCase(
         name: 'Simple secondary button',
         builder: (context) => simpleSecondaryButton(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
+    name: 'TeamSelectionCard',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Simple team selection Card',
+        builder: (context) => simpleTeamSelectionCard(context),
       ),
     ],
   ),
