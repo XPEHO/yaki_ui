@@ -1,3 +1,13 @@
+## 0.1.0
+
+_Feat_
+
+- Add Cell widget
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial release.
+
+_Feat_
+
+- Add button and colors
