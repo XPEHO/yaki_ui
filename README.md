@@ -69,6 +69,40 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
+### Icon chip
+
+![](flutter/test/goldens/icon_chip_grid.png)
+
+__Web usage__
+```html
+TODO
+```
+
+__Flutter usage__
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IconChip(
+      label: 'Hello World !',
+      backgroundColor: Colors.blue,
+      image: ClipRRect(
+        borderRadius: BorderRadius.circular(50),
+        child: Image.network(
+          'https://picsum.photos/200',
+          width: 100,
+          height: 100,
+        ),
+      ),
+    );
+  }
+}
+```
+
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
