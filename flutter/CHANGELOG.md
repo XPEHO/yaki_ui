@@ -1,3 +1,9 @@
+## 0.3.0
+
+_Feat_
+
+- Add Input text widget
+
 ## 0.2.0
 
 _Feat_

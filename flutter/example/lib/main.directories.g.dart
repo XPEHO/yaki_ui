@@ -12,6 +12,7 @@ import 'dart:core';
 import 'package:example/button_usecase.dart';
 import 'package:example/cell_usecase.dart';
 import 'package:example/icon_chip_usecase.dart';
+import 'package:example/input_text_usecase.dart';
 import 'package:example/team_selection_card_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
@@ -38,6 +39,15 @@ final directories = [
       WidgetbookUseCase(
         name: 'Simple team selection Card',
         builder: (context) => simpleTeamSelectionCard(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
+    name: 'InputText',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Input text',
+        builder: (context) => inputText(context),
       ),
     ],
   ),
