@@ -10,6 +10,7 @@
 
 import 'dart:core';
 import 'package:example/button_usecase.dart';
+import 'package:example/cell_usecase.dart';
 import 'package:example/icon_chip_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
@@ -26,6 +27,15 @@ final directories = [
       WidgetbookUseCase(
         name: 'Simple secondary button',
         builder: (context) => simpleSecondaryButton(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
+    name: 'Cell',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Cell with chips',
+        builder: (context) => cellWithChips(context),
       ),
     ],
   ),

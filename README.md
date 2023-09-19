@@ -103,6 +103,53 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
+### Cell
+
+![](flutter/test/goldens/cell_grid.png)
+
+__Web usage__
+```html
+TODO
+```
+
+__Flutter usage__
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Cell(
+      title: 'Hello World',
+      subtitle: 'Welcome to Yaki UI !',
+      image: Container(
+        height: 48,
+        width: 48,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(
+            20,
+          ),
+          image: const DecorationImage(
+            image: NetworkImage(
+              'https://picsum.photos/200/300',
+            ),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      chips: const Icon(Icons.abc),
+      child: IconChip(
+        image: const Icon(Icons.abc),
+        label: 'ABC',
+        backgroundColor: Colors.grey.shade300,
+      ),
+    );
+  }
+}
+```
+
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.

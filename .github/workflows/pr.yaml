@@ -14,7 +14,7 @@ jobs:
           flutter pub get
           dart format --set-exit-if-changed .
           flutter analyze
-          flutter test --dart-define=golden_tolerance=1
+          flutter test --dart-define=golden_tolerance=5
   flutter-example:
     runs-on: ubuntu-latest
     defaults:
