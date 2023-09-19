@@ -14,13 +14,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Widgetbook.material(directories: directories, addons: [
-      DeviceFrameAddon(
-        devices: [
-          Devices.android.samsungGalaxyS20,
-          Devices.ios.iPhone13,
-        ],
-      ),
-    ]);
+    return Widgetbook.material(
+      directories: directories,
+      addons: [
+        DeviceFrameAddon(
+          devices: [
+            Devices.android.samsungGalaxyS20,
+            Devices.ios.iPhone13,
+          ],
+        ),
+      ],
+    );
   }
 }
