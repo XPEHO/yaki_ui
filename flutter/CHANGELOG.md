@@ -1,3 +1,9 @@
+## 0.2.0
+
+_Feat_
+
+- Add TeamSelectionCard widget
+
 ## 0.1.0
 
 _Feat_

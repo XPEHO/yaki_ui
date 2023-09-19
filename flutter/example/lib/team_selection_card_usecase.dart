@@ -9,7 +9,9 @@ import 'package:yaki_ui/yaki_ui.dart';
 Widget simpleTeamSelectionCard(BuildContext context) {
   return Center(
     child: TeamSelectionCard(
-      picture: 'https://picsum.photos/200',
+      picture: Image.network(
+        'https://picsum.photos/200',
+      ),
       title: 'Yaki',
       subtitle: 'Yaki is a design system',
       onSelectionChanged: (selected) {

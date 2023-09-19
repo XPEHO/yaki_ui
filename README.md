@@ -149,7 +149,37 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+### TeamSelectionCard
 
+![](flutter/test/goldens/team_selection_card_grid.png)
+
+__Web usage__
+```html
+TODO
+```
+
+__Flutter usage__
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return TeamSelectionCard(
+      picture: Image.network(
+        'https://picsum.photos/200',
+      ),
+      title: 'Yaki',
+      subtitle: 'Yaki is a design system',
+      onSelectionChanged: (selected) {
+        debugPrint('Team selection changed: $selected');
+      },
+    );
+  }
+}
+```
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.

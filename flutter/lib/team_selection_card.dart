@@ -12,7 +12,7 @@ class TeamSelectionCard extends StatefulWidget {
     required this.onSelectionChanged,
   });
 
-  final String picture;
+  final Widget picture;
   final String title;
   final String subtitle;
   final OnTeamSelectionChanged onSelectionChanged;
@@ -58,15 +58,7 @@ class _TeamSelectionCardState extends State<TeamSelectionCard> {
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),
-                child: Image.network(
-                  widget.picture,
-                  width: 76,
-                  height: 76,
-                  errorBuilder: (context, error, stackTrace) => const Icon(
-                    Icons.no_photography,
-                    size: 76,
-                  ),
-                ),
+                child: widget.picture,
               ),
               const SizedBox(
                 width: 24,
