@@ -13,6 +13,7 @@ import 'package:example/button_usecase.dart';
 import 'package:example/cell_usecase.dart';
 import 'package:example/icon_chip_usecase.dart';
 import 'package:example/input_text_usecase.dart';
+import 'package:example/location_selection_card_usecase.dart';
 import 'package:example/team_selection_card_usecase.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
@@ -20,6 +21,15 @@ import 'package:yaki_ui/colors.dart';
 import 'package:yaki_ui/yaki_ui.dart';
 
 final directories = [
+  WidgetbookComponent(
+    name: 'LocationSelectionCard',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Simple location selection Card',
+        builder: (context) => simpleLocationSelectionCard(context),
+      ),
+    ],
+  ),
   WidgetbookComponent(
     name: 'Button',
     useCases: [
