@@ -1,3 +1,8 @@
+## 0.4.0
+
+_Feat_
+
+- Add LocationSelectionCard widget
 ## 0.3.0
 
 _Feat_

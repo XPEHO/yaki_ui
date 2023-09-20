@@ -207,6 +207,34 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+
+
+### LocationSelectionCard
+
+![](flutter/test/goldens/location_selection_card_grid.png)
+
+__Web usage__
+```html
+TODO
+```
+
+__Flutter usage__
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return LocationSelectionCard(
+      picture: const Icon(Icons.abc),
+      title: 'Yaki',
+      subtitle: 'Yaki is a design system',
+      onSelectionChanged: (selected) {},
+    );
+  }
+}
+```
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
