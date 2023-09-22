@@ -1,3 +1,9 @@
+## 0.4.1
+
+_Fix_
+
+- Input text : set the obscureText property to true by default if the type is password
+
 ## 0.4.0
 
 _Feat_

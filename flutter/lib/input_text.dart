@@ -24,7 +24,7 @@ class InputText extends StatefulWidget {
 }
 
 class _InputTextState extends State<InputText> {
-  bool passwordVisible = false;
+  bool passwordInvisible = true;
   FocusNode focusNode = FocusNode();
 
   @override
@@ -47,7 +47,8 @@ class _InputTextState extends State<InputText> {
         onChanged: widget.onChange,
         focusNode: focusNode,
         controller: widget.controller,
-        obscureText: passwordVisible,
+        obscureText:
+            (widget.type == InputTextType.password) ? passwordInvisible : false,
         obscuringCharacter: '●',
         keyboardType: _getKeyboardByType(widget.type),
         decoration: InputDecoration(
@@ -55,13 +56,13 @@ class _InputTextState extends State<InputText> {
           filled: true,
           suffixIcon: (widget.type == InputTextType.password)
               ? IconButton(
-                  icon: Icon((passwordVisible)
-                      ? Icons.visibility_off_outlined
-                      : Icons.visibility_outlined),
+                  icon: Icon((passwordInvisible)
+                      ? Icons.visibility_outlined
+                      : Icons.visibility_off_outlined),
                   onPressed: () {
                     setState(
                       () {
-                        passwordVisible = !passwordVisible;
+                        passwordInvisible = !passwordInvisible;
                       },
                     );
                   },
