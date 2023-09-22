@@ -57,7 +57,7 @@ class _ButtonState extends State<Button> {
             vertical: 12,
           ),
           decoration: BoxDecoration(
-            color: widget.color,
+            color: (widget.onPressed != null) ? widget.color : Colors.grey,
             borderRadius: BorderRadius.circular(16),
             border: Border(
               top: BorderSide(
@@ -95,15 +95,19 @@ class _ButtonState extends State<Button> {
   }
 
   void _onButtonDown(TapDownDetails details) {
-    setState(() {
-      _pressed = true;
-    });
+    if (widget.onPressed != null) {
+      setState(() {
+        _pressed = true;
+      });
+    }
   }
 
   void _onButtonUp(TapUpDetails details) {
-    setState(() {
-      _pressed = false;
-    });
+    if (widget.onPressed != null) {
+      setState(() {
+        _pressed = false;
+      });
+    }
   }
 
   void _onButtonPressed() {

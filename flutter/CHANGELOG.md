@@ -1,3 +1,9 @@
+## 0.4.2
+
+_Fix_
+
+- Button : Disable the button when the onPressed property is null
+
 ## 0.4.1
 
 _Fix_

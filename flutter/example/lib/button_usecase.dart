@@ -10,6 +10,13 @@ import 'package:yaki_ui/yaki_ui.dart';
 Widget simplePrimaryButton(BuildContext context) {
   return Center(
     child: Button(
+      onPressed: context.knobs.boolean(
+        label: 'Button onPressed',
+        description: 'The onPressed of the button',
+        initialValue: true,
+      )
+          ? () {}
+          : null,
       text: context.knobs.string(
         label: 'Button label',
         description: 'The label of the button',
@@ -26,6 +33,13 @@ Widget simplePrimaryButton(BuildContext context) {
 Widget simpleSecondaryButton(BuildContext context) {
   return Center(
     child: Button.secondary(
+      onPressed: context.knobs.boolean(
+        label: 'Button onPressed',
+        description: 'The onPressed of the button',
+        initialValue: true,
+      )
+          ? () {}
+          : null,
       text: context.knobs.string(
         label: 'Button label',
         description: 'The label of the button',
