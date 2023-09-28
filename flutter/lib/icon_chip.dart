@@ -33,7 +33,7 @@ class IconChip extends StatelessWidget {
         children: [
           image,
           const SizedBox(
-            width: 4,
+            width: 8,
           ),
           Text(
             label,
@@ -41,7 +41,7 @@ class IconChip extends StatelessWidget {
               color: kTextColor,
               fontWeight: FontWeight.w600,
               fontFamily: 'SF Pro Rounded',
-              fontSize: 14,
+              fontSize: 20,
             ),
           ),
         ],
