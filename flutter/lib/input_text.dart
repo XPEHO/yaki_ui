@@ -28,6 +28,14 @@ class _InputTextState extends State<InputText> {
   FocusNode focusNode = FocusNode();
 
   @override
+  void initState() {
+    super.initState();
+    focusNode.addListener(() {
+      setState(() {});
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
@@ -72,10 +80,10 @@ class _InputTextState extends State<InputText> {
           border: const OutlineInputBorder(
             borderSide: BorderSide.none,
           ),
-          hintText: (focusNode.hasFocus) ? widget.label : null,
           labelText: widget.label,
-          labelStyle: const TextStyle(
-            color: kTextColor,
+          labelStyle: TextStyle(
+            color:
+                (focusNode.hasFocus) ? kTextColor.withOpacity(0.5) : kTextColor,
             fontSize: 16,
             fontWeight: FontWeight.w600,
             fontFamily: 'SF Pro Rounded',
@@ -83,7 +91,7 @@ class _InputTextState extends State<InputText> {
         ),
         style: const TextStyle(
           color: kTextColor,
-          fontSize: 16,
+          fontSize: 18,
           fontWeight: FontWeight.w600,
           fontFamily: 'SF Pro Rounded',
         ),

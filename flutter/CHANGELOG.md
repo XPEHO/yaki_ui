@@ -1,3 +1,9 @@
+## 0.4.3
+
+_Fix_
+
+- Input text : Fix the hint style when the textfield is focused
+
 ## 0.4.2
 
 _Fix_
