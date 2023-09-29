@@ -19,18 +19,16 @@ void main() {
         title: 'Hello World',
         subtitle: 'Welcome to Yaki UI !',
         image: imageWidget,
-        chips: const CircleAvatar(
-          radius: 10,
-          backgroundImage: AssetImage(
-            "example/assets/twitch_logo.png",
-          ),
+        chips: Image.asset(
+          "example/assets/twitch_logo.png",
+          width: 15,
+          height: 15,
         ),
         child: IconChip(
-          image: const CircleAvatar(
-            radius: 10,
-            backgroundImage: AssetImage(
-              "example/assets/twitch_logo.png",
-            ),
+          image: Image.asset(
+            "example/assets/twitch_logo.png",
+            width: 15,
+            height: 15,
           ),
           label: 'Hello World',
           backgroundColor: Colors.grey.shade300,

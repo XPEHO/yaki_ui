@@ -10,13 +10,11 @@ import 'package:yaki_ui/yaki_ui.dart';
 Widget iconChip(BuildContext context) {
   return Center(
     child: IconChip(
-      image: ClipRRect(
-        borderRadius: BorderRadius.circular(50),
-        child: Image.asset(
-          'assets/twitch_logo.png',
-          width: 20,
-          height: 20,
-        ),
+      image: Image.asset(
+        'assets/twitch_logo.png',
+        width: 15,
+        height: 15,
+        fit: BoxFit.contain,
       ),
       label: context.knobs.string(
         label: 'Label',
