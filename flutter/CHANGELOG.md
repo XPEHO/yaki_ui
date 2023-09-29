@@ -3,6 +3,7 @@
 _Fix_
 
 - Input text : Fix the hint style when the textfield is focused
+- Icon chip : Increase text size chip
 
 ## 0.4.2
 
