@@ -54,56 +54,69 @@ class _LocationSelectionCardState extends State<LocationSelectionCard> {
             color: Colors.white,
             borderRadius: BorderRadius.circular(16),
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+          child: Stack(
             children: [
-              Align(
-                alignment: Alignment.centerRight,
-                widthFactor: 1.0,
-                child: Icon(
-                  Icons.check_circle,
-                  color: (selected) ? kPrimaryColor : Colors.transparent,
-                ),
-              ),
-              const SizedBox(
-                height: 5,
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: widget.picture,
-              ),
-              const SizedBox(
-                width: 24,
-              ),
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
-                    widget.title,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: kTextColor,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'SF Pro Rounded',
-                    ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: widget.picture,
                   ),
                   const SizedBox(
-                    height: 10,
+                    width: 24,
                   ),
-                  Text(
-                    widget.subtitle,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: kTextColor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      fontFamily: 'SF Pro Rounded',
+                  Container(
+                    alignment: Alignment.center,
+                    margin: const EdgeInsets.only(
+                      top: 16,
+                      bottom: 16,
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          widget.title,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: Color(0xFF37414C),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: 'SF Pro Rounded',
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          widget.subtitle,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: kTextColor,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'SF Pro Rounded',
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
               ),
+              if (selected)
+                const Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Icon(
+                    Icons.check_circle,
+                    color: kPrimaryColor,
+                  ),
+                ),
             ],
           ),
         ),

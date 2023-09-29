@@ -4,6 +4,7 @@ _Fix_
 
 - Input text : Fix the hint style when the textfield is focused
 - Icon chip : Increase text size chip
+- Location selection card : Use Stack for the selected icon and update size
 
 ## 0.4.2
 
