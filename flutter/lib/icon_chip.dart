@@ -27,6 +27,10 @@ class IconChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(
           20,
         ),
+        border: Border.all(
+          color: kBorderIconChip,
+          width: 2,
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

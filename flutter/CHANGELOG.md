@@ -3,6 +3,7 @@
 _Fix_
 
 - Button : Up the bottom border side to 8
+- Icon chip : Add border
 
 ## 0.4.3
 
