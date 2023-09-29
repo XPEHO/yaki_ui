@@ -1,3 +1,9 @@
+## 0.4.4
+
+_Fix_
+
+- Button : Up the bottom border side to 8
+
 ## 0.4.3
 
 _Fix_
