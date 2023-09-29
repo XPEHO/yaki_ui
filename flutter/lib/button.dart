@@ -66,7 +66,7 @@ class _ButtonState extends State<Button> {
               ),
               bottom: BorderSide(
                 color: Colors.black.withOpacity(0.15),
-                width: _pressed ? 2 : 4,
+                width: _pressed ? 2 : 8,
               ),
               left: BorderSide(
                 color: Colors.black.withOpacity(0.15),
