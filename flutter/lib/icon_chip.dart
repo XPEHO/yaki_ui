@@ -25,7 +25,7 @@ class IconChip extends StatelessWidget {
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(
-          20,
+          30,
         ),
         border: Border.all(
           color: kBorderIconChip,

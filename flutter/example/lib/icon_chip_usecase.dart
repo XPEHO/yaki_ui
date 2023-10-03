@@ -12,8 +12,8 @@ Widget iconChip(BuildContext context) {
     child: IconChip(
       image: Image.asset(
         'assets/twitch_logo.png',
-        width: 15,
-        height: 15,
+        width: 32,
+        height: 32,
         fit: BoxFit.contain,
       ),
       label: context.knobs.string(
