@@ -1,3 +1,22 @@
+## 0.5.1
+
+_Fix_
+
+- Icon chip : optional border with parameter value.
+
+## 0.5.0
+
+_Fix_
+
+- Button : Add tertiary button with black background color and white text color.
+- Button : Optional parameter to change the button height.
+
+## 0.4.5
+
+_Fix_
+
+- Icon chip : Fix text size and add fontWeight and fontSize optional parameter
+
 ## 0.4.4
 
 _Fix_
@@ -30,6 +49,7 @@ _Fix_
 _Feat_
 
 - Add LocationSelectionCard widget
+
 ## 0.3.0
 
 _Feat_
@@ -50,7 +70,7 @@ _Feat_
 
 ## 0.0.1
 
-* Initial release.
+- Initial release.
 
 _Feat_
 

@@ -5,12 +5,18 @@ class IconChip extends StatelessWidget {
   final Widget image;
   final String label;
   final Color backgroundColor;
+  final double? fontSizeLabel;
+  final FontWeight? fontWeightLabel;
+  final double? borderWidth;
 
   const IconChip({
     super.key,
     required this.image,
     required this.label,
     required this.backgroundColor,
+    this.fontSizeLabel,
+    this.fontWeightLabel,
+    this.borderWidth,
   });
 
   @override
@@ -29,7 +35,7 @@ class IconChip extends StatelessWidget {
         ),
         border: Border.all(
           color: kBorderIconChip,
-          width: 2,
+          width: borderWidth ?? 0,
         ),
       ),
       child: Row(
@@ -41,11 +47,11 @@ class IconChip extends StatelessWidget {
           ),
           Text(
             label,
-            style: const TextStyle(
+            style: TextStyle(
               color: kTextColor,
-              fontWeight: FontWeight.w600,
+              fontWeight: fontWeightLabel ?? FontWeight.w600,
               fontFamily: 'SF Pro Rounded',
-              fontSize: 20,
+              fontSize: fontSizeLabel ?? 14,
             ),
           ),
         ],
