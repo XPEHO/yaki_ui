@@ -23,14 +23,16 @@ TODO - Describe how to import Flutter library using pub
 
 ![](flutter/test/goldens/button_grid.png)
 
-__Web usage__
+**Web usage**
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <title>Yaki UI</title>
-    <link rel="stylesheet" href="css/yaki_ui.css">
+    <link
+      rel="stylesheet"
+      href="css/yaki_ui.css" />
   </head>
   <body>
     <!-- Primary button -->
@@ -41,7 +43,7 @@ __Web usage__
 </html>
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -67,18 +69,30 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
+
+// Tertiary button
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Button.tertiary(
+      text: 'Button',
+      onPressed: () {},
+    );
+  }
+}
 ```
 
 ### Icon chip
 
 ![](flutter/test/goldens/icon_chip_grid.png)
 
-__Web usage__
+**Web usage**
+
 ```html
 TODO
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -107,12 +121,13 @@ class MyWidget extends StatelessWidget {
 
 ![](flutter/test/goldens/cell_grid.png)
 
-__Web usage__
+**Web usage**
+
 ```html
 TODO
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -149,16 +164,18 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+
 ### TeamSelectionCard
 
 ![](flutter/test/goldens/team_selection_card_grid.png)
 
-__Web usage__
+**Web usage**
+
 ```html
 TODO
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -185,12 +202,13 @@ class MyWidget extends StatelessWidget {
 
 ![](flutter/test/goldens/input_text_grid.png)
 
-__Web usage__
+**Web usage**
+
 ```html
 TODO
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -208,17 +226,17 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
-
 ### LocationSelectionCard
 
 ![](flutter/test/goldens/location_selection_card_grid.png)
 
-__Web usage__
+**Web usage**
+
 ```html
 TODO
 ```
 
-__Flutter usage__
+**Flutter usage**
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
@@ -235,6 +253,7 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
