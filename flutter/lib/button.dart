@@ -15,12 +15,14 @@ class Button extends StatefulWidget {
     Key? key,
     required String text,
     VoidCallback? onPressed,
+    double? buttonHeight,
   }) {
     return Button(
       key: key,
       text: text,
       onPressed: onPressed,
       color: kSecondaryColor,
+      buttonHeight: buttonHeight,
     );
   }
 
@@ -28,6 +30,7 @@ class Button extends StatefulWidget {
     Key? key,
     required String text,
     VoidCallback? onPressed,
+    double? buttonHeight,
   }) {
     return Button(
       key: key,
@@ -35,6 +38,7 @@ class Button extends StatefulWidget {
       onPressed: onPressed,
       color: kTertiaryColor,
       fontColor: kSecondaryTextColor,
+      buttonHeight: buttonHeight,
     );
   }
 

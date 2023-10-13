@@ -1,3 +1,9 @@
+## 0.5.2
+
+_Fix_
+
+- button : Add buttonHeight parameter in secondary and tertiary button
+
 ## 0.5.1
 
 _Fix_
