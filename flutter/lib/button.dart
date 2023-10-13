@@ -7,6 +7,8 @@ class Button extends StatefulWidget {
     required this.text,
     this.onPressed,
     this.color = kPrimaryColor,
+    this.fontColor = kTextColor,
+    this.buttonHeight,
   });
 
   factory Button.secondary({
@@ -22,8 +24,24 @@ class Button extends StatefulWidget {
     );
   }
 
+  factory Button.tertiary({
+    Key? key,
+    required String text,
+    VoidCallback? onPressed,
+  }) {
+    return Button(
+      key: key,
+      text: text,
+      onPressed: onPressed,
+      color: kTertiaryColor,
+      fontColor: kSecondaryTextColor,
+    );
+  }
+
   final Color color;
   final String text;
+  final Color fontColor;
+  final double? buttonHeight;
   final VoidCallback? onPressed;
 
   @override
@@ -50,7 +68,7 @@ class _ButtonState extends State<Button> {
             ? const EdgeInsets.only(top: 4)
             : const EdgeInsets.only(bottom: 4),
         child: Container(
-          height: 72,
+          height: widget.buttonHeight ?? 72,
           width: double.infinity,
           padding: const EdgeInsets.symmetric(
             horizontal: 16,
@@ -81,8 +99,8 @@ class _ButtonState extends State<Button> {
           child: Center(
             child: Text(
               widget.text,
-              style: const TextStyle(
-                color: kTextColor,
+              style: TextStyle(
+                color: widget.fontColor,
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
                 fontFamily: 'SF Pro Rounded',
