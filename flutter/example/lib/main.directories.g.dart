@@ -41,6 +41,10 @@ final directories = [
         name: 'Simple secondary button',
         builder: (context) => simpleSecondaryButton(context),
       ),
+      WidgetbookUseCase(
+        name: 'Simple tertiary button',
+        builder: (context) => simpleTertiaryButton(context),
+      ),
     ],
   ),
   WidgetbookComponent(

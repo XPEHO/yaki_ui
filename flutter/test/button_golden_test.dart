@@ -27,6 +27,18 @@ void main() {
           Button.secondary(
             text: 'Button',
             onPressed: () {},
+          ))
+      ..addScenario(
+          'Tertiary with onPressed null',
+          Button.tertiary(
+            text: 'Button',
+            onPressed: null,
+          ))
+      ..addScenario(
+          'Tertiary with onPressed not null',
+          Button.tertiary(
+            text: 'Button',
+            onPressed: () {},
           ));
     await tester.pumpWidgetBuilder(builder.build());
     await screenMatchesGolden(tester, 'button_grid');
