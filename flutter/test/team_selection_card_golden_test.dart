@@ -7,17 +7,60 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   testGoldens('TeamSelectionCard should look correct', (tester) async {
-    final builder = GoldenBuilder.grid(columns: 2, widthToHeightRatio: 1)
+    final avatar = Container(
+      width: 80,
+      height: 80,
+      color: const Color(0xffE6ECEF),
+      child: const Center(
+        child: Text(
+          'YA\nKI?',
+          style: TextStyle(
+            fontSize: 35,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'SF Pro Rounded',
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
+    final builder = GoldenBuilder.grid(
+      columns: 1,
+      widthToHeightRatio: 1,
+      bgColor: const Color(0xffFFFFFF),
+    )
       ..addScenario(
-        'Simple',
+        '',
         TeamSelectionCard(
-          picture: const Icon(Icons.abc),
-          title: 'Yaki',
-          subtitle: 'Yaki is a design system',
+          picture: avatar,
+          title: 'Projet',
+          subtitle: 'XPEHO',
           onSelectionChanged: (selected) {},
         ),
+      )
+      ..addScenario(
+        '',
+        TeamSelectionCard(
+          picture: avatar,
+          title: 'Projet',
+          subtitle: 'XPEHO',
+          onSelectionChanged: (selected) {},
+          defaultPressed: true,
+        ),
+      )
+      ..addScenario(
+        '',
+        TeamSelectionCard(
+          picture: avatar,
+          title: 'Projet',
+          subtitle: 'XPEHO',
+          onSelectionChanged: (selected) {},
+          defaultSelected: true,
+        ),
       );
-    await tester.pumpWidgetBuilder(builder.build());
+    await tester.pumpWidgetBuilder(
+      builder.build(),
+      surfaceSize: const Size(400, 500),
+    );
     await screenMatchesGolden(tester, 'team_selection_card_grid');
   });
 }

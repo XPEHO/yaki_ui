@@ -1,39 +1,205 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Yaki UI
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+This is the UI for the Yaki XPEHO project.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Getting Started
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Add dependency
 
 ```dart
-const like = 'sample';
+flutter pub add yaki_ui
 ```
 
-## Additional information
+## Components
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### Button
+
+![](test/goldens/button_grid.png)
+
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Primary button
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Button(
+      text: 'Button',
+      onPressed: () {},
+    );
+  }
+}
+
+// Secondary button
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Button.secondary(
+      text: 'Button',
+      onPressed: () {},
+    );
+  }
+}
+
+// Tertiary button
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Button.tertiary(
+      text: 'Button',
+      onPressed: () {},
+    );
+  }
+}
+```
+
+### Icon chip
+
+![](test/goldens/icon_chip_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return IconChip(
+      label: 'Hello World !',
+      backgroundColor: Colors.blue,
+      image: ClipRRect(
+        borderRadius: BorderRadius.circular(50),
+        child: Image.network(
+          'https://picsum.photos/200',
+          width: 100,
+          height: 100,
+        ),
+      ),
+    );
+  }
+}
+```
+
+### Cell
+
+![](test/goldens/cell_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Cell(
+      title: 'Hello World',
+      subtitle: 'Welcome to Yaki UI !',
+      image: Container(
+        height: 48,
+        width: 48,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(
+            20,
+          ),
+          image: const DecorationImage(
+            image: NetworkImage(
+              'https://picsum.photos/200/300',
+            ),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      chips: const Icon(Icons.abc),
+      child: IconChip(
+        image: const Icon(Icons.abc),
+        label: 'ABC',
+        backgroundColor: Colors.grey.shade300,
+      ),
+    );
+  }
+}
+```
+
+### TeamSelectionCard
+
+![](test/goldens/team_selection_card_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return TeamSelectionCard(
+      picture: Image.network(
+        'https://picsum.photos/200',
+      ),
+      title: 'Yaki',
+      subtitle: 'Yaki is a design system',
+      onSelectionChanged: (selected) {
+        debugPrint('Team selection changed: $selected');
+      },
+    );
+  }
+}
+```
+
+### InputText
+
+![](test/goldens/input_text_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return InputText(
+      type: InputTextType.email,
+      label: 'Email',
+      controller: TextEditingController(),
+    );
+  }
+}
+```
+
+### LocationSelectionCard
+
+![](test/goldens/location_selection_card_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+// Icon chip
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return LocationSelectionCard(
+      picture: const Icon(Icons.abc),
+      title: 'Yaki',
+      subtitle: 'Yaki is a design system',
+      onSelectionChanged: (selected) {},
+    );
+  }
+}
+```
+
+## Widgetbook
+
+This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
+
+More information about Widgetbook can be found on [widgetbook.io](https://www.widgetbook.io/)

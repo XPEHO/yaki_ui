@@ -1,46 +1,76 @@
+import 'package:flutter/material.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 import 'package:yaki_ui/yaki_ui.dart';
 
 void main() {
   testGoldens('Button should look correct', (tester) async {
-    final builder = GoldenBuilder.grid(columns: 4, widthToHeightRatio: 1)
+    final builder = GoldenBuilder.grid(
+      columns: 2,
+      widthToHeightRatio: 1,
+      bgColor: Colors.white,
+    )
       ..addScenario(
-          'Simple with onPressed null',
-          const Button(
-            text: 'Button',
-            onPressed: null,
-          ))
-      ..addScenario(
-          'Simple with onPressed not null',
+          '',
           Button(
-            text: 'Button',
+            text: 'BUTTON',
             onPressed: () {},
           ))
       ..addScenario(
-          'Secondary with onPressed null',
+          '',
+          Button(
+            text: 'BUTTON',
+            onPressed: () {},
+            defaultPressed: true,
+          ))
+      ..addScenario(
+          '',
           Button.secondary(
-            text: 'Button',
-            onPressed: null,
+            text: 'BUTTON',
+            onPressed: () {},
+            defaultPressed: false,
           ))
       ..addScenario(
-          'Secondary with onPressed not null',
+          '',
           Button.secondary(
-            text: 'Button',
+            text: 'BUTTON',
             onPressed: () {},
+            defaultPressed: true,
           ))
       ..addScenario(
-          'Tertiary with onPressed null',
+          '',
           Button.tertiary(
-            text: 'Button',
+            text: 'BUTTON',
+            onPressed: () {},
+            defaultPressed: false,
+          ))
+      ..addScenario(
+          '',
+          Button.tertiary(
+            text: 'BUTTON',
+            onPressed: () {},
+            defaultPressed: true,
+          ))
+      ..addScenario(
+          '',
+          const Button(
+            text: 'BUTTON',
             onPressed: null,
+            defaultPressed: false,
           ))
       ..addScenario(
-          'Tertiary with onPressed not null',
-          Button.tertiary(
-            text: 'Button',
-            onPressed: () {},
+          '',
+          const Button(
+            text: 'BUTTON',
+            onPressed: null,
+            defaultPressed: true,
           ));
-    await tester.pumpWidgetBuilder(builder.build());
-    await screenMatchesGolden(tester, 'button_grid');
+    await tester.pumpWidgetBuilder(
+      builder.build(),
+      surfaceSize: const Size(300, 600),
+    );
+    await screenMatchesGolden(
+      tester,
+      'button_grid',
+    );
   });
 }

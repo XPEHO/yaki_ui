@@ -1,36 +1,63 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:golden_toolkit/golden_toolkit.dart';
 import 'package:yaki_ui/location_selection_card.dart';
 
 void main() {
   testGoldens('LocationSelectionCard should look correct', (tester) async {
-    final widgetUnselected = LocationSelectionCard(
-      key: const Key('unselected'),
-      picture: const Icon(Icons.abc),
-      title: 'Yaki',
-      subtitle: 'Yaki is a design system',
-      onSelectionChanged: (selected) {},
-    );
-
-    final widgetSelected = LocationSelectionCard(
-      key: const Key('selected'),
-      picture: const Icon(Icons.abc),
-      title: 'Yaki',
-      subtitle: 'Yaki is a design system',
-      onSelectionChanged: (selected) {},
-    );
-
-    final builder = GoldenBuilder.grid(columns: 2, widthToHeightRatio: 1)
-      ..addScenario('Unselected', widgetUnselected)
-      ..addScenario('Selected', widgetSelected);
-
-    await tester.pumpWidgetBuilder(builder.build());
-    await tester.tap(
-      find.byKey(
-        widgetSelected.key!,
+    final avatar = Container(
+      width: 112,
+      height: 112,
+      color: const Color(0xffE6ECEF),
+      child: const Center(
+        child: Text(
+          'YA\nKI?',
+          style: TextStyle(
+            fontSize: 48,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'SF Pro Rounded',
+            color: Colors.white,
+          ),
+        ),
       ),
     );
+
+    final builder = GoldenBuilder.grid(
+      columns: 1,
+      widthToHeightRatio: 1,
+      bgColor: Colors.white,
+    )
+      ..addScenario(
+          '',
+          LocationSelectionCard(
+            picture: avatar,
+            title: 'Je suis',
+            subtitle: 'Au bureau',
+            onSelectionChanged: (selected) {},
+          ))
+      ..addScenario(
+          '',
+          LocationSelectionCard(
+            picture: avatar,
+            title: 'Je suis',
+            subtitle: 'Au bureau',
+            onSelectionChanged: (selected) {},
+            defaultPressed: true,
+          ))
+      ..addScenario(
+          '',
+          LocationSelectionCard(
+            picture: avatar,
+            title: 'Je suis',
+            subtitle: 'Au bureau',
+            onSelectionChanged: (selected) {},
+            defaultSelected: true,
+          ));
+
+    await tester.pumpWidgetBuilder(
+      builder.build(),
+      surfaceSize: const Size(200, 1000),
+    );
+
     await screenMatchesGolden(tester, 'location_selection_card_grid');
   });
 }
