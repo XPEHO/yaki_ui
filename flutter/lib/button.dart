@@ -9,6 +9,7 @@ class Button extends StatefulWidget {
     this.color = kPrimaryColor,
     this.fontColor = kTextColor,
     this.buttonHeight,
+    this.defaultPressed = false,
   });
 
   factory Button.secondary({
@@ -16,6 +17,7 @@ class Button extends StatefulWidget {
     required String text,
     VoidCallback? onPressed,
     double? buttonHeight,
+    bool defaultPressed = false,
   }) {
     return Button(
       key: key,
@@ -23,6 +25,7 @@ class Button extends StatefulWidget {
       onPressed: onPressed,
       color: kSecondaryColor,
       buttonHeight: buttonHeight,
+      defaultPressed: defaultPressed,
     );
   }
 
@@ -31,6 +34,7 @@ class Button extends StatefulWidget {
     required String text,
     VoidCallback? onPressed,
     double? buttonHeight,
+    bool defaultPressed = false,
   }) {
     return Button(
       key: key,
@@ -39,6 +43,7 @@ class Button extends StatefulWidget {
       color: kTertiaryColor,
       fontColor: kSecondaryTextColor,
       buttonHeight: buttonHeight,
+      defaultPressed: defaultPressed,
     );
   }
 
@@ -47,6 +52,7 @@ class Button extends StatefulWidget {
   final Color fontColor;
   final double? buttonHeight;
   final VoidCallback? onPressed;
+  final bool defaultPressed;
 
   @override
   State<Button> createState() => _ButtonState();
@@ -58,7 +64,7 @@ class _ButtonState extends State<Button> {
   @override
   void initState() {
     super.initState();
-    _pressed = false;
+    _pressed = widget.defaultPressed;
   }
 
   @override
@@ -79,7 +85,9 @@ class _ButtonState extends State<Button> {
             vertical: 12,
           ),
           decoration: BoxDecoration(
-            color: (widget.onPressed != null) ? widget.color : Colors.grey,
+            color: widget.onPressed != null
+                ? widget.color
+                : const Color(0xffE6ECEF),
             borderRadius: BorderRadius.circular(16),
             border: Border(
               top: BorderSide(
@@ -104,7 +112,9 @@ class _ButtonState extends State<Button> {
             child: Text(
               widget.text,
               style: TextStyle(
-                color: widget.fontColor,
+                color: widget.onPressed != null
+                    ? widget.fontColor
+                    : Colors.black.withOpacity(0.15),
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
                 fontFamily: 'SF Pro Rounded',

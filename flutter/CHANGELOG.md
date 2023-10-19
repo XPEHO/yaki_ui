@@ -1,3 +1,9 @@
+## 0.6.0
+
+_Chore_
+
+- pub.dev: prepare publication
+
 ## 0.5.2
 
 _Fix_

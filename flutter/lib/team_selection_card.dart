@@ -10,12 +10,16 @@ class TeamSelectionCard extends StatefulWidget {
     required this.title,
     required this.subtitle,
     required this.onSelectionChanged,
+    this.defaultPressed = false,
+    this.defaultSelected = false,
   });
 
   final Widget picture;
   final String title;
   final String subtitle;
   final OnTeamSelectionChanged onSelectionChanged;
+  final bool defaultPressed;
+  final bool defaultSelected;
 
   @override
   State<TeamSelectionCard> createState() => _TeamSelectionCardState();
@@ -28,8 +32,8 @@ class _TeamSelectionCardState extends State<TeamSelectionCard> {
   @override
   void initState() {
     super.initState();
-    pressed = false;
-    selected = false;
+    pressed = widget.defaultPressed;
+    selected = widget.defaultSelected;
   }
 
   @override
@@ -76,6 +80,7 @@ class _TeamSelectionCardState extends State<TeamSelectionCard> {
                       fontFamily: 'SF Pro Rounded',
                     ),
                   ),
+                  const SizedBox(height: 4),
                   Text(
                     widget.subtitle,
                     style: const TextStyle(

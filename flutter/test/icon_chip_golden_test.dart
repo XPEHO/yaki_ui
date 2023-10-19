@@ -6,20 +6,44 @@ void main() {
   testGoldens(
     'Icon chip should look correct',
     (tester) async {
-      final iconChip = IconChip(
-        image: ClipRRect(
-          borderRadius: BorderRadius.circular(50),
-          child: const Icon(Icons.abc),
-        ),
-        label: 'Yaki chip',
-        backgroundColor: Colors.white,
+      final builder = GoldenBuilder.grid(
+        columns: 1,
+        widthToHeightRatio: 1,
+        bgColor: const Color(0xffFFFFFF),
+      )
+        ..addScenario(
+          '',
+          const IconChip(
+            image: SizedBox(
+              width: 32,
+              height: 32,
+            ),
+            label: 'Ship text',
+            backgroundColor: Colors.white,
+            borderWidth: 2,
+          ),
+        )
+        ..addScenario(
+          '',
+          const IconChip(
+            image: SizedBox(
+              width: 16,
+              height: 16,
+            ),
+            label: 'Ship text',
+            backgroundColor: Color(0xffF2F6F9),
+            borderWidth: 0,
+          ),
+        );
+
+      await tester.pumpWidgetBuilder(
+        builder.build(),
+        surfaceSize: const Size(130, 170),
       );
-
-      final builder = GoldenBuilder.grid(columns: 1, widthToHeightRatio: 1)
-        ..addScenario('Icon chip with abc flutter icon', iconChip);
-
-      await tester.pumpWidgetBuilder(builder.build());
-      await screenMatchesGolden(tester, 'icon_chip_grid');
+      await screenMatchesGolden(
+        tester,
+        'icon_chip_grid',
+      );
     },
   );
 }

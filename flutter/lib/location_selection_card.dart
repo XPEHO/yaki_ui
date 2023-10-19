@@ -10,12 +10,16 @@ class LocationSelectionCard extends StatefulWidget {
     required this.title,
     required this.subtitle,
     required this.onSelectionChanged,
+    this.defaultPressed = false,
+    this.defaultSelected = false,
   });
 
   final Widget picture;
   final String title;
   final String subtitle;
   final OnLocationSelectionChanged onSelectionChanged;
+  final bool defaultPressed;
+  final bool defaultSelected;
 
   @override
   State<LocationSelectionCard> createState() => _LocationSelectionCardState();
@@ -28,8 +32,8 @@ class _LocationSelectionCardState extends State<LocationSelectionCard> {
   @override
   void initState() {
     super.initState();
-    pressed = false;
-    selected = false;
+    pressed = widget.defaultPressed;
+    selected = widget.defaultSelected;
   }
 
   @override
@@ -63,48 +67,41 @@ class _LocationSelectionCardState extends State<LocationSelectionCard> {
                   const SizedBox(
                     height: 20,
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: widget.picture,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                      child: widget.picture,
+                    ),
                   ),
                   const SizedBox(
-                    width: 24,
+                    height: 24,
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    margin: const EdgeInsets.only(
-                      top: 16,
-                      bottom: 16,
+                  Text(
+                    widget.title,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: Color(0xFF37414C),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w400,
+                      fontFamily: 'SF Pro Rounded',
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          widget.title,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: Color(0xFF37414C),
-                            fontSize: 13,
-                            fontWeight: FontWeight.w400,
-                            fontFamily: 'SF Pro Rounded',
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          widget.subtitle,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            color: kTextColor,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w600,
-                            fontFamily: 'SF Pro Rounded',
-                          ),
-                        ),
-                      ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    widget.subtitle,
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                      color: kTextColor,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'SF Pro Rounded',
                     ),
+                  ),
+                  const SizedBox(
+                    height: 35,
                   ),
                 ],
               ),
