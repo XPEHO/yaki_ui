@@ -1,3 +1,18 @@
+## 0.7.1
+
+_Fix_
+
+- Remove button padding that caused issue with thin buttons
+
+## 0.7.0
+
+_Feat_
+
+- Add optional icon button attribute to use another Widget than the default Text.
+  If this attribute is null, the default Text is used.
+
+> > > > > > > Stashed changes
+
 ## 0.6.0
 
 _Chore_
