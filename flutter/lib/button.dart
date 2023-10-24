@@ -10,6 +10,7 @@ class Button extends StatefulWidget {
     this.fontColor = kTextColor,
     this.buttonHeight,
     this.defaultPressed = false,
+    this.icon,
   });
 
   factory Button.secondary({
@@ -18,6 +19,7 @@ class Button extends StatefulWidget {
     VoidCallback? onPressed,
     double? buttonHeight,
     bool defaultPressed = false,
+    Widget? icon,
   }) {
     return Button(
       key: key,
@@ -26,6 +28,7 @@ class Button extends StatefulWidget {
       color: kSecondaryColor,
       buttonHeight: buttonHeight,
       defaultPressed: defaultPressed,
+      icon: icon,
     );
   }
 
@@ -35,6 +38,7 @@ class Button extends StatefulWidget {
     VoidCallback? onPressed,
     double? buttonHeight,
     bool defaultPressed = false,
+    Widget? icon,
   }) {
     return Button(
       key: key,
@@ -44,6 +48,7 @@ class Button extends StatefulWidget {
       fontColor: kSecondaryTextColor,
       buttonHeight: buttonHeight,
       defaultPressed: defaultPressed,
+      icon: icon,
     );
   }
 
@@ -53,6 +58,7 @@ class Button extends StatefulWidget {
   final double? buttonHeight;
   final VoidCallback? onPressed;
   final bool defaultPressed;
+  final Widget? icon;
 
   @override
   State<Button> createState() => _ButtonState();
@@ -109,18 +115,18 @@ class _ButtonState extends State<Button> {
             ),
           ),
           child: Center(
-            child: Text(
-              widget.text,
-              style: TextStyle(
-                color: widget.onPressed != null
-                    ? widget.fontColor
-                    : Colors.black.withOpacity(0.15),
-                fontSize: 15,
-                fontWeight: FontWeight.w600,
-                fontFamily: 'SF Pro Rounded',
-              ),
-            ),
-          ),
+              child: widget.icon ??
+                  Text(
+                    widget.text,
+                    style: TextStyle(
+                      color: widget.onPressed != null
+                          ? widget.fontColor
+                          : Colors.black.withOpacity(0.15),
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'SF Pro Rounded',
+                    ),
+                  )),
         ),
       ),
     );
