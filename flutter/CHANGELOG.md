@@ -1,3 +1,10 @@
+## 0.7.0
+
+_Feat_
+
+- Add optional icon button attribute to use another Widget than the default Text.
+  If this attribute is null, the default Text is used.
+
 ## 0.6.0
 
 _Chore_
