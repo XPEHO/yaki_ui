@@ -69,9 +69,11 @@ class _LocationSelectionCardState extends State<LocationSelectionCard> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(16),
-                      child: widget.picture,
+                    child: Center(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(16),
+                        child: widget.picture,
+                      ),
                     ),
                   ),
                   const SizedBox(
