@@ -1,3 +1,9 @@
+## 0.7.2
+
+_Fix_
+
+- set location card content to the center
+
 ## 0.7.1
 
 _Fix_
