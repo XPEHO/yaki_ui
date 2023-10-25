@@ -86,10 +86,6 @@ class _ButtonState extends State<Button> {
         child: Container(
           height: widget.buttonHeight ?? 72,
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16,
-            vertical: 12,
-          ),
           decoration: BoxDecoration(
             color: widget.onPressed != null
                 ? widget.color
