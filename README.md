@@ -30,9 +30,7 @@ TODO - Describe how to import Flutter library using pub
 <html>
   <head>
     <title>Yaki UI</title>
-    <link
-      rel="stylesheet"
-      href="css/yaki_ui.css" />
+    <link rel="stylesheet" href="css/yaki_ui.css" />
   </head>
   <body>
     <!-- Primary button -->
@@ -221,6 +219,7 @@ class MyWidget extends StatelessWidget {
       type: InputTextType.email,
       label: 'Email',
       controller: TextEditingController(),
+      enabled: true,
     );
   }
 }
