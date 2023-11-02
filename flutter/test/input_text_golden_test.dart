@@ -25,8 +25,8 @@ void main() {
         ..addScenario('Input text email', inputTextEmail)
         ..addScenario('Input text password', inputTextPassword)
         ..addScenario('Input text password with focus', inputTextPassword)
-        ..addScenario('Not enabled', inputTextEmail)
-        ..addScenario('Not enabled', inputTextPassword);
+        ..addScenario('Input text not enabled', inputTextEmail)
+        ..addScenario('Input text not enabled', inputTextPassword);
 
       await tester.pumpWidgetBuilder(builder.build());
       await tester.tap(find.byType(TextField).last);
