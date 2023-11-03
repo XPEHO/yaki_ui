@@ -1,3 +1,9 @@
+# 0.7.3
+
+_Fix_
+
+- In inputText : By default, the value can be modified. Now it's not possible anymore by setting value at false
+
 ## 0.7.2
 
 _Fix_

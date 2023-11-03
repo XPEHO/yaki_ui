@@ -16,7 +16,6 @@ flutter pub add yaki_ui
 
 ![](test/goldens/button_grid.png)
 
-
 **Usage**
 
 ```dart
@@ -171,6 +170,7 @@ class MyWidget extends StatelessWidget {
       type: InputTextType.email,
       label: 'Email',
       controller: TextEditingController(),
+      enabled: true,
     );
   }
 }
