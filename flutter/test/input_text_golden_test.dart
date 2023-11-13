@@ -18,7 +18,7 @@ void main() {
         type: InputTextType.password,
         label: 'Password',
         controller: TextEditingController(),
-        readOnly: false,
+        readOnly: true,
       );
 
       final builder = GoldenBuilder.grid(columns: 3, widthToHeightRatio: 1)
