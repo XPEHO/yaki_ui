@@ -26,7 +26,7 @@ void main() {
         ..addScenario('Input text password', inputTextPassword)
         ..addScenario('Input text password with focus', inputTextPassword)
         ..addScenario('Input text not readOnly', inputTextEmail)
-        ..addScenario('Input text not readOnly', inputTextPassword);
+        ..addScenario('Input text readOnly', inputTextPassword);
 
       await tester.pumpWidgetBuilder(builder.build());
       await tester.tap(find.byType(TextField).last);
