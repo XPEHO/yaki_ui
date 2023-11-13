@@ -11,22 +11,22 @@ void main() {
         type: InputTextType.email,
         label: 'Email',
         controller: TextEditingController(),
-        enabled: false,
+        readOnly: false,
       );
 
       final inputTextPassword = InputText(
         type: InputTextType.password,
         label: 'Password',
         controller: TextEditingController(),
-        enabled: false,
+        readOnly: true,
       );
 
       final builder = GoldenBuilder.grid(columns: 3, widthToHeightRatio: 1)
         ..addScenario('Input text email', inputTextEmail)
         ..addScenario('Input text password', inputTextPassword)
         ..addScenario('Input text password with focus', inputTextPassword)
-        ..addScenario('Input text not enabled', inputTextEmail)
-        ..addScenario('Input text not enabled', inputTextPassword);
+        ..addScenario('Input text not readOnly', inputTextEmail)
+        ..addScenario('Input text readOnly', inputTextPassword);
 
       await tester.pumpWidgetBuilder(builder.build());
       await tester.tap(find.byType(TextField).last);

@@ -11,7 +11,7 @@ class InputText extends StatefulWidget {
     required this.controller,
     this.validator,
     this.onChange,
-    this.enabled =
+    this.readOnly =
         true, //By default, the value can be modified. Add the possibility of setting enabled false. This means you can't change the value.
   });
 
@@ -20,7 +20,7 @@ class InputText extends StatefulWidget {
   final TextEditingController controller;
   final String? Function(String?)? validator;
   final void Function(String)? onChange;
-  final bool enabled;
+  final bool readOnly;
 
   @override
   State<InputText> createState() => _InputTextState();
@@ -56,7 +56,7 @@ class _InputTextState extends State<InputText> {
       child: TextFormField(
         validator: widget.validator,
         onChanged: widget.onChange,
-        enabled: widget.enabled,
+        readOnly: widget.readOnly,
         focusNode: focusNode,
         controller: widget.controller,
         obscureText:
