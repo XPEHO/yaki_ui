@@ -170,7 +170,7 @@ class MyWidget extends StatelessWidget {
       type: InputTextType.email,
       label: 'Email',
       controller: TextEditingController(),
-      enabled: true,
+      readOnly: true,
     );
   }
 }
