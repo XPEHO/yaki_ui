@@ -1,5 +1,5 @@
 name: Main CI on merge
-on: 
+on:
   push:
     branches:
       - main
