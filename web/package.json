@@ -1,0 +1,11 @@
+{
+  "name": "@yaki_ui/yaki_ui_web_components",
+  "version": "1.0.0",
+  "description": "Yaki_ui web components based on BastiUI work",
+  "author": "XPEHO",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpeho/yaki_ui.git"
+  }
+}
