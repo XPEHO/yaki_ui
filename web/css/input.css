@@ -1,0 +1,15 @@
+.textField {
+  display: flex;
+  height: 64px;
+  padding: 4px 16px 4px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: none;
+  background: var(--bg-1, #fff);
+  /* full size width */
+  width: 100%;
+  font-size: 16px;
+}

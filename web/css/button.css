@@ -1,0 +1,53 @@
+:root {
+  --button-background-color: #ff936b;
+  --button-border-color: rgba(0, 0, 0, 0.15);
+  --button-box-shadow-heigh: -6px;
+  --button-translate-y: calc((-1 * var(--button-box-shadow-heigh)) - 2px);
+}
+
+.button {
+  color: var(--content-1, #0f1013);
+  font-size: var(--test-font-size);
+
+  width: 100%;
+  padding: 8px 16px 12px 16px;
+
+  background-color: var(--button-background-color);
+
+  border-radius: 16px;
+  border: 2px solid var(--button-border-color);
+
+  box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15) inset;
+
+  /* transition: transform 0.02s ease, box-shadow 0.02s ease; */
+
+  &:active {
+    /* transform: translateY(var(--button-translate-y)); */
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset;
+  }
+
+  /* unselectable text */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.button--text {
+  line-height: 100%; /* 15px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.button:active {
+  margin-bottom: 0px;
+}
+
+.primary {
+  height: 72px;
+}
+
+.secondary {
+  height: 52px;
+  background: var(--action-1, #ffffff);
+}
