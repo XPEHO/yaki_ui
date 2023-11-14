@@ -1,5 +1,18 @@
 # Yaki_UI Web Components
 
+# For now : Install the npm package :
+
+In the project use :
+
+```
+npm install "https://gitpkg.now.sh/XPEHO/yaki_ui/web?feat/web_admin_ui"
+```
+
+This will install the npm package from github in the current project.
+
+All change related to web components will be done in the **web** folder of the **yaki_ui** repository, and on the **web_admin_ui** branch,
+Or at least PR related to web components will be merged on that branch.
+
 ### Description
 
 Yaki_UI is a collection of web components based on BastiUI work. It's designed to provide a set of reusable UI components for web development.
