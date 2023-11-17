@@ -1,0 +1,83 @@
+:root {
+  --background-color-button-primary: #ff936b;
+  --background-color-button-darker-primary: color-mix(in srgb, var(--background-color-button-primary), #000 15%);
+
+  --background-color-button-secondary: #ffffff;
+  --background-color-button-darker-secondary: color-mix(in srgb, var(--background-color-button-secondary), #000 15%);
+
+  --background-color-button-delete: #fe6267;
+  --background-color-button-darker-delete: color-mix(in srgb, var(--background-color-button-delete), #000 15%);
+
+  --box-shadow-heigh-button: 4px;
+  --animation-translate-y-button: var(--box-shadow-heigh-button);
+
+  --height-button-primary: 72px;
+  --height-button-secondary: 52px;
+
+  --padding-inline-button-content-sized: 16px;
+}
+
+/* BUTTON BASE STYLE  */
+.button--general {
+  border-radius: var(--border-radius-base);
+  border: 2px solid;
+
+  &:active {
+    transform: translateY(var(--animation-translate-y-button));
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* BUTTON COLORS */
+.button--color-primary {
+  background-color: var(--background-color-button-primary);
+  border-color: var(--background-color-button-darker-primary);
+  box-shadow: 0px var(--box-shadow-heigh-button) 0px 0px var(--background-color-button-darker-primary);
+}
+
+.button--color-secondary {
+  background-color: var(--background-color-button-secondary);
+  border-color: var(--background-color-button-darker-secondary);
+  box-shadow: 0px var(--box-shadow-heigh-button) 0px 0px var(--background-color-button-darker-secondary);
+}
+
+.button--color-delete {
+  background-color: var(--background-color-button-delete);
+  border-color: var(--background-color-button-darker-delete);
+  box-shadow: 0px var(--box-shadow-heigh-button) 0px 0px var(--background-color-button-darker-delete);
+}
+
+/* BUTTON SIZING */
+.button--height-primary {
+  height: var(--height-button-primary);
+  /* padding inline when its content sized */
+  padding-inline: var(--padding-inline-button-content-sized);
+}
+
+.button--height-secondary {
+  height: var(--height-button-secondary);
+  /* padding inline when its content sized */
+  padding-inline: var(--padding-inline-button-content-sized);
+}
+
+.button--width-100-pct {
+  width: 100%;
+}
+
+/* BUTTON ICON AND TEXT  */
+.button--icon-text-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  figure {
+    width: 24px;
+    height: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
