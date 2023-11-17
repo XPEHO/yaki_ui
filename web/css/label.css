@@ -5,14 +5,15 @@
 }
 
 .label {
-  height: 35px;
-  min-width: 25%;
+  height: 20px;
+  min-width: 60px;
   padding: 8px 8px;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
+  gap: 8px;
 }
 
 .label--text {
