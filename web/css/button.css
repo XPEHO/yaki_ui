@@ -64,10 +64,14 @@
   --button-background-secondary-color: #ffffff;
   --button-background-darker-secondary-color: color-mix(in srgb, var(--button-background-secondary-color), #000 15%);
 
+  --button-background-delete-color: #fe6267;
+  --button-background-darker-delete-color: color-mix(in srgb, var(--button-background-delete-color), #000 15%);
+
   --button-box-shadow-heigh: 4px;
   --button-translate-y: calc(var(--button-box-shadow-heigh) - 1px);
 }
 
+/* BUTTON BASE STYLE  */
 .button--general {
   border-radius: 16px;
   border: 2px solid;
@@ -78,6 +82,7 @@
   }
 }
 
+/* BUTTON COLORS */
 .button--color-primary {
   background-color: var(--button-background-primary-color);
   border-color: var(--button-background-darker-primary-color);
@@ -90,6 +95,13 @@
   box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px var(--button-background-darker-secondary-color);
 }
 
+.button--color-delete {
+  background-color: var(--button-background-delete-color);
+  border-color: var(--button-background-darker-delete-color);
+  box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px var(--button-background-darker-delete-color);
+}
+
+/* BUTTON SIZING */
 .button--height-primary {
   padding-block: 26px;
 }
@@ -102,10 +114,30 @@
   width: 100%;
 }
 
-.button--size-content {
-  padding: 16px;
+.button--sized-content {
+  height: 52px;
+  padding: 12px 16px;
 }
 
+/* BUTTON ICON AND TEXT  */
+.button--icon-text-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  figure {
+    width: 24px;
+    height: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+/* GENERAL BUTTON STYLE  */
 .button--text {
   color: var(--text-color-main);
   font-size: var(--button-font-size-web);
