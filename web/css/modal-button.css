@@ -1,0 +1,19 @@
+:root {
+  --button-border-color: rgba(0, 0, 0, 0.15);
+  --button-box-shadow-heigh: -6px;
+  --button-translate-y: calc((-1 * var(--button-box-shadow-heigh)) - 2px);
+}
+
+.modal--button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px 16px;
+  border-radius: 24px;
+  box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15)
+    inset;
+  border: 2px solid var(--button-border-color);
+  background-color: #fff;
+  min-width: 220px;
+}
