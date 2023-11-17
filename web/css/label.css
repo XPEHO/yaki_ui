@@ -1,0 +1,30 @@
+:root {
+  --label-background-color: #37414c;
+  --label-box-shadow-heigh: -6px;
+  --label-translate-y: calc((-1 * var(--button-box-shadow-heigh)) - 2px);
+}
+
+.label {
+  font-size: var(--test-font-size);
+  height: 29px;
+  min-width: 30%;
+  padding: 8px 8px;
+  line-height: 100%; /* 15px */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: bold;
+}
+
+.label-primary {
+  background-color: var(--label-background-color);
+  color: #fff;
+}
+.label-secondary {
+  background-color: #fff;
+  color: #ff936b;
+}
