@@ -17,7 +17,8 @@
   border-radius: 16px;
   border: 2px solid var(--button-border-color);
 
-  box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px var(--button-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15)
+    inset;
 
   /* transition: transform 0.02s ease, box-shadow 0.02s ease; */
 
