@@ -1,0 +1,27 @@
+.chip--container {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e6ecef;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.chip--field {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.chip--text {
+  font-weight: bold;
+}
+
+.chip--close-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7d818c;
+  font-size: 1.5rem;
+}
