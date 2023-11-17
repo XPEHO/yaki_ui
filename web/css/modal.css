@@ -1,0 +1,15 @@
+.modal--content i {
+  margin-right: 20px;
+}
+
+.modal--content {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 16px;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.modal--text {
+  color: #0f1013;
+}
