@@ -24,11 +24,11 @@
   font-weight: bold;
 }
 
-.label-primary {
+.label-primary-color {
   background-color: var(--label-background-color);
   color: #fff;
 }
-.label-secondary {
+.label-secondary-color {
   background-color: #fff;
   color: #fe6267;
 }
