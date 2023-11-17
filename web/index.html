@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=100%, initial-scale=1.0" />
     <title>Yaki UI</title>
@@ -9,22 +8,24 @@
     <link rel="stylesheet" href="font/SF-Pro-Rounded-Regular.ttf" />
     <!-- import yaki_ui.css -->
     <link rel="stylesheet" href="css/yaki_ui.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
-        body {
-            padding: 16px;
-            background-color: #ebf1f5;
+      body {
+        padding: 16px;
+        background-color: #ebf1f5;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Se connecter</h1>
     <br />
 
@@ -35,10 +36,15 @@
     <button class="button primary">SE CONNECTER</button>
 
     <button class="button secondary">SE CONNECTER</button>
-
-
+    <br />
     <p class="label label-primary-color label--text">en attente</p>
     <p class="label label-secondary-color label--text">refusé</p>
-</body>
+    <br />
+    <div class="email--container">
+      <p class="email--field email--text">mon-mail@email.com</p>
+      <button class="email--close-icon"><i class="fas fa-times"></i></button>
+    </div>
 
+    <br />
+  </body>
 </html>
