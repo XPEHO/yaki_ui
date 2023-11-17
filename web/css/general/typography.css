@@ -1,0 +1,13 @@
+/* GENERAL BUTTON STYLE  */
+.button--text {
+  color: var(--font-color-main);
+  font-size: var(--font-size-web-button);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+.input__text {
+  color: var(--text-color-primary);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+}

@@ -1,0 +1,88 @@
+:root {
+  --background-color-input-primary: #fff;
+
+  --font-size-input-label: 0.688rem;
+}
+
+.input__border-background {
+  border-radius: var(--border-radius-base);
+  background: var(--background-color-input-primary);
+  padding-inline: 24px 16px;
+}
+
+.input__container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  align-self: stretch;
+
+  position: relative;
+}
+
+.input__no-border-background {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.input__label-style {
+  label {
+    position: absolute;
+    top: 23px;
+    left: 24px;
+    pointer-events: none;
+
+    transition: top 0.1s ease, font-size 0.1s ease;
+
+    color: var(--font-color-secondary);
+
+    font-size: var(--font-size-base);
+    font-weight: 400;
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label,
+  textarea:focus ~ label,
+  textarea:not(:placeholder-shown) ~ label {
+    top: 7px;
+    font-size: var(--font-size-input-label);
+  }
+}
+
+.input__password-btn-switch {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+
+  right: 32px;
+
+  figure {
+    width: 30px;
+    aspect-ratio: 1/1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.input__container-height {
+  height: 64px;
+}
+
+.textarea__container-height-pos {
+  justify-content: flex-start;
+  height: 128px;
+
+  textarea {
+    padding-block-start: 25px;
+    resize: none;
+  }
+}
