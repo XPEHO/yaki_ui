@@ -1,4 +1,4 @@
-.email--container {
+.chip--container {
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -9,16 +9,16 @@
   background-color: #fff;
 }
 
-.email--field {
+.chip--field {
   flex-grow: 1;
   margin-right: 10px;
 }
 
-.email--text {
+.chip--text {
   font-weight: bold;
 }
 
-.email--close-icon {
+.chip--close-icon {
   background: none;
   border: none;
   cursor: pointer;
