@@ -4,7 +4,6 @@
 
 .modal--content {
   display: flex;
-  align-items: flex-start;
   padding: 16px 16px;
   max-width: 200px;
   cursor: pointer;
