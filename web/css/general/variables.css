@@ -1,0 +1,9 @@
+:root {
+  --border-radius-base: 16px;
+
+  --font-color-main: #010101;
+  --font-color-secondary: #8e8e8e;
+
+  --font-size-base: 1rem;
+  --font-size-web-button: 0.9375rem;
+}
