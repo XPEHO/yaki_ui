@@ -1,20 +1,15 @@
-body {
-  background-color: rgb(177, 170, 170);
-  margin: 10px;
-}
-
 :root {
-  --button-border-color: rgba(0, 0, 0, 0.15);
-  --modal-box-shadow-heigh: -6px;
+  --color-border-button: rgba(0, 0, 0, 0.15);
+  --box-shadow-heigh-modal: -6px;
 }
 
 .modal__container {
   display: flex;
   flex-direction: column;
   border-radius: 24px;
-  box-shadow: 0px var(--modal-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15)
+  box-shadow: 0px var(--box-shadow-heigh-modal) 0px 0px rgba(0, 0, 0, 0.15)
     inset;
-  border: 2px solid var(--button-border-color);
+  border: 2px solid var(--color-border-button);
   background-color: #fff;
 }
 
