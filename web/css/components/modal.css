@@ -20,3 +20,41 @@
   width: 248px;
   height: 136px;
 }
+
+.modal__title {
+  font-size: 30px;
+  width: 340px;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.modal__text {
+  padding: 8px 0;
+  line-height: 24px;
+  height: 87px;
+  width: 340px;
+}
+
+.modal__text__bold {
+  font-weight: bold;
+}
+
+.modal__edit-size-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 40px;
+}
+
+.modal__location-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  display: flex;
+  padding: 8px;
+}
