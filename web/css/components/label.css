@@ -4,7 +4,7 @@
 }
 
 .label {
-  min-width: 60px;
+  width: fit-content;
   padding: 8px 8px;
   border-radius: 10px;
   align-items: center;
