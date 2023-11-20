@@ -1,14 +1,27 @@
-.modal--content i {
-  margin-right: 20px;
+body {
+  background-color: rgb(177, 170, 170);
+  margin: 10px;
 }
 
-.modal--content {
+:root {
+  --button-border-color: rgba(0, 0, 0, 0.15);
+  --modal-box-shadow-heigh: -6px;
+}
+
+.modal__container {
   display: flex;
-  padding: 16px 16px;
-  max-width: 200px;
-  cursor: pointer;
+  flex-direction: column;
+  border-radius: 24px;
+  box-shadow: 0px var(--modal-box-shadow-heigh) 0px 0px rgba(0, 0, 0, 0.15)
+    inset;
+  border: 2px solid var(--button-border-color);
+  background-color: #fff;
 }
 
-.modal--text {
-  color: #0f1013;
+.modal__edit-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 136px;
 }

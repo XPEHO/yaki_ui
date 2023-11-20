@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(177, 170, 170);
+  margin: 10px;
+}
+
+.text_icon--content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: #fff;
+  height: 56px;
+
+  & figure {
+    width: 24px;
+    height: 24px;
+
+    & img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.text-icon--text {
+  color: black;
+  font-size: 17px;
+}

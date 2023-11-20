@@ -24,4 +24,14 @@
   cursor: pointer;
   color: #7d818c;
   font-size: 1.5rem;
+
+  & figure {
+    width: 24px;
+    height: 24px;
+
+    & img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
