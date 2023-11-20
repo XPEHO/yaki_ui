@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
