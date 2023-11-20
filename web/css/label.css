@@ -1,7 +1,6 @@
 :root {
   --label-background-color: #37414c;
   --label-box-shadow-heigh: -6px;
-  --label-translate-y: calc((-1 * var(--button-box-shadow-heigh)) - 2px);
 }
 
 .label {

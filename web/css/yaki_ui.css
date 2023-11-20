@@ -1,10 +1,9 @@
 @import url("./reset.css");
 @import url("./variables.css");
+@import url("./utilities-class.css");
 @import url("./button.css");
 @import url("./input.css");
 @import url("./label.css");
 @import url("./modal-button.css");
 @import url("./modal.css");
 @import url("./chip.css");
-@import url("./utilities-class.css");
-
