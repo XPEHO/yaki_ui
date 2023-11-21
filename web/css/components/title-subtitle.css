@@ -12,6 +12,7 @@
   line-height: 100%;
   padding: 4px 8px;
   height: 32px;
+  font-weight: bold;
 }
 
 .container__text {
