@@ -25,6 +25,7 @@
   gap: 1rem;
   height: var(--height-user-card);
   padding: 1rem;
+  background-color: var(--background-color-yaki-main);
 
   & .logged-user-card__avatar {
     height: var(--width-avatar-user-card);
@@ -37,7 +38,7 @@
 }
 
 .logged-user-card__container:hover {
-  background-color: var(--color-white);
+  background-color: var(--background-color-yaki-hover);
   border-radius: 16px;
   cursor: pointer;
 }
