@@ -1,11 +1,3 @@
-.container__title-subtitle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;
-  background-color: #ebf1f5;
-}
-
 .container__title-text {
   color: #0f1013;
   font-size: 32px;
