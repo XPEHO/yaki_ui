@@ -1,20 +1,49 @@
-.text_icon--content {
+:root {
+  --background-color-yaki-main: #ff936b;
+  --background-color-yaki-hover: #ffa380;
+
+  --height-text-icon-container: 56px;
+}
+
+.text-icon__container {
   display: flex;
   align-items: center;
+  align-self: stretch;
   gap: 8px;
-  cursor: pointer;
-  border-radius: 16px;
-  background-color: #fff;
-  height: 56px;
 
+  border-radius: 16px;
+  cursor: pointer;
+
+  & p {
+    flex: 1;
+  }
+}
+
+.text-icon__container-height--padding {
+  height: var(--height-text-icon-container);
+  padding-inline: 24px;
+}
+
+.text_icon--icon {
   & figure {
     width: 24px;
     height: 24px;
-
     & img {
       width: 100%;
       object-fit: contain;
     }
+  }
+}
+
+.text-icon--background-white {
+  background-color: var(--color-white);
+}
+
+.text-icon--sidebar-color {
+  background-color: var(--background-color-yaki-main);
+
+  &:hover {
+    background-color: var(--background-color-yaki-hover);
   }
 }
 
