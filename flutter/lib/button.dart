@@ -79,12 +79,12 @@ class _ButtonState extends State<Button> {
       onTapDown: _onButtonDown,
       onTapUp: _onButtonUp,
       onTap: _onButtonPressed,
-      child: Container(
-        padding: _pressed
-            ? const EdgeInsets.only(top: 4)
-            : const EdgeInsets.only(bottom: 4),
+      child: Transform.translate(
+        offset: _pressed ? const Offset(0, 3) : const Offset(0, 0),
         child: Container(
-          height: widget.buttonHeight ?? 72,
+          height: _pressed
+              ? (widget.buttonHeight ?? 72) - 6
+              : widget.buttonHeight ?? 72,
           width: double.infinity,
           decoration: BoxDecoration(
             color: widget.onPressed != null

@@ -1,3 +1,9 @@
+# 0.9.1
+
+_fix_
+
+- Changed the button click animation to be more realistic
+
 # 0.9.0
 
 _feat_
