@@ -21,30 +21,26 @@
   height: 136px;
 }
 
-.modal__title {
+.modal__container-title {
   font-size: 30px;
   width: 340px;
   font-weight: bold;
   padding: 8px 0;
 }
 
-.modal__text {
+.modal__container-text {
   padding: 8px 0;
   line-height: 24px;
   height: 87px;
   width: 340px;
 }
 
-.modal__text__bold {
-  font-weight: bold;
-}
-
 .modal__edit-size-modal {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   width: 400px;
   padding: 40px;
 }
