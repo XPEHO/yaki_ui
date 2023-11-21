@@ -1,0 +1,21 @@
+.container__popup {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 784px;
+  padding: 40px;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: #f2f6f9;
+}
+
+.container_img {
+  height: 160px;
+  width: 160px;
+}
+
+.container_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: spasp-between;
+}
