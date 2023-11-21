@@ -1,5 +1,6 @@
 @import url("./general/reset.css");
 @import url("./general/variables.css");
+@import url("./general/typography.css");
 @import url("./general/utilities-class.css");
 @import url("./components/button.css");
 @import url("./components/input.css");
