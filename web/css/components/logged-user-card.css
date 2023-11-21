@@ -8,7 +8,6 @@
   font-family: "Rubik";
   font-size: 20px;
   font-weight: 500;
-  padding: 8px 0;
 }
 
 .logged-user-card__email_text {
@@ -43,14 +42,14 @@
   cursor: pointer;
 }
 
-.user-card__wrapper-user-infos {
+.logged-user-card__wrapper-user-infos {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 0.5rem;
 }
 
-.user-card__wrapper-status {
+.logged-user-card__wrapper-status {
   display: flex;
   justify-self: flex-end;
   align-items: center;
