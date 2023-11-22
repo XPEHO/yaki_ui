@@ -11,16 +11,22 @@
   --box-shadow-heigh-button: 4px;
   --animation-translate-y-button: var(--box-shadow-heigh-button);
 
-  --height-button-primary: 72px;
-  --height-button-secondary: 52px;
+  --height-button-primary: 68px;
+  --height-button-secondary: 48px;
 
-  --padding-inline-button-content-sized: 16px;
+  --padding-inline-button-content-sized: 14px;
+
+  --width-button-icon: 22px;
 }
 
 /* BUTTON BASE STYLE  */
 .button--general {
   border-radius: var(--border-radius-base);
   border: 2px solid;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:active {
     transform: translateY(var(--animation-translate-y-button));
@@ -72,8 +78,8 @@
   gap: 8px;
 
   & figure {
-    width: 24px;
-    height: 24px;
+    width: var(--width-button-icon);
+    height: var(--width-button-icon);
     & img {
       width: 100%;
       height: 100%;

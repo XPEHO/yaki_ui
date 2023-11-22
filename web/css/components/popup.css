@@ -1,0 +1,45 @@
+.container__popup {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 784px;
+  padding: 40px;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: #f2f6f9;
+}
+
+.container__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.popup__content {
+  display: flex;
+  gap: 20px;
+
+  & figure {
+    & img {
+      width: 100%;
+      object-fit: fit;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.popup__input-container {
+  gap: 20px;
+  width: 600px;
+}
+.button__position {
+  margin: 24px 0px 0px 24px;
+}
+
+.button--width {
+  width: 76px;
+}
+
+.container__buttons--popup {
+  display: flex;
+  justify-content: flex-end;
+}

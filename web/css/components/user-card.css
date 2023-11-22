@@ -4,9 +4,9 @@
   --background-color-user-card-waiting: #e6edee;
   --background-color-user-card-waiting-hover: #ecf0f5;
 
-  --height-user-card: 99px;
+  --height-user-card: 74px;
 
-  --width-avatar-user-card: 67px;
+  --width-avatar-user-card: 62px;
 }
 
 .logged_user_card {
@@ -21,14 +21,14 @@
 .user-card__name-text {
   color: #0f1013;
   font-family: "Rubik";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .user-card__email_text {
   color: var(--content-1, #0f1013);
   font-family: "Rubik";
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 100;
 }
 

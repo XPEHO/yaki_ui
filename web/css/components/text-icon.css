@@ -14,6 +14,9 @@
   & p {
     flex: 1;
   }
+  &:active {
+    transform: scale(0.99);
+  }
 }
 
 .text-icon__container-height--padding {
