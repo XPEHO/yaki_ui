@@ -1,7 +1,7 @@
 :root {
   --background-color-input-primary: #fff;
 
-  --font-size-input-label: 0.688rem;
+  --font-size-input-label: 0.73rem;
 }
 
 .input__border-background {
@@ -14,10 +14,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   align-self: stretch;
   gap: 8px;
   position: relative;
+
+  input {
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.2rem;
+    height: 100%;
+  }
 }
 
 .input__no-border-background {
@@ -30,16 +36,16 @@
 .input__label-style {
   & label {
     position: absolute;
-    top: 23px;
+    top: 25px;
     left: 24px;
     pointer-events: none;
 
     transition: top 0.1s ease, font-size 0.1s ease;
 
+    font-family: "SF Pro Rounded thin", sans-serif;
     color: var(--font-color-secondary);
-
     font-size: var(--font-size-base);
-    font-weight: 400;
+    font-weight: 800;
   }
 
   & input:focus ~ label,
@@ -47,6 +53,8 @@
   textarea:focus ~ label,
   textarea:not(:placeholder-shown) ~ label {
     top: 7px;
+    font-family: "SF Pro Rounded thin", sans-serif;
+
     font-size: var(--font-size-input-label);
   }
 }
@@ -56,6 +64,7 @@
   border: none;
   background-color: transparent;
 
+  top: 25%;
   right: 32px;
 
   & figure {

@@ -20,20 +20,6 @@
   height: 136px;
 }
 
-.modal__container-title {
-  font-size: 30px;
-  width: 340px;
-  font-weight: bold;
-  padding: 8px 0;
-}
-
-.modal__container-text {
-  padding: 8px 0;
-  line-height: 24px;
-  height: 87px;
-  width: 340px;
-}
-
 .modal__delete-size {
   display: flex;
   flex-direction: column;
@@ -52,4 +38,28 @@
   align-self: stretch;
   display: flex;
   padding: 8px;
+}
+
+.modal__container-title {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  width: 340px;
+  padding: 8px 0;
+}
+
+.modal__container-text {
+  font-family: "SF Pro Rounded", sans-serif;
+  line-height: 24px;
+  padding: 8px 0;
+
+  height: 87px;
+  width: 340px;
+
+  & span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #303134;
+  }
 }

@@ -18,20 +18,6 @@
   }
 }
 
-.user-card__name-text {
-  color: #0f1013;
-  font-family: "Rubik";
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.user-card__email_text {
-  color: var(--content-1, #0f1013);
-  font-family: "Rubik";
-  font-size: 15px;
-  font-weight: 100;
-}
-
 .user-card__container {
   display: flex;
   align-items: center;
@@ -44,9 +30,13 @@
   & .user-card__avatar {
     height: var(--width-avatar-user-card);
     width: var(--width-avatar-user-card);
+    border-radius: 50%;
     & img {
+      border-radius: 50%;
       width: 100%;
       object-fit: contain;
+      font-size: 0.8rem;
+      font-style: italic;
     }
   }
   & .user-card__wrapper-status_buttons {

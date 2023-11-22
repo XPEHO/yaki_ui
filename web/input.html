@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/yaki_ui.css" />
 
-    <style>
-      body {
-        padding-block-start: 10rem;
-        padding-inline: 16px;
-        background-color: #ebf1f5;
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="css/yaki_ui.css"
+  />
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-      }
-    </style>
-  </head>
+  <style>
+    body {
+      padding-block-start: 10rem;
+      padding-inline: 16px;
+      background-color: #ebf1f5;
 
-  <body>
-    <section
-      class="input__border-background input__container-flex input__container-height input__label-style">
-      <input
-        class="input__text input__no-border-background"
-        type="text"
-        placeholder=""
-        id="input-text" />
-      <label for="input-text">Text label</label>
-    </section>
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  </style>
+</head>
 
-    <section
-      class="input__border-background input__container-flex input__container-height input__label-style">
-      <input
-        class="input__text input__no-border-background"
-        type="password"
-        placeholder=""
-        id="input-pw" />
-      <label for="input-pw">Password label</label>
-      <button class="input__password-btn-switch">
-        <figure>
-          <img src="assets/eyes_closed.png" alt="button_password_visibility" />
-        </figure>
-      </button>
-    </section>
+<body>
+  <section class="input__border-background 
+  input__container-flex 
+  input__container-height 
+  input__label-style">
+    <input
+      class="input__text input__no-border-background"
+      type="text"
+      placeholder=""
+      id="input-text"
+    />
+    <label for="input-text">Text label</label>
+  </section>
 
-    <section
-      class="input__border-background input__container-flex textarea__container-height-pos input__label-style">
-      <textarea
-        class="input__text input__no-border-background"
-        placeholder=""
-        id="textarea"
-        cols="10"
-        rows="5"></textarea>
-      <label for="textarea">Text area label</label>
-    </section>
-  </body>
+  <section class="input__border-background 
+  input__container-flex 
+  input__container-height 
+  input__label-style">
+    <input
+      class="input__text input__no-border-background"
+      type="password"
+      placeholder=""
+      id="input-pw"
+    />
+    <label for="input-pw">Password label</label>
+    <button
+      class="input__password-btn-switch"
+      type="button"
+    >
+      <figure>
+        <img
+          src="assets/eyes_closed.png"
+          alt="button_password_visibility"
+        />
+      </figure>
+    </button>
+  </section>
+
+  <section class="input__border-background 
+  input__container-flex 
+  textarea__container-height-pos 
+  input__label-style">
+    <textarea
+      class="input__text input__no-border-background"
+      placeholder=""
+      id="textarea"
+      cols="10"
+      rows="5"
+    ></textarea>
+    <label for="textarea">Saisir des emails</label>
+  </section>
+</body>
+
 </html>

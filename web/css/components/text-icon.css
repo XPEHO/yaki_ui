@@ -15,7 +15,7 @@
     flex: 1;
   }
   &:active {
-    transform: scale(0.99);
+    transform: scale(0.99) translateY(1px);
   }
 }
 
@@ -45,9 +45,4 @@
   &:hover {
     background-color: var(--background-color-yaki-hover);
   }
-}
-
-.text-icon--text {
-  color: black;
-  font-size: 17px;
 }
