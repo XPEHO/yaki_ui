@@ -12,10 +12,29 @@
 .container_img {
   height: 160px;
   width: 160px;
+  padding-bottom: 8px;
 }
 
-.container_buttons {
+.container__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.popup__content {
   display: flex;
   flex-direction: row;
-  justify-content: spasp-between;
+  gap: 20px;
+}
+
+.popup__input-container {
+  gap: 20px;
+  width: 600px;
+}
+.button__position {
+  margin: 24px 0px 0px 24px;
+}
+
+.container__buttons--popup {
+  display: flex;
+  justify-content: flex-end;
 }
