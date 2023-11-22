@@ -10,19 +10,18 @@
 }
 
 .container_img {
-  height: 160px;
-  width: 160px;
+  width: 100%;
+  object-fit: fit;
   padding-bottom: 8px;
 }
 
 .container__buttons {
   display: flex;
-  gap: 40px;
+  gap: 8px;
 }
 
 .popup__content {
   display: flex;
-  flex-direction: row;
   gap: 20px;
 }
 
@@ -32,6 +31,10 @@
 }
 .button__position {
   margin: 24px 0px 0px 24px;
+}
+
+.button--width {
+  width: 76px;
 }
 
 .container__buttons--popup {
