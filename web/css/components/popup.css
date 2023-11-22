@@ -9,12 +9,6 @@
   background-color: #f2f6f9;
 }
 
-.container_img {
-  width: 100%;
-  object-fit: fit;
-  padding-bottom: 8px;
-}
-
 .container__buttons {
   display: flex;
   gap: 8px;
@@ -23,6 +17,14 @@
 .popup__content {
   display: flex;
   gap: 20px;
+
+  & figure {
+    & img {
+      width: 100%;
+      object-fit: fit;
+      padding-bottom: 8px;
+    }
+  }
 }
 
 .popup__input-container {
