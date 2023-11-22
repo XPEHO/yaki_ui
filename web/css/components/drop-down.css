@@ -19,10 +19,13 @@
   align-self: stretch;
 
   position: relative;
+
+  isolation: isolate;
 }
 
 .drop-down__checkbox {
   position: absolute;
+  z-index: 1;
   align-self: stretch;
   cursor: pointer;
   top: 0;
