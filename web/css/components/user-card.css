@@ -9,6 +9,15 @@
   --width-avatar-user-card: 67px;
 }
 
+.logged_user_card {
+  background-color: var(--background-color-yaki-main);
+  border-radius: 16px;
+
+  &:hover {
+    background-color: var(--background-color-yaki-hover);
+  }
+}
+
 .user-card__name-text {
   color: #0f1013;
   font-family: "Rubik";

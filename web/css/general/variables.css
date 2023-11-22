@@ -1,4 +1,7 @@
 :root {
+  --background-color-yaki-main: #ff936b;
+  --background-color-yaki-hover: #ffa380;
+
   --border-radius-base: 16px;
 
   --font-color-main: #010101;
