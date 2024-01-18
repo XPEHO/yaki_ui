@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Document</title>
+  <title>Yaki UI</title>
+  <!--import font font/SF-Pro-Rounded-Regular.ttf-->
+  <link
+    rel="stylesheet"
+    href="font/SF-Pro-Rounded-Regular.ttf"
+  />
+  <!-- import yaki_ui.css -->
+  <link
+    rel="stylesheet"
+    href="css/yaki_ui.css"
+  />
+
+  <style>
+    body {
+      padding-block-start: 10rem;
+      padding-inline: 16px;
+      background-color: var(--background-color-yaki-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <article class="container__popup">
+    <h1 class="container__title-text container__style">Titre</h1>
+    <p class="container__text container__style">Texte</p>
+
+    <section class="popup__content">
+      <section class="popup__avatar-section">
+        <figure>
+          <img
+            src="assets/yaki_basti_icon.png"
+            alt="avatar"
+          />
+        </figure>
+
+        <aside class="container__buttons_aside">
+          <button class="button--general 
+            button--color-secondary 
+            button--height-secondary 
+            button--icon-text-style">
+            <figure>
+              <img
+                src="assets/x_close.png"
+                alt="arrow-left"
+              />
+            </figure>
+          </button>
+
+          <button class="button--general 
+            button--color-secondary 
+            button--height-secondary 
+            button--icon-text-style">
+            <figure>
+              <img
+                src="assets/pencil-regular-24.png"
+                alt="arrow-left"
+              />
+            </figure>
+          </button>
+        </aside>
+      </section>
+
+
+      <form class="popup__input-container">
+        <section class="input__border-background 
+          input__container-flex 
+          input__container-height 
+          input__label-style">
+          <input
+            class="input__text input__no-border-background"
+            type="text"
+            placeholder=""
+            id="input-text"
+          />
+          <label for="input-text">Text label</label>
+        </section>
+
+        <section class="input__border-background 
+            input__container-flex 
+            textarea__container-height-pos 
+            input__label-style">
+          <textarea
+            class="input__text input__no-border-background"
+            placeholder=""
+            id="textarea"
+            cols="10"
+            rows="5"
+          ></textarea>
+          <label for="textarea">Text area label</label>
+        </section>
+
+        <div class="container__buttons_form">
+          <button class="button--general 
+              button--color-secondary 
+              button--height-secondary 
+              button--inline-padding-16">
+            <p class="button--text text-uppercase unselectabla-text">
+              annuler
+            </p>
+          </button>
+
+          <button
+            type="submit"
+            class="button--general 
+              button--color-primary 
+              button--height-secondary 
+              button--inline-padding-16"
+          >
+            <p class="button--text text-uppercase unselectabla-text">
+              modifier
+            </p>
+          </button>
+        </div>
+      </form>
+
+    </section>
+  </article>
+</body>
+
+</html>

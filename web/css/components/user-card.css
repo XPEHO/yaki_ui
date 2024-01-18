@@ -1,0 +1,88 @@
+:root {
+  --background-color-user-card-accepted-hover: #f9fbfc;
+
+  --background-color-user-card-waiting: #e6edee;
+  --background-color-user-card-waiting-hover: #ecf0f5;
+
+  --height-user-card: 74px;
+
+  --width-avatar-user-card: 62px;
+}
+
+.logged_user_card {
+  background-color: var(--background-color-yaki-main);
+  border-radius: 16px;
+
+  &:hover {
+    background-color: var(--background-color-yaki-hover);
+  }
+}
+
+.user-card__container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 1rem;
+
+  height: var(--height-user-card);
+  padding: 1rem;
+
+  & .user-card__avatar {
+    height: var(--width-avatar-user-card);
+    width: var(--width-avatar-user-card);
+    border-radius: 50%;
+    & img {
+      border-radius: 50%;
+      width: 100%;
+      object-fit: contain;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+  & .user-card__wrapper-status_buttons {
+    display: none;
+  }
+
+  &:hover .user-card__wrapper-status_buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.user-card__wrapper-user-infos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.user-card__wrapper-status {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+.user-card__accepted_status {
+  background-color: var(--color-white);
+  &:hover {
+    background-color: var(--background-color-user-card-accepted-hover);
+  }
+  & .user-card__wrapper-status_label {
+    display: none;
+  }
+}
+
+.user_card__waiting_status {
+  background-color: var(--background-color-user-card-waiting);
+  &:hover {
+    background-color: var(--background-color-user-card-waiting-hover);
+  }
+
+  & .user-card__wrapper-status_label {
+    display: block;
+  }
+
+  &:hover .user-card__wrapper-status_label {
+    display: none;
+  }
+}

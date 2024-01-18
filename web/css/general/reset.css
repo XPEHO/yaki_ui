@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Rounded";
+  src: url("../../fonts/SF-Pro-Rounded-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Rounded thin";
+  src: url("../../fonts/SF-Pro-Rounded-Thin.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

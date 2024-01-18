@@ -1,0 +1,48 @@
+:root {
+  --height-text-icon-container: 56px;
+}
+
+.text-icon__container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  gap: 8px;
+
+  border-radius: 16px;
+  cursor: pointer;
+
+  & p {
+    flex: 1;
+  }
+  &:active {
+    transform: scale(0.99) translateY(1px);
+  }
+}
+
+.text-icon__container-height--padding {
+  height: var(--height-text-icon-container);
+  padding-inline: 24px;
+}
+
+.text_icon--icon {
+  & figure {
+    width: 24px;
+    height: 24px;
+    & img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.text-icon--background-white {
+  background-color: var(--color-white);
+}
+
+.text-icon--sidebar-color {
+  background-color: var(--background-color-yaki-main);
+
+  &:hover {
+    background-color: var(--background-color-yaki-hover);
+  }
+}

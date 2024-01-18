@@ -1,0 +1,72 @@
+/* BUTTON */
+.button--text {
+  font-family: "SF Pro Rounded", sans-serif;
+  color: var(--font-color-main);
+  font-size: var(--font-size-web-button);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+/* USER CARD */
+.user-card__name-text {
+  font-family: "Rubik";
+  color: #0f1013;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user-card__email_text {
+  font-family: "Rubik";
+  color: #0f1013;
+  font-size: 15px;
+  font-weight: 350;
+}
+
+/*  INPUT */
+.input__text {
+  font-family: "SF Pro Rounded", sans-serif;
+  color: var(--text-color-primary);
+  font-size: var(--font-size-base);
+  font-weight: 20;
+}
+
+.text__bold {
+  font-weight: bold;
+}
+
+/* SIDEBAR CHOICE */
+.text-icon--text {
+  font-family: "Rubik";
+  font-weight: 350;
+  font-variant: normal;
+  letter-spacing: 0.2px;
+
+  color: black;
+  font-size: 17px;
+}
+
+/*  USER CARD LABEL  */
+.label--text {
+  font-family: "Rubik";
+  line-height: 100%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*  MODAL  */
+.container__title-text {
+  font-family: "SF Pro Rounded", sans-serif;
+  color: #0f1013;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: bold;
+}
+
+.container__text {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: #37414c;
+}

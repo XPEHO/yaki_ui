@@ -1,0 +1,77 @@
+:root {
+  --height-drop-down-item: 40px;
+}
+
+.drop-down--background-white {
+  background-color: var(--color-white);
+}
+
+.drop-down--sidebar-color {
+  background-color: var(--background-color-yaki-main);
+}
+.drop-down__container:hover .drop-down--sidebar-color {
+  background-color: var(--background-color-yaki-hover);
+}
+
+.drop-down__container {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+
+  position: relative;
+
+  isolation: isolate;
+}
+
+.drop-down__checkbox {
+  position: absolute;
+  z-index: 1;
+  align-self: stretch;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 100%;
+  opacity: 0;
+
+  &:checked ~ .drop-down__menu {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-inline: 32px 8px;
+  }
+
+  &:checked ~ .drop-down__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.drop-down__menu {
+  transform: scaleY(0);
+  display: none;
+}
+
+.drop-down__icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  right: 24px;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.drop-down__menu_item--height-padding-color {
+  height: var(--height-drop-down-item);
+  padding-inline: 16px 8px;
+
+  background-color: var(--background-color-yaki-main);
+
+  &:hover {
+    background-color: var(--background-color-yaki-hover);
+  }
+}

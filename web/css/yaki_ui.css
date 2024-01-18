@@ -1,71 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'SF Pro Rounded', sans-serif;
-    
-    font-style: normal;
-    font-weight: 500;
-}
-
-body {
-    padding: 16px;
-    background-color: #EBF1F5;
-}
-
-.button {
-    font-size: 15px;
-    margin-bottom: 4px;
-    display: flex;
-    height: 72px;
-    padding: 8px 16px 12px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;   
-    border-radius: 16px;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    background: var(--action-1, #FF936B);
-    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.15) inset;
-    color: var(--content-1, #0F1013);
-    
-    line-height: 100%; /* 15px */
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    /* unselectable text */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-.button:active {
-    margin-top: 4px;
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15) inset;    
-}
-
-.primary {
-    height: 72px;
-}
-
-.secondary {
-    height: 52px;
-    background: var(--action-1, #FFFFFF);
-}
-
-.textField {
-    display: flex;
-    height: 64px;
-    padding: 4px 16px 4px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    border-radius: 16px;
-    border: none;
-    background: var(--bg-1, #FFF);
-    /* full size width */
-    width: 100%;
-    font-size: 16px;
-}
+@import url("./general/reset.css");
+@import url("./general/variables.css");
+@import url("./general/typography.css");
+@import url("./general/utilities-class.css");
+@import url("./components/button.css");
+@import url("./components/input.css");
+@import url("./components/label.css");
+@import url("./components/modal.css");
+@import url("./components/text-icon.css");
+@import url("./components/chip.css");
+@import url("./components/user-card.css");
+@import url("./components/drop-down.css");
+@import url("./components/popup.css");

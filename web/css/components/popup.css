@@ -1,0 +1,60 @@
+.container__popup {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 784px;
+  padding: 35px;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: #f2f6f9;
+
+  & > p {
+    padding-block: 8px 10px;
+  }
+}
+
+.popup__content {
+  display: flex;
+  gap: 20px;
+}
+
+.popup__avatar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & > figure {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+}
+
+.container__buttons_aside {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  & > button {
+    width: 76px;
+  }
+}
+
+.container__buttons_form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-block-start: 32px;
+}
+
+.popup__input-container {
+  gap: 20px;
+  width: 600px;
+}

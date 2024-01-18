@@ -28,3 +28,4 @@ flutter/**/doc/api/
 flutter/.dart_tool/
 flutter/.packages
 flutter/build/
+flutter/test/failures/

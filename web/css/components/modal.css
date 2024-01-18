@@ -1,0 +1,65 @@
+:root {
+  --color-border-button: rgba(0, 0, 0, 0.15);
+  --box-shadow-heigh-modal: -6px;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  box-shadow: 0px var(--box-shadow-heigh-modal) 0px 0px rgba(0, 0, 0, 0.15) inset;
+  border: 2px solid var(--color-border-button);
+  background-color: #fff;
+}
+
+.modal__edit-size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 136px;
+}
+
+.modal__delete-size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 400px;
+  padding: 40px;
+}
+
+.modal__location-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  display: flex;
+  padding: 8px;
+}
+
+.modal__container-title {
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+  width: 340px;
+  padding: 8px 0;
+}
+
+.modal__container-text {
+  font-family: "SF Pro Rounded", sans-serif;
+  line-height: 24px;
+  padding: 8px 0;
+
+  height: 87px;
+  width: 340px;
+
+  & span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #303134;
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --label-background-color: #37414c;
+  --label-box-shadow-heigh: -6px;
+}
+
+.label {
+  width: fit-content;
+  padding: 8px 8px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.label-primary-color {
+  background-color: var(--label-background-color);
+  color: #fff;
+}
+.label-secondary-color {
+  background-color: #fff;
+  color: #fe6267;
+}

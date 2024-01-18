@@ -1,0 +1,14 @@
+:root {
+  --background-color-yaki-main: #ff936b;
+  --background-color-yaki-hover: #ffa380;
+
+  --border-radius-base: 16px;
+
+  --font-color-main: #010101;
+  --font-color-secondary: #8e8e8e;
+
+  --font-size-base: 1.05rem;
+  --font-size-web-button: 0.85rem;
+
+  --color-white: #ffffff;
+}

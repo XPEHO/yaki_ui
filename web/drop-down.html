@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=100%, initial-scale=1.0"
+    >
+    <title>Yaki UI</title>
+    <!--import font font/SF-Pro-Rounded-Regular.ttf-->
+    <link
+        rel="stylesheet"
+        href="font/SF-Pro-Rounded-Regular.ttf"
+    >
+    <!-- import yaki_ui.css -->
+    <link
+        rel="stylesheet"
+        href="css/yaki_ui.css"
+    >
+
+    <style>
+        body {
+            padding-block-start: 10rem;
+            padding-inline: 16px;
+            background-color: var(--background-color-yaki-main);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="drop-down__container ">
+        <div class="text-icon__container 
+        text-icon__container-height--padding
+        text_icon--icon 
+        drop-down--sidebar-color">
+            <figure>
+                <img
+                    src="assets/group-regular-24.png"
+                    alt="close"
+                />
+            </figure>
+            <p class="text-icon--text">Mes équipes</p>
+        </div>
+        <input
+            class="drop-down__checkbox"
+            type="checkbox"
+            id="sidebar-dropdown"
+        />
+        <figure class="drop-down__icon">
+            <img
+                src="assets/chevron-down-regular-24.png"
+                alt="close"
+            />
+        </figure>
+        <section class="drop-down__menu">
+            <p class="text-icon__container drop-down__menu_item--height-padding-color text-icon--text"> team 1 </p>
+            <p class="text-icon__container drop-down__menu_item--height-padding-color text-icon--text"> team 2 </p>
+            <p class="text-icon__container drop-down__menu_item--height-padding-color text-icon--text"> team 3 </p>
+            <p class="text-icon__container drop-down__menu_item--height-padding-color text-icon--text"> team 4 </p>
+        </section>
+    </section>
+</body>
+
+</html>
