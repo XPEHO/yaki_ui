@@ -59,7 +59,7 @@ void main() {
       );
     await tester.pumpWidgetBuilder(
       builder.build(),
-      surfaceSize: const Size(400, 500),
+      surfaceSize: const Size(400, 700),
     );
     await screenMatchesGolden(tester, 'team_selection_card_grid');
   });

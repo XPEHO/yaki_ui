@@ -55,7 +55,7 @@ void main() {
 
     await tester.pumpWidgetBuilder(
       builder.build(),
-      surfaceSize: const Size(200, 1000),
+      surfaceSize: const Size(200, 1200),
     );
 
     await screenMatchesGolden(tester, 'location_selection_card_grid');

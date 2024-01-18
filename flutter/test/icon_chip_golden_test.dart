@@ -38,7 +38,7 @@ void main() {
 
       await tester.pumpWidgetBuilder(
         builder.build(),
-        surfaceSize: const Size(130, 170),
+        surfaceSize: const Size(130, 200),
       );
       await screenMatchesGolden(
         tester,
