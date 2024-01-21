@@ -241,7 +241,7 @@ TODO
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
-// Icon chip
+
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -269,10 +269,9 @@ TODO
 
 ```dart
 import 'package:yaki_ui/yaki_ui.dart';
-// Icon chip
+// Toggle button
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return ToggleButton(
@@ -284,7 +283,39 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
+```
 
+### DatePickerCard
+
+![](flutter/test/goldens/date_picker_card_grid.png)
+
+**Web usage**
+
+```html
+TODO
+```
+
+**Flutter usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+// darte picker card
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return DatePickerCard(
+      title: "Start",
+      initialButtonLabel: "Pick a date",
+      earliestSelectableDate: DateTime.now(),
+      onDateSelection: (selectedDateTime) {
+        debugPrint('Date selected: $selectedDateTime');
+      },
+      toggleLabels: const ["Morning", "Noon"],
+    );
+  }
+}
 ```
 
 ## Widgetbook
