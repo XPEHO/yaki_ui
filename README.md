@@ -30,7 +30,9 @@ TODO - Describe how to import Flutter library using pub
 <html>
   <head>
     <title>Yaki UI</title>
-    <link rel="stylesheet" href="css/yaki_ui.css" />
+    <link
+      rel="stylesheet"
+      href="css/yaki_ui.css" />
   </head>
   <body>
     <!-- Primary button -->
@@ -253,8 +255,44 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
+### ToggleButton
+
+![](flutter/test/goldens/toggle_button_grid.png)
+
+**Web usage**
+
+```html
+TODO
+```
+
+**Flutter usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+// Icon chip
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ToggleButton(
+      isSelected: const [true, false],
+      labels: const ['Morning', 'Noon'],
+      onToggleButtonSelect: (selectedOption) {
+        debugPrint('Selected option: $selectedOption');
+      },
+    );
+  }
+}
+
+```
+
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.
 
 More information about Widgetbook can be found on [widgetbook.io](https://www.widgetbook.io/)
+
+```
+
+```
