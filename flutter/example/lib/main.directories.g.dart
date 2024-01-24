@@ -15,6 +15,7 @@ import 'package:example/icon_chip_usecase.dart';
 import 'package:example/input_text_usecase.dart';
 import 'package:example/location_selection_card_usecase.dart';
 import 'package:example/team_selection_card_usecase.dart';
+import 'package:example/toggle_button_usercase.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:yaki_ui/colors.dart';
@@ -27,6 +28,15 @@ final directories = [
       WidgetbookUseCase(
         name: 'Simple location selection Card',
         builder: (context) => simpleLocationSelectionCard(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
+    name: 'ToggleButton',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Date picker card and calendar',
+        builder: (context) => toggleButton(context),
       ),
     ],
   ),
@@ -57,11 +67,11 @@ final directories = [
     ],
   ),
   WidgetbookComponent(
-    name: 'InputText',
+    name: 'IconChip',
     useCases: [
       WidgetbookUseCase(
-        name: 'Input text',
-        builder: (context) => inputText(context),
+        name: 'Icon chip',
+        builder: (context) => iconChip(context),
       ),
     ],
   ),
@@ -75,11 +85,11 @@ final directories = [
     ],
   ),
   WidgetbookComponent(
-    name: 'IconChip',
+    name: 'InputText',
     useCases: [
       WidgetbookUseCase(
-        name: 'Icon chip',
-        builder: (context) => iconChip(context),
+        name: 'Input text',
+        builder: (context) => inputText(context),
       ),
     ],
   ),

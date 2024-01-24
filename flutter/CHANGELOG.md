@@ -1,3 +1,9 @@
+# 0.8.0
+
+_feat_
+
+- Added toggleButton widget
+
 # 0.7.4
 
 _Fix_
