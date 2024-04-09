@@ -15,13 +15,16 @@ import 'package:example/date_picker_usercase.dart';
 import 'package:example/icon_chip_usecase.dart';
 import 'package:example/input_text_usecase.dart';
 import 'package:example/location_selection_card_usecase.dart';
+import 'package:example/swap_usecase.dart';
 import 'package:example/team_selection_card_usecase.dart';
 import 'package:example/toggle_button_usercase.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:widgetbook/widgetbook.dart';
 import 'package:yaki_ui/colors.dart';
 import 'package:yaki_ui/date_picker_header.dart';
+import 'package:yaki_ui/toggle_button_element.dart';
 import 'package:yaki_ui/yaki_ui.dart';
 
 final directories = [
@@ -35,10 +38,19 @@ final directories = [
     ],
   ),
   WidgetbookComponent(
+    name: 'Swap',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Simple swap',
+        builder: (context) => simpleSwap(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
     name: 'ToggleButton',
     useCases: [
       WidgetbookUseCase(
-        name: 'Date picker card and calendar',
+        name: 'Morning Afternoon toggle',
         builder: (context) => toggleButton(context),
       ),
     ],
@@ -70,20 +82,20 @@ final directories = [
     ],
   ),
   WidgetbookComponent(
-    name: 'IconChip',
-    useCases: [
-      WidgetbookUseCase(
-        name: 'Icon chip',
-        builder: (context) => iconChip(context),
-      ),
-    ],
-  ),
-  WidgetbookComponent(
     name: 'Cell',
     useCases: [
       WidgetbookUseCase(
         name: 'Cell with chips',
         builder: (context) => cellWithChips(context),
+      ),
+    ],
+  ),
+  WidgetbookComponent(
+    name: 'IconChip',
+    useCases: [
+      WidgetbookUseCase(
+        name: 'Icon chip',
+        builder: (context) => iconChip(context),
       ),
     ],
   ),
@@ -100,7 +112,7 @@ final directories = [
     name: 'DatePickerCard',
     useCases: [
       WidgetbookUseCase(
-        name: 'Date picker card and calendar',
+        name: 'Date picker calendar',
         builder: (context) => datePickerCard(context),
       ),
     ],

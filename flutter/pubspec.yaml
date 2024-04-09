@@ -1,6 +1,6 @@
 name: yaki_ui
 description: Yaki UI is a Flutter UI library for building beautiful apps.
-version: 0.9.1
+version: 0.10.0
 homepage: https://xpeho.com
 
 environment:

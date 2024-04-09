@@ -198,6 +198,29 @@ class MyWidget extends StatelessWidget {
 }
 ```
 
+### Swap
+
+![](test/goldens/swap_grid.png)
+
+**Usage**
+
+```dart
+import 'package:yaki_ui/yaki_ui.dart';
+
+// Swap
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Swap(
+      setActivated: true,
+      thumbColor: Color.fromARGB(255, 255, 247, 137),
+      backgroundColor: Colors.green,
+      onSwapChange: () {},
+    );
+  }
+}
+```
+
 ## Widgetbook
 
 This project uses [Widgetbook](https://pub.dev/packages/widgetbook) to document the widgets.

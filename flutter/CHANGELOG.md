@@ -1,3 +1,9 @@
+# 0.10.0
+
+_feat_
+
+- Add switch component as "Swap"
+
 # 0.9.1
 
 _fix_
