@@ -1,3 +1,9 @@
+# 0.10.1
+
+\_fix-
+
+- Remove right overflow on team selection card when there is a too long text
+
 # 0.10.0
 
 _feat_

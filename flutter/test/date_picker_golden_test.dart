@@ -14,7 +14,7 @@ void main() {
           DatePickerCard(
             title: "Start",
             initialButtonLabel: "Pick a date",
-            earliestSelectableDate: DateTime.now(),
+            earliestSelectableDate: DateTime(DateTime.april, 1, 2021),
             onDateSelection: (selectedDateTime) {
               debugPrint('Date selected: $selectedDateTime');
             },
@@ -25,7 +25,7 @@ void main() {
         DatePickerCard(
           title: "Start",
           initialButtonLabel: "Pick a date",
-          earliestSelectableDate: DateTime.now(),
+          earliestSelectableDate: DateTime(DateTime.april, 1, 2021),
           onDateSelection: (selectedDateTime) {
             debugPrint('Date selected: $selectedDateTime');
           },
