@@ -67,32 +67,34 @@ class _TeamSelectionCardState extends State<TeamSelectionCard> {
               const SizedBox(
                 width: 24,
               ),
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    widget.title,
-                    style: const TextStyle(
-                      color: kTextColor,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'SF Pro Rounded',
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      widget.title,
+                      style: const TextStyle(
+                        color: kTextColor,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'SF Pro Rounded',
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    widget.subtitle,
-                    style: const TextStyle(
-                      color: kTextColor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      fontFamily: 'SF Pro Rounded',
+                    const SizedBox(height: 4),
+                    Text(
+                      widget.subtitle,
+                      style: const TextStyle(
+                        color: kTextColor,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'SF Pro Rounded',
+                      ),
                     ),
-                  ),
 
-                  //Image.asset('assets/icons/validated.png')
-                ],
+                    //Image.asset('assets/icons/validated.png')
+                  ],
+                ),
               ),
               const Spacer(),
               if (selected)
