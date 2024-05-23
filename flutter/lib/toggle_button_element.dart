@@ -9,11 +9,11 @@ class ToggleButtonElement extends StatelessWidget {
   final OnButtonTap onTap;
 
   const ToggleButtonElement({
-    Key? key,
+    super.key,
     required this.isSelected,
     required this.label,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   static const double containerHeight = 35;
 

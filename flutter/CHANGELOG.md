@@ -1,6 +1,12 @@
+# 0.10.2
+
+_chore_
+
+- Update depencies
+
 # 0.10.1
 
-\_fix-
+_fix_
 
 - Remove right overflow on team selection card when there is a too long text
 
