@@ -50,6 +50,37 @@
 .drop-down__menu {
   transform: scaleY(0);
   display: none;
+  max-height: 10rem;
+  overflow-y: auto;
+
+  @supports selector(::-webkit-scrollbar) {
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      padding: 0 5px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      background-clip: padding-box;
+      border-radius: 0.6rem;
+      background-color: #d8d8d8;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: var(--color-white);
+    }
+
+    &::-webkit-scrollbar-track-piece:end {
+      background: transparent;
+      margin-bottom: 25px;
+    }
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    scrollbar-width: 8px;
+    scrollbar-color: var(--color-white) transparent;
+  }
 }
 
 .drop-down__icon {

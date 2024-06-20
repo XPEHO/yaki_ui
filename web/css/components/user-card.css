@@ -33,8 +33,9 @@
     border-radius: 50%;
     & img {
       border-radius: 50%;
-      width: 100%;
-      object-fit: contain;
+      width: 4rem;
+      height: 4rem;
+      object-fit: cover;
       font-size: 0.8rem;
       font-style: italic;
     }
