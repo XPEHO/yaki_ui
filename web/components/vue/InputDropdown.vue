@@ -77,7 +77,9 @@ let hasBeenOpenedViaClick = ref(false);
 let defaultValueNames: Array<string> =
   props.valueNames.length > 0 && props.valueGroup.length
     ? props.valueNames
-    : props.valueGroup.map((x) => x.toString()[0].toUpperCase() + x.toString().slice(1));
+    : props.valueGroup.map(
+        (x) => x.toString()[0].toUpperCase() + x.toString().slice(1)
+      );
 
 // Emitter, allows to pass the selected option's value to parent components
 const emit = defineEmits<{ emittedSelectedInput: [value: any] }>();
@@ -117,7 +119,6 @@ const classList = [
   "input__label-style",
   "dropdown",
 ];
-
 </script>
 
 <template>
@@ -146,17 +147,12 @@ const classList = [
       </figure>
     </div>
 
-    <label
-      class="dropdown-label"
-      for="dropdown-text"
-      >{{ props.labelText }}</label
-    >
+    <label class="dropdown-label" for="dropdown-text">{{
+      props.labelText
+    }}</label>
 
     <Transition>
-      <div
-        :class="'dropdown-list'"
-        v-if="isDropdownOpen"
-      >
+      <div :class="'dropdown-list'" v-if="isDropdownOpen">
         <div
           class="dropdown-element"
           tabindex="0"
@@ -164,7 +160,9 @@ const classList = [
           @keypress.enter="onSelectValue(item)"
           :key="index"
         >
-          <span @click="onSelectValue(item)">{{ defaultValueNames[index] }}</span>
+          <span @click="onSelectValue(item)">{{
+            defaultValueNames[index]
+          }}</span>
         </div>
       </div>
     </Transition>
@@ -234,11 +232,6 @@ const classList = [
 
     &::-webkit-scrollbar-thumb:hover {
       background-color: $background-color-theme-secondary;
-    }
-
-    &::-webkit-scrollbar-track-piece:end {
-      background: transparent;
-      margin-bottom: 25px;
     }
   }
 
