@@ -10,8 +10,10 @@ import SwiftUI
 
 // Constants
 let XPEHO_COLOR: Color = Color(hex: 0xA0CE4E)
+let XPEHO_DARK_COLOR: Color = Color(hex: 0x88AF41)
+let GREEN_DARK_COLOR: Color = Color(hex: 0x3F6D34)
+let RED_INFO_COLOR: Color = Color(hex: 0xD25656)
 let DISABLED_COLOR: Color = Color(hex: 0xE6ECEF)
-
 
 // Handle hexadecimal for colors
 extension Color {
@@ -62,5 +64,14 @@ struct NoTapAnimationStyle: PrimitiveButtonStyle {
             // Make the whole button surface tappable. Without this only content in the label is tappable and not whitespace. Order is important so add it before the tap gesture
             .contentShape(Rectangle())
             .onTapGesture(perform: configuration.trigger)
+    }
+}
+
+// Converter to view vontroller for snapshot testing
+extension View {
+    func toViewController() -> UIViewController {
+        let vc = UIHostingController(rootView: self)
+        vc.view.frame = UIScreen.main.bounds
+        return vc
     }
 }

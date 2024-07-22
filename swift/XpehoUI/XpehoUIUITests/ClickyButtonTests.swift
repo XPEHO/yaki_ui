@@ -49,12 +49,3 @@ final class ClickyButtonTests: XCTestCase {
         XCTAssertFalse(app.buttons["Clicky Button Disabled"].isEnabled, "The button should be disabled.")        
     }
 }
-
-// Converter to view vontroller for snapshot testing
-extension View {
-    func toViewController() -> UIViewController {
-        let vc = UIHostingController(rootView: self)
-        vc.view.frame = UIScreen.main.bounds
-        return vc
-    }
-}

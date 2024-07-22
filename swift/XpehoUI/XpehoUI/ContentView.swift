@@ -18,6 +18,9 @@ struct ContentView: View {
                 NavigationLink(destination: ClickyButtonView()) {
                     Text("ClickyButton")
                 }
+                NavigationLink(destination: TagPillView()) {
+                    Text("TagPill")
+                }
                 NavigationLink(destination: OtherView()) {
                     Text("Other")
                 }
@@ -43,6 +46,23 @@ struct ClickyButtonView: View {
                 isDisabled: true
             )
         }.navigationTitle("ClickyButton")
+    }
+}
+
+struct TagPillView: View {
+    var body: some View {
+        VStack {
+            TagPill()
+            TagPill(
+                label: "Tag Pill Customized",
+                backgroundColor: GREEN_DARK_COLOR,
+                size: 20
+            )
+            TagPill(
+                label: "Tag Pill Important",
+                backgroundColor: RED_INFO_COLOR
+            )
+        }.navigationTitle("TagPill")
     }
 }
 
