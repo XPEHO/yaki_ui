@@ -6,6 +6,7 @@ This is the UI for the Yaki project.
 
 - Web CSS
 - Flutter multiplatform
+- SwiftUI
 
 ## Getting Started
 
@@ -30,9 +31,7 @@ TODO - Describe how to import Flutter library using pub
 <html>
   <head>
     <title>Yaki UI</title>
-    <link
-      rel="stylesheet"
-      href="css/yaki_ui.css" />
+    <link rel="stylesheet" href="css/yaki_ui.css" />
   </head>
   <body>
     <!-- Primary button -->
@@ -81,6 +80,10 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+
+**Swift usage**
+
+TODO: see how to use it in swift
 
 ### Icon chip
 
