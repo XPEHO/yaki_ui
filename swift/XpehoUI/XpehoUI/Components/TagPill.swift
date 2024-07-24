@@ -9,9 +9,11 @@ import SwiftUI
 
 struct TagPill: View {
     var label: String = "Tag Pill"
+    
+    var size: Double = 10.0
+    
     var backgroundColor: Color = XPEHO_COLOR
     var labelColor: Color = .white
-    var size: Double = 10.0
     
     var body: some View {
         Text(label)
@@ -22,6 +24,7 @@ struct TagPill: View {
             .background(backgroundColor)
             .foregroundColor(labelColor)
             .cornerRadius(6)
+            .lineLimit(1)
     }
 }
 

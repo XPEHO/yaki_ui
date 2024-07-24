@@ -21,6 +21,9 @@ struct ContentView: View {
                 NavigationLink(destination: TagPillView()) {
                     Text("TagPill")
                 }
+                NavigationLink(destination: FilePreviewButtonView()) {
+                    Text("FilePreviewButton")
+                }
                 NavigationLink(destination: OtherView()) {
                     Text("Other")
                 }
@@ -32,37 +35,89 @@ struct ContentView: View {
 
 struct ClickyButtonView: View {
     var body: some View {
-        VStack {
-            ClickyButton()
-            ClickyButton(
-                label: "Clicky Button Customized",
-                onPress: testFunction,
-                backgroundColor: .red,
-                labelColor: .white,
-                size: 20
-            )
-            ClickyButton(
-                label: "Clicky Button Disabled",
-                isDisabled: true
-            )
-        }.navigationTitle("ClickyButton")
+        ScrollView {
+            VStack(spacing: 20) {
+                ClickyButton()
+                ClickyButton(
+                    label: "Clicky Button Customized",
+                    size: 20,
+                    backgroundColor: .red,
+                    labelColor: .white,
+                    onPress: testFunction
+                )
+                ClickyButton(
+                    label: "Clicky Button Disabled",
+                    isDisabled: true
+                )
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("ClickyButton")
+        }
+        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 
 struct TagPillView: View {
     var body: some View {
-        VStack {
-            TagPill()
-            TagPill(
-                label: "Tag Pill Customized",
-                backgroundColor: GREEN_DARK_COLOR,
-                size: 20
-            )
-            TagPill(
-                label: "Tag Pill Important",
-                backgroundColor: RED_INFO_COLOR
-            )
-        }.navigationTitle("TagPill")
+        ScrollView {
+            VStack(spacing: 20) {
+                TagPill()
+                TagPill(
+                    label: "Tag Pill Customized",
+                    size: 20,
+                    backgroundColor: GREEN_DARK_COLOR
+                )
+                TagPill(
+                    label: "Tag Pill Important",
+                    backgroundColor: RED_INFO_COLOR
+                )
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("TagPill")
+        }
+        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
+    }
+}
+
+struct FilePreviewButtonView: View {
+    var imagePreview: Image = Image("Placeholder")
+
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 20) {
+                FilePreviewButton(
+                    labelLeft: "File Preview Button",
+                    labelRight: "",
+                    imagePreview: imagePreview
+                )
+                FilePreviewButton(
+                    labelLeft: "File Preview Button Customized",
+                    labelRight: "",
+                    imagePreview: imagePreview,
+                    pillTags: ["Tag Pill Custom 1", "Tag Pill Custom 2", "Tag Pill Custom 3", "Tag Pill Custom 4"],
+                    height: 200,
+                    labelSize: 20,
+                    backgroundColor: CONTENT_COLOR,
+                    labelColor: .white,
+                    pillBackColor: RED_INFO_COLOR,
+                    arrowColor: RED_INFO_COLOR,
+                    isLabelsAbove: false,
+                    onPress: testFunction
+                )
+                FilePreviewButton(
+                    labelLeft: "File Preview Button Disabled",
+                    labelRight: "",
+                    imagePreview: imagePreview,
+                    isDisabled: true
+                )
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("FilePreviewButton")
+        }
+        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 
@@ -76,4 +131,16 @@ struct OtherView: View {
 
 #Preview {
     ContentView()
+}
+
+#Preview("ClickyButton") {
+    ClickyButtonView()
+}
+
+#Preview("TagPill") {
+    TagPillView()
+}
+
+#Preview("FilePreviewButton") {
+    FilePreviewButtonView()
 }

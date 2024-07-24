@@ -14,6 +14,8 @@ let XPEHO_DARK_COLOR: Color = Color(hex: 0x88AF41)
 let GREEN_DARK_COLOR: Color = Color(hex: 0x3F6D34)
 let RED_INFO_COLOR: Color = Color(hex: 0xD25656)
 let DISABLED_COLOR: Color = Color(hex: 0xE6ECEF)
+let CONTENT_COLOR: Color = Color(hex: 0x212121)
+let BACKGROUND_COLOR: Color = Color(hex: 0xF2F6F9)
 
 // Handle hexadecimal for colors
 extension Color {
@@ -73,5 +75,14 @@ extension View {
         let vc = UIHostingController(rootView: self)
         vc.view.frame = UIScreen.main.bounds
         return vc
+    }
+}
+
+// Calculating the width of a string using a font
+extension String {
+    func widthByFont(usingFont font: UIFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
     }
 }

@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Raleway-Regular.ttf</string>
 		<string>Rubik-SemiBold.ttf</string>
 	</array>
 </dict>

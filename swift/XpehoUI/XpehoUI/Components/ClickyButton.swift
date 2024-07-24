@@ -1,5 +1,5 @@
 //
-//  Button.swift
+//  ClickyButton.swift
 //  XpehoUI
 //
 //  Created by Ryan Debouvries on 18/07/2024.
@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ClickyButton: View {
     var label: String = "Clicky Button"
+    
+    var size: Double = 16
+    
+    var backgroundColor: Color = XPEHO_COLOR
+    var labelColor: Color = .white
+    
+    var isDisabled: Bool = false
+    
     var onPress: () -> Void = {
         debugPrint("The button is pressed")
     }
-    var backgroundColor: Color = XPEHO_COLOR
-    var labelColor: Color = .white
-    var isDisabled: Bool = false
-    var size: Double = 16
     
     @State private var isPressed = false
     
@@ -49,17 +53,18 @@ struct ClickyButton: View {
             isPressed = false
         }
         .disabled(isDisabled)
+        .accessibilityIdentifier(label)
     }
 }
 
 #Preview {
     ClickyButton(
         label: "Button Customized",
-        onPress: {
-            debugPrint("The button is pressed")
-        },
         backgroundColor: XPEHO_COLOR,
         labelColor: .white,
-        isDisabled: false
+        isDisabled: false,
+        onPress: {
+            debugPrint("The button is pressed")
+        }
     )
 }
