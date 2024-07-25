@@ -30,9 +30,15 @@ final class FilePreviewButtonTests: XCTestCase {
         var filePreviewButtonView = FilePreviewButtonView()
         
         // Load placeholder picture for snapshots
-        if let uiImage = loadImageFromTestAssets(named: "Placeholder") {
-            let image = Image(uiImage: uiImage)
-            filePreviewButtonView.imagePreview = image
+        if let placeholderUIImage = loadImageFromTestAssets(named: "Placeholder") {
+            let placeholderImage = Image(uiImage: placeholderUIImage)
+            filePreviewButtonView.imagePreview = placeholderImage
+        }
+        
+        // Load arrow icon for snapshots
+        if let arrowIconUIImage = loadImageFromTestAssets(named: "Arrow-right") {
+            let arrowIconImage = Image(uiImage: arrowIconUIImage)
+            filePreviewButtonView.arrowRight = arrowIconImage
         }
 
         let viewController = filePreviewButtonView.toViewController()

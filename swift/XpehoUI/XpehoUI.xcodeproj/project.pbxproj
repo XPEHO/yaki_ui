@@ -72,6 +72,21 @@
 		0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
 		0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
 		0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */; };
+		0E99FD3A2C52435D005B43FA /* CollapsableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD392C52435D005B43FA /* CollapsableCard.swift */; };
+		0E99FD3B2C52435D005B43FA /* CollapsableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD392C52435D005B43FA /* CollapsableCard.swift */; };
+		0E99FD3D2C525720005B43FA /* CollapsableCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */; };
+		0E99FD442C527F23005B43FA /* ChoiceSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */; };
+		0E99FD452C527F23005B43FA /* ChoiceSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */; };
+		0E99FD472C527F94005B43FA /* CollapsableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD462C527F94005B43FA /* CollapsableCardView.swift */; };
+		0E99FD482C527F94005B43FA /* CollapsableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD462C527F94005B43FA /* CollapsableCardView.swift */; };
+		0E99FD4D2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */; };
+		0E99FD4E2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */; };
+		0E99FD502C52802A005B43FA /* TagPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD4F2C52802A005B43FA /* TagPillView.swift */; };
+		0E99FD512C52802A005B43FA /* TagPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD4F2C52802A005B43FA /* TagPillView.swift */; };
+		0E99FD532C52804B005B43FA /* ClickyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD522C52804B005B43FA /* ClickyButtonView.swift */; };
+		0E99FD542C52804B005B43FA /* ClickyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD522C52804B005B43FA /* ClickyButtonView.swift */; };
+		0E99FD562C5297EA005B43FA /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD552C5297E9005B43FA /* WrappingHStack.swift */; };
+		0E99FD572C5297EA005B43FA /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD552C5297E9005B43FA /* WrappingHStack.swift */; };
 		0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA01BED2C4E629000AB7A6B /* TagPill.swift */; };
 		0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B702C490E93000FB15D /* ContentView.swift */; };
 		0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C42C49425300BDB812 /* ClickyButton.swift */; };
@@ -158,6 +173,14 @@
 		0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelectorTests.swift; sourceTree = "<group>"; };
 		0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButton.swift; sourceTree = "<group>"; };
 		0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButtonTests.swift; sourceTree = "<group>"; };
+		0E99FD392C52435D005B43FA /* CollapsableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCard.swift; sourceTree = "<group>"; };
+		0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCardTests.swift; sourceTree = "<group>"; };
+		0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelectorView.swift; sourceTree = "<group>"; };
+		0E99FD462C527F94005B43FA /* CollapsableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCardView.swift; sourceTree = "<group>"; };
+		0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButtonView.swift; sourceTree = "<group>"; };
+		0E99FD4F2C52802A005B43FA /* TagPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillView.swift; sourceTree = "<group>"; };
+		0E99FD522C52804B005B43FA /* ClickyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButtonView.swift; sourceTree = "<group>"; };
+		0E99FD552C5297E9005B43FA /* WrappingHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStack.swift; sourceTree = "<group>"; };
 		0EA01BED2C4E629000AB7A6B /* TagPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPill.swift; sourceTree = "<group>"; };
 		0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +226,7 @@
 				0EA01BED2C4E629000AB7A6B /* TagPill.swift */,
 				0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */,
 				0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */,
+				0E99FD392C52435D005B43FA /* CollapsableCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -309,11 +333,13 @@
 				0E6983382C496EC400BDB812 /* Info.plist */,
 				0E734B6E2C490E93000FB15D /* XpehoUIApp.swift */,
 				0E734B702C490E93000FB15D /* ContentView.swift */,
+				0E99FD412C527EB4005B43FA /* Views */,
 				0E6982C32C49423700BDB812 /* Components */,
 				0E734B722C490E94000FB15D /* Assets.xcassets */,
 				0E6983372C496E2300BDB812 /* Fonts */,
 				0E734B742C490E94000FB15D /* Preview Content */,
 				0E6982C62C49427400BDB812 /* Utils.swift */,
+				0E99FD552C5297E9005B43FA /* WrappingHStack.swift */,
 			);
 			path = XpehoUI;
 			sourceTree = "<group>";
@@ -342,8 +368,21 @@
 				0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */,
 				0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */,
 				0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */,
+				0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */,
 			);
 			path = XpehoUIUITests;
+			sourceTree = "<group>";
+		};
+		0E99FD412C527EB4005B43FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E99FD522C52804B005B43FA /* ClickyButtonView.swift */,
+				0E99FD4F2C52802A005B43FA /* TagPillView.swift */,
+				0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */,
+				0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */,
+				0E99FD462C527F94005B43FA /* CollapsableCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,11 +571,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E99FD502C52802A005B43FA /* TagPillView.swift in Sources */,
+				0E99FD442C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
 				0E734B712C490E93000FB15D /* ContentView.swift in Sources */,
+				0E99FD532C52804B005B43FA /* ClickyButtonView.swift in Sources */,
 				0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */,
 				0E6982C52C49425300BDB812 /* ClickyButton.swift in Sources */,
 				0E734B6F2C490E93000FB15D /* XpehoUIApp.swift in Sources */,
+				0E99FD562C5297EA005B43FA /* WrappingHStack.swift in Sources */,
+				0E99FD472C527F94005B43FA /* CollapsableCardView.swift in Sources */,
+				0E99FD3A2C52435D005B43FA /* CollapsableCard.swift in Sources */,
 				0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */,
+				0E99FD4D2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */,
 				0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */,
 				0E6982C72C49427400BDB812 /* Utils.swift in Sources */,
 			);
@@ -554,17 +600,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E99FD452C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
+				0E99FD512C52802A005B43FA /* TagPillView.swift in Sources */,
+				0E99FD3B2C52435D005B43FA /* CollapsableCard.swift in Sources */,
 				0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */,
 				0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */,
 				0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */,
 				0E61C4262C4A5C59003857D0 /* ClickyButtonTests.swift in Sources */,
 				0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */,
 				0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */,
+				0E99FD572C5297EA005B43FA /* WrappingHStack.swift in Sources */,
 				0E77D4782C512F5E0060A971 /* ChoiceSelector.swift in Sources */,
 				0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */,
+				0E99FD542C52804B005B43FA /* ClickyButtonView.swift in Sources */,
+				0E99FD482C527F94005B43FA /* CollapsableCardView.swift in Sources */,
+				0E99FD3D2C525720005B43FA /* CollapsableCardTests.swift in Sources */,
 				0E734B8C2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift in Sources */,
 				0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */,
 				0EA01BF42C4E829200AB7A6B /* TagPill.swift in Sources */,
+				0E99FD4E2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
