@@ -16,6 +16,7 @@ let RED_INFO_COLOR: Color = Color(hex: 0xD25656)
 let DISABLED_COLOR: Color = Color(hex: 0xE6ECEF)
 let CONTENT_COLOR: Color = Color(hex: 0x212121)
 let BACKGROUND_COLOR: Color = Color(hex: 0xF2F6F9)
+let GRAY_LIGHT_COLOR: Color = Color(hex: 0xEEEEEE)
 
 // Handle hexadecimal for colors
 extension Color {

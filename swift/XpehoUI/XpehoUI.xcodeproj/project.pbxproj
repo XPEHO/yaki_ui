@@ -66,6 +66,9 @@
 		0E734B762C490E94000FB15D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B752C490E94000FB15D /* Preview Assets.xcassets */; };
 		0E734B802C490E94000FB15D /* XpehoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B7F2C490E94000FB15D /* XpehoUITests.swift */; };
 		0E734B8C2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B8B2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift */; };
+		0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */; };
+		0E77D4782C512F5E0060A971 /* ChoiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */; };
+		0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */; };
 		0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
 		0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
 		0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */; };
@@ -151,6 +154,8 @@
 		0E734B7F2C490E94000FB15D /* XpehoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpehoUITests.swift; sourceTree = "<group>"; };
 		0E734B852C490E94000FB15D /* XpehoUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XpehoUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E734B8B2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpehoUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelector.swift; sourceTree = "<group>"; };
+		0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelectorTests.swift; sourceTree = "<group>"; };
 		0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButton.swift; sourceTree = "<group>"; };
 		0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButtonTests.swift; sourceTree = "<group>"; };
 		0EA01BED2C4E629000AB7A6B /* TagPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPill.swift; sourceTree = "<group>"; };
@@ -197,6 +202,7 @@
 				0E6982C42C49425300BDB812 /* ClickyButton.swift */,
 				0EA01BED2C4E629000AB7A6B /* TagPill.swift */,
 				0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */,
+				0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 				0E61C4252C4A5C59003857D0 /* ClickyButtonTests.swift */,
 				0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */,
 				0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */,
+				0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */,
 			);
 			path = XpehoUIUITests;
 			sourceTree = "<group>";
@@ -526,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E734B712C490E93000FB15D /* ContentView.swift in Sources */,
+				0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */,
 				0E6982C52C49425300BDB812 /* ClickyButton.swift in Sources */,
 				0E734B6F2C490E93000FB15D /* XpehoUIApp.swift in Sources */,
 				0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */,
@@ -547,10 +555,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */,
+				0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */,
 				0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */,
 				0E61C4262C4A5C59003857D0 /* ClickyButtonTests.swift in Sources */,
 				0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */,
 				0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */,
+				0E77D4782C512F5E0060A971 /* ChoiceSelector.swift in Sources */,
 				0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */,
 				0E734B8C2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift in Sources */,
 				0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */,

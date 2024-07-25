@@ -11,6 +11,10 @@ func testFunction () {
     debugPrint("Test is working")
 }
 
+func testChoiceSelectorFunction (choice: String) {
+    debugPrint("Test is working : \(choice)")
+}
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
@@ -24,8 +28,8 @@ struct ContentView: View {
                 NavigationLink(destination: FilePreviewButtonView()) {
                     Text("FilePreviewButton")
                 }
-                NavigationLink(destination: OtherView()) {
-                    Text("Other")
+                NavigationLink(destination: ChoiceSelectorView()) {
+                    Text("ChoiceSelector")
                 }
             }
             .navigationTitle("Components")
@@ -121,10 +125,28 @@ struct FilePreviewButtonView: View {
     }
 }
 
-struct OtherView: View {
+struct ChoiceSelectorView: View {
     var body: some View {
-        VStack {
-        }.navigationTitle("Other")
+        ScrollView {
+            VStack(spacing: 20) {
+                ChoiceSelector()
+                ChoiceSelector(
+                    label: "Choice Selector Customized",
+                    choicesAvailable: ["Choice Custom 1", "Choice Custom 2", "Choice Custom 3", "Choice Custom 4", "Choice Custom 5"],
+                    size: 20.0,
+                    backgroundColor: CONTENT_COLOR,
+                    choiceColor: .white,
+                    checkIconColor: .white,
+                    separatorColor: .white,
+                    onPress: testChoiceSelectorFunction
+                )
+                
+                Spacer()
+            }
+            .padding()
+            .navigationTitle("ChoiceSelector")
+        }
+        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 
@@ -143,4 +165,8 @@ struct OtherView: View {
 
 #Preview("FilePreviewButton") {
     FilePreviewButtonView()
+}
+
+#Preview("ChoiceSelector") {
+    ChoiceSelectorView()
 }
