@@ -13,7 +13,6 @@ struct FilePreviewButton: View {
     var labelRight: String = "FileInfo"
     var imagePreview: Image = Image("Placeholder")
     var pillTags: [String] = ["Tag Pill 1", "Tag Pill 2", "Tag Pill 3", "Tag Pill 4", "Tag Pill 5", "Tag Pill 6"]
-    var arrowIcon: Image = Image("Arrow-right")
     
     var height: Double = 232
     var labelSize: Double = 18
@@ -65,7 +64,7 @@ struct FilePreviewButton: View {
                             }
                         }
                         Spacer()
-                        arrowIcon
+                        Image("Arrow-right")
                             .renderingMode(.template)
                             .foregroundColor(arrowColor)
                             .padding(.leading, 5)
