@@ -15,6 +15,7 @@ struct ClickyButton: View {
     var backgroundColor: Color = XPEHO_COLOR
     var labelColor: Color = .white
     
+    var thinMode: Bool = false
     var isDisabled: Bool = false
     
     var onPress: () -> Void = {
@@ -30,8 +31,8 @@ struct ClickyButton: View {
                 .textCase(.uppercase)
                 .multilineTextAlignment(.center)
         }
-        .padding(.horizontal, 32)
-        .padding(.vertical, 16)
+        .padding(.horizontal, thinMode ? 50 : 32)
+        .padding(.vertical, thinMode ? 12 : 16)
         .background(isDisabled ? DISABLED_COLOR : backgroundColor)
         .foregroundStyle(isDisabled ? Color.black.opacity(0.15) : labelColor)
         .cornerRadius(20)
