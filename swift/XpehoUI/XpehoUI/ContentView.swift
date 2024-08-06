@@ -15,6 +15,10 @@ func testChoiceSelectorFunction (choice: String) {
     debugPrint("Test is working : \(choice)")
 }
 
+func testInputFunction (input: String) {
+    debugPrint("Test is working : \(input)")
+}
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
@@ -33,6 +37,9 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: CollapsableCardView()) {
                     Text("CollapsableCard")
+                }
+                NavigationLink(destination: InputTextView()) {
+                    Text("InputText")
                 }
             }
             .navigationTitle("Components")
@@ -62,4 +69,8 @@ struct ContentView: View {
 
 #Preview("CollapsableCard") {
     CollapsableCardView()
+}
+
+#Preview("InputText") {
+    InputTextView()
 }
