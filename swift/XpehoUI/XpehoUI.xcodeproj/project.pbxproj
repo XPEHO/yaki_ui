@@ -10,6 +10,13 @@
 		0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B722C490E94000FB15D /* Assets.xcassets */; };
 		0E331C3C2C4FB93D006A9A6B /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D52C496E0200BDB812 /* Raleway-Regular.ttf */; };
 		0E331C3D2C4FB944006A9A6B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831D2C496E1B00BDB812 /* Rubik-SemiBold.ttf */; };
+		0E3F698A2C60CA88009353E6 /* InputText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F69892C60CA88009353E6 /* InputText.swift */; };
+		0E3F698B2C60CA88009353E6 /* InputText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F69892C60CA88009353E6 /* InputText.swift */; };
+		0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
+		0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
+		0E3F69902C611BF5009353E6 /* InputTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698F2C611BF5009353E6 /* InputTextTests.swift */; };
+		0E3F69912C611D6B009353E6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D32C496E0200BDB812 /* Raleway-Medium.ttf */; };
+		0E3F69922C611D71009353E6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983002C496E0E00BDB812 /* Roboto-Regular.ttf */; };
 		0E5996952C4A6D2C00CC495F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5996942C4A6D2C00CC495F /* SnapshotTesting */; };
 		0E5996972C4A6D3100CC495F /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5996962C4A6D3100CC495F /* InlineSnapshotTesting */; };
 		0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C62C49427400BDB812 /* Utils.swift */; };
@@ -112,6 +119,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E3F69892C60CA88009353E6 /* InputText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputText.swift; sourceTree = "<group>"; };
+		0E3F698C2C6116BE009353E6 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		0E3F698F2C611BF5009353E6 /* InputTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextTests.swift; sourceTree = "<group>"; };
 		0E61C4252C4A5C59003857D0 /* ClickyButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButtonTests.swift; sourceTree = "<group>"; };
 		0E6982C42C49425300BDB812 /* ClickyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButton.swift; sourceTree = "<group>"; };
 		0E6982C62C49427400BDB812 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -227,6 +237,7 @@
 				0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */,
 				0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */,
 				0E99FD392C52435D005B43FA /* CollapsableCard.swift */,
+				0E3F69892C60CA88009353E6 /* InputText.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -369,6 +380,7 @@
 				0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */,
 				0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */,
 				0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */,
+				0E3F698F2C611BF5009353E6 /* InputTextTests.swift */,
 			);
 			path = XpehoUIUITests;
 			sourceTree = "<group>";
@@ -381,6 +393,7 @@
 				0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */,
 				0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */,
 				0E99FD462C527F94005B43FA /* CollapsableCardView.swift */,
+				0E3F698C2C6116BE009353E6 /* InputTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -558,6 +571,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3F69922C611D71009353E6 /* Roboto-Regular.ttf in Resources */,
+				0E3F69912C611D6B009353E6 /* Raleway-Medium.ttf in Resources */,
 				0E331C3D2C4FB944006A9A6B /* Rubik-SemiBold.ttf in Resources */,
 				0E331C3C2C4FB93D006A9A6B /* Raleway-Regular.ttf in Resources */,
 				0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */,
@@ -573,6 +588,7 @@
 			files = (
 				0E99FD502C52802A005B43FA /* TagPillView.swift in Sources */,
 				0E99FD442C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
+				0E3F698A2C60CA88009353E6 /* InputText.swift in Sources */,
 				0E734B712C490E93000FB15D /* ContentView.swift in Sources */,
 				0E99FD532C52804B005B43FA /* ClickyButtonView.swift in Sources */,
 				0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */,
@@ -584,6 +600,7 @@
 				0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */,
 				0E99FD4D2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */,
 				0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */,
+				0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */,
 				0E6982C72C49427400BDB812 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,13 +617,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */,
 				0E99FD452C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
 				0E99FD512C52802A005B43FA /* TagPillView.swift in Sources */,
 				0E99FD3B2C52435D005B43FA /* CollapsableCard.swift in Sources */,
 				0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */,
+				0E3F69902C611BF5009353E6 /* InputTextTests.swift in Sources */,
 				0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */,
 				0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */,
 				0E61C4262C4A5C59003857D0 /* ClickyButtonTests.swift in Sources */,
+				0E3F698B2C60CA88009353E6 /* InputText.swift in Sources */,
 				0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */,
 				0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */,
 				0E99FD572C5297EA005B43FA /* WrappingHStack.swift in Sources */,

@@ -48,7 +48,7 @@ struct CollapsableCard: View {
                 HStack (spacing: 12) {
                     if isCollapsable {
                         icon
-                            .renderingMode(.template)
+                        .renderingMode(.template)
                         .foregroundStyle(iconColor)
                     }
                     Text(label)

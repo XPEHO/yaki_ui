@@ -19,7 +19,9 @@ struct CollapsableCardView: View {
         ScrollView {
             VStack(spacing: 20) {
                 CollapsableCard(
-                    icon: baseIcon
+                    icon: baseIcon,
+                    openArrowIcon: chevronDownIcon,
+                    closeArrowIcon: chevronUpIcon
                 )
                 CollapsableCard(
                     label: "QVST Title",
@@ -72,6 +74,13 @@ struct CollapsableCardView: View {
                     iconColor: .white,
                     buttonBackgroundColor: RED_INFO_COLOR,
                     buttonLabelColor: .white
+                )
+                CollapsableCard(
+                    label: "Collapsable Card Closed",
+                    icon: baseIcon,
+                    openArrowIcon: chevronDownIcon,
+                    closeArrowIcon: chevronUpIcon,
+                    isOpen: false
                 )
                 
                 Spacer()

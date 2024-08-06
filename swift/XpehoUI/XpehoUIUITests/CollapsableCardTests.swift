@@ -67,7 +67,7 @@ final class CollapsableCardTests: XCTestCase {
 
         let viewController = collapsableCardView.toViewController()
 
-        viewController.view.frame = CGRect(x: 0, y: 0, width: 400, height: 900)
+        viewController.view.frame = CGRect(x: 0, y: 0, width: 400, height: 1000)
         viewController.view.layoutIfNeeded()
         
         assertSnapshot(
@@ -93,6 +93,7 @@ final class CollapsableCardTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Newsletter #__"].exists)
         XCTAssertTrue(app.staticTexts["Birthday of NAME"].exists)
         XCTAssertTrue(app.staticTexts["Collapsable Card Customized"].exists)
+        XCTAssertTrue(app.staticTexts["Collapsable Card Closed"].exists)
     }
     
     // Load custom font
