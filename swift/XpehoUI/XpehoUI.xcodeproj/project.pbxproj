@@ -3,84 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E25FD732C623E2F007E2248 /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E25FD722C623E2F007E2248 /* xpeho_ui */; };
 		0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B722C490E94000FB15D /* Assets.xcassets */; };
-		0E331C3C2C4FB93D006A9A6B /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D52C496E0200BDB812 /* Raleway-Regular.ttf */; };
-		0E331C3D2C4FB944006A9A6B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831D2C496E1B00BDB812 /* Rubik-SemiBold.ttf */; };
-		0E3F698A2C60CA88009353E6 /* InputText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F69892C60CA88009353E6 /* InputText.swift */; };
-		0E3F698B2C60CA88009353E6 /* InputText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F69892C60CA88009353E6 /* InputText.swift */; };
 		0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
 		0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
 		0E3F69902C611BF5009353E6 /* InputTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698F2C611BF5009353E6 /* InputTextTests.swift */; };
-		0E3F69912C611D6B009353E6 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D32C496E0200BDB812 /* Raleway-Medium.ttf */; };
-		0E3F69922C611D71009353E6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983002C496E0E00BDB812 /* Roboto-Regular.ttf */; };
 		0E5996952C4A6D2C00CC495F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5996942C4A6D2C00CC495F /* SnapshotTesting */; };
 		0E5996972C4A6D3100CC495F /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5996962C4A6D3100CC495F /* InlineSnapshotTesting */; };
-		0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C62C49427400BDB812 /* Utils.swift */; };
 		0E61C4262C4A5C59003857D0 /* ClickyButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E61C4252C4A5C59003857D0 /* ClickyButtonTests.swift */; };
-		0E6982C52C49425300BDB812 /* ClickyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C42C49425300BDB812 /* ClickyButton.swift */; };
-		0E6982C72C49427400BDB812 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C62C49427400BDB812 /* Utils.swift */; };
-		0E6982E02C496E0200BDB812 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982C82C496E0200BDB812 /* Raleway-Black.ttf */; };
-		0E6982E12C496E0200BDB812 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982C92C496E0200BDB812 /* Raleway-BlackItalic.ttf */; };
-		0E6982E22C496E0200BDB812 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CA2C496E0200BDB812 /* Raleway-Bold.ttf */; };
-		0E6982E32C496E0200BDB812 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CB2C496E0200BDB812 /* Raleway-BoldItalic.ttf */; };
-		0E6982E42C496E0200BDB812 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CC2C496E0200BDB812 /* Raleway-ExtraBold.ttf */; };
-		0E6982E52C496E0200BDB812 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CD2C496E0200BDB812 /* Raleway-ExtraBoldItalic.ttf */; };
-		0E6982E62C496E0200BDB812 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CE2C496E0200BDB812 /* Raleway-ExtraLight.ttf */; };
-		0E6982E72C496E0200BDB812 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982CF2C496E0200BDB812 /* Raleway-ExtraLightItalic.ttf */; };
-		0E6982E82C496E0200BDB812 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D02C496E0200BDB812 /* Raleway-Italic.ttf */; };
-		0E6982E92C496E0200BDB812 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D12C496E0200BDB812 /* Raleway-Light.ttf */; };
-		0E6982EA2C496E0200BDB812 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D22C496E0200BDB812 /* Raleway-LightItalic.ttf */; };
-		0E6982EB2C496E0200BDB812 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D32C496E0200BDB812 /* Raleway-Medium.ttf */; };
-		0E6982EC2C496E0200BDB812 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D42C496E0200BDB812 /* Raleway-MediumItalic.ttf */; };
-		0E6982ED2C496E0200BDB812 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D52C496E0200BDB812 /* Raleway-Regular.ttf */; };
-		0E6982EE2C496E0200BDB812 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D62C496E0200BDB812 /* Raleway-SemiBold.ttf */; };
-		0E6982EF2C496E0200BDB812 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D72C496E0200BDB812 /* Raleway-SemiBoldItalic.ttf */; };
-		0E6982F02C496E0200BDB812 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D82C496E0200BDB812 /* Raleway-Thin.ttf */; };
-		0E6982F12C496E0200BDB812 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982D92C496E0200BDB812 /* Raleway-ThinItalic.ttf */; };
-		0E6983052C496E0E00BDB812 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982F72C496E0E00BDB812 /* Roboto-Black.ttf */; };
-		0E6983062C496E0E00BDB812 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982F82C496E0E00BDB812 /* Roboto-BlackItalic.ttf */; };
-		0E6983072C496E0E00BDB812 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982F92C496E0E00BDB812 /* Roboto-Bold.ttf */; };
-		0E6983082C496E0E00BDB812 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FA2C496E0E00BDB812 /* Roboto-BoldItalic.ttf */; };
-		0E6983092C496E0E00BDB812 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FB2C496E0E00BDB812 /* Roboto-Italic.ttf */; };
-		0E69830A2C496E0E00BDB812 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FC2C496E0E00BDB812 /* Roboto-Light.ttf */; };
-		0E69830B2C496E0E00BDB812 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FD2C496E0E00BDB812 /* Roboto-LightItalic.ttf */; };
-		0E69830C2C496E0E00BDB812 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FE2C496E0E00BDB812 /* Roboto-Medium.ttf */; };
-		0E69830D2C496E0E00BDB812 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6982FF2C496E0E00BDB812 /* Roboto-MediumItalic.ttf */; };
-		0E69830E2C496E0E00BDB812 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983002C496E0E00BDB812 /* Roboto-Regular.ttf */; };
-		0E69830F2C496E0E00BDB812 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983012C496E0E00BDB812 /* Roboto-Thin.ttf */; };
-		0E6983102C496E0E00BDB812 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983022C496E0E00BDB812 /* Roboto-ThinItalic.ttf */; };
-		0E6983252C496E1B00BDB812 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983112C496E1B00BDB812 /* Rubik-Black.ttf */; };
-		0E6983262C496E1B00BDB812 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983122C496E1B00BDB812 /* Rubik-BlackItalic.ttf */; };
-		0E6983272C496E1B00BDB812 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983132C496E1B00BDB812 /* Rubik-Bold.ttf */; };
-		0E6983282C496E1B00BDB812 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983142C496E1B00BDB812 /* Rubik-BoldItalic.ttf */; };
-		0E6983292C496E1B00BDB812 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983152C496E1B00BDB812 /* Rubik-ExtraBold.ttf */; };
-		0E69832A2C496E1B00BDB812 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983162C496E1B00BDB812 /* Rubik-ExtraBoldItalic.ttf */; };
-		0E69832B2C496E1B00BDB812 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983172C496E1B00BDB812 /* Rubik-Italic.ttf */; };
-		0E69832C2C496E1B00BDB812 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983182C496E1B00BDB812 /* Rubik-Light.ttf */; };
-		0E69832D2C496E1B00BDB812 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E6983192C496E1B00BDB812 /* Rubik-LightItalic.ttf */; };
-		0E69832E2C496E1B00BDB812 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831A2C496E1B00BDB812 /* Rubik-Medium.ttf */; };
-		0E69832F2C496E1B00BDB812 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831B2C496E1B00BDB812 /* Rubik-MediumItalic.ttf */; };
-		0E6983302C496E1B00BDB812 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831C2C496E1B00BDB812 /* Rubik-Regular.ttf */; };
-		0E6983312C496E1B00BDB812 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831D2C496E1B00BDB812 /* Rubik-SemiBold.ttf */; };
-		0E6983322C496E1B00BDB812 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E69831E2C496E1B00BDB812 /* Rubik-SemiBoldItalic.ttf */; };
 		0E734B6F2C490E93000FB15D /* XpehoUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B6E2C490E93000FB15D /* XpehoUIApp.swift */; };
 		0E734B712C490E93000FB15D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B702C490E93000FB15D /* ContentView.swift */; };
 		0E734B732C490E94000FB15D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B722C490E94000FB15D /* Assets.xcassets */; };
 		0E734B762C490E94000FB15D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B752C490E94000FB15D /* Preview Assets.xcassets */; };
 		0E734B802C490E94000FB15D /* XpehoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B7F2C490E94000FB15D /* XpehoUITests.swift */; };
 		0E734B8C2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B8B2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift */; };
-		0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */; };
-		0E77D4782C512F5E0060A971 /* ChoiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */; };
 		0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */; };
-		0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
-		0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */; };
 		0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */; };
-		0E99FD3A2C52435D005B43FA /* CollapsableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD392C52435D005B43FA /* CollapsableCard.swift */; };
-		0E99FD3B2C52435D005B43FA /* CollapsableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD392C52435D005B43FA /* CollapsableCard.swift */; };
 		0E99FD3D2C525720005B43FA /* CollapsableCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */; };
 		0E99FD442C527F23005B43FA /* ChoiceSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */; };
 		0E99FD452C527F23005B43FA /* ChoiceSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */; };
@@ -92,13 +34,9 @@
 		0E99FD512C52802A005B43FA /* TagPillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD4F2C52802A005B43FA /* TagPillView.swift */; };
 		0E99FD532C52804B005B43FA /* ClickyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD522C52804B005B43FA /* ClickyButtonView.swift */; };
 		0E99FD542C52804B005B43FA /* ClickyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD522C52804B005B43FA /* ClickyButtonView.swift */; };
-		0E99FD562C5297EA005B43FA /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD552C5297E9005B43FA /* WrappingHStack.swift */; };
-		0E99FD572C5297EA005B43FA /* WrappingHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD552C5297E9005B43FA /* WrappingHStack.swift */; };
-		0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA01BED2C4E629000AB7A6B /* TagPill.swift */; };
 		0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B702C490E93000FB15D /* ContentView.swift */; };
-		0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6982C42C49425300BDB812 /* ClickyButton.swift */; };
-		0EA01BF42C4E829200AB7A6B /* TagPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA01BED2C4E629000AB7A6B /* TagPill.swift */; };
 		0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */; };
+		0EBBF9AF2C62372200464C28 /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBBF9AE2C62372200464C28 /* xpeho_ui */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,56 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E3F69892C60CA88009353E6 /* InputText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputText.swift; sourceTree = "<group>"; };
 		0E3F698C2C6116BE009353E6 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		0E3F698F2C611BF5009353E6 /* InputTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextTests.swift; sourceTree = "<group>"; };
 		0E61C4252C4A5C59003857D0 /* ClickyButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButtonTests.swift; sourceTree = "<group>"; };
-		0E6982C42C49425300BDB812 /* ClickyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButton.swift; sourceTree = "<group>"; };
-		0E6982C62C49427400BDB812 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		0E6982C82C496E0200BDB812 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
-		0E6982C92C496E0200BDB812 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
-		0E6982CA2C496E0200BDB812 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
-		0E6982CB2C496E0200BDB812 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6982CC2C496E0200BDB812 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
-		0E6982CD2C496E0200BDB812 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6982CE2C496E0200BDB812 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
-		0E6982CF2C496E0200BDB812 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		0E6982D02C496E0200BDB812 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
-		0E6982D12C496E0200BDB812 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
-		0E6982D22C496E0200BDB812 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
-		0E6982D32C496E0200BDB812 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
-		0E6982D42C496E0200BDB812 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
-		0E6982D52C496E0200BDB812 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
-		0E6982D62C496E0200BDB812 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
-		0E6982D72C496E0200BDB812 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6982D82C496E0200BDB812 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
-		0E6982D92C496E0200BDB812 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
-		0E6982F72C496E0E00BDB812 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
-		0E6982F82C496E0E00BDB812 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
-		0E6982F92C496E0E00BDB812 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		0E6982FA2C496E0E00BDB812 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6982FB2C496E0E00BDB812 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
-		0E6982FC2C496E0E00BDB812 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		0E6982FD2C496E0E00BDB812 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
-		0E6982FE2C496E0E00BDB812 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		0E6982FF2C496E0E00BDB812 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
-		0E6983002C496E0E00BDB812 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		0E6983012C496E0E00BDB812 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
-		0E6983022C496E0E00BDB812 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		0E6983112C496E1B00BDB812 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
-		0E6983122C496E1B00BDB812 /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
-		0E6983132C496E1B00BDB812 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		0E6983142C496E1B00BDB812 /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6983152C496E1B00BDB812 /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
-		0E6983162C496E1B00BDB812 /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		0E6983172C496E1B00BDB812 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
-		0E6983182C496E1B00BDB812 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
-		0E6983192C496E1B00BDB812 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
-		0E69831A2C496E1B00BDB812 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		0E69831B2C496E1B00BDB812 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
-		0E69831C2C496E1B00BDB812 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		0E69831D2C496E1B00BDB812 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
-		0E69831E2C496E1B00BDB812 /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0E6983382C496EC400BDB812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0E734B6B2C490E93000FB15D /* XpehoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XpehoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E734B6E2C490E93000FB15D /* XpehoUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpehoUIApp.swift; sourceTree = "<group>"; };
@@ -179,19 +70,14 @@
 		0E734B7F2C490E94000FB15D /* XpehoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpehoUITests.swift; sourceTree = "<group>"; };
 		0E734B852C490E94000FB15D /* XpehoUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XpehoUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E734B8B2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpehoUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelector.swift; sourceTree = "<group>"; };
 		0E77D4792C51347E0060A971 /* ChoiceSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelectorTests.swift; sourceTree = "<group>"; };
-		0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButton.swift; sourceTree = "<group>"; };
 		0E806DD42C4FADF500AD17D4 /* FilePreviewButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButtonTests.swift; sourceTree = "<group>"; };
-		0E99FD392C52435D005B43FA /* CollapsableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCard.swift; sourceTree = "<group>"; };
 		0E99FD3C2C525720005B43FA /* CollapsableCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCardTests.swift; sourceTree = "<group>"; };
 		0E99FD432C527F23005B43FA /* ChoiceSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceSelectorView.swift; sourceTree = "<group>"; };
 		0E99FD462C527F94005B43FA /* CollapsableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableCardView.swift; sourceTree = "<group>"; };
 		0E99FD4C2C527FD6005B43FA /* FilePreviewButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewButtonView.swift; sourceTree = "<group>"; };
 		0E99FD4F2C52802A005B43FA /* TagPillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillView.swift; sourceTree = "<group>"; };
 		0E99FD522C52804B005B43FA /* ClickyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickyButtonView.swift; sourceTree = "<group>"; };
-		0E99FD552C5297E9005B43FA /* WrappingHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStack.swift; sourceTree = "<group>"; };
-		0EA01BED2C4E629000AB7A6B /* TagPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPill.swift; sourceTree = "<group>"; };
 		0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagPillTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBBF9AF2C62372200464C28 /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +103,7 @@
 			files = (
 				0E5996972C4A6D3100CC495F /* InlineSnapshotTesting in Frameworks */,
 				0E5996952C4A6D2C00CC495F /* SnapshotTesting in Frameworks */,
+				0E25FD732C623E2F007E2248 /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,94 +115,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0E6982C32C49423700BDB812 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				0E6982C42C49425300BDB812 /* ClickyButton.swift */,
-				0EA01BED2C4E629000AB7A6B /* TagPill.swift */,
-				0E7B616A2C4E8C0000F3F905 /* FilePreviewButton.swift */,
-				0E77D4762C50F83E0060A971 /* ChoiceSelector.swift */,
-				0E99FD392C52435D005B43FA /* CollapsableCard.swift */,
-				0E3F69892C60CA88009353E6 /* InputText.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		0E6982DF2C496E0200BDB812 /* Raleway */ = {
-			isa = PBXGroup;
-			children = (
-				0E6982C82C496E0200BDB812 /* Raleway-Black.ttf */,
-				0E6982C92C496E0200BDB812 /* Raleway-BlackItalic.ttf */,
-				0E6982CA2C496E0200BDB812 /* Raleway-Bold.ttf */,
-				0E6982CB2C496E0200BDB812 /* Raleway-BoldItalic.ttf */,
-				0E6982CC2C496E0200BDB812 /* Raleway-ExtraBold.ttf */,
-				0E6982CD2C496E0200BDB812 /* Raleway-ExtraBoldItalic.ttf */,
-				0E6982CE2C496E0200BDB812 /* Raleway-ExtraLight.ttf */,
-				0E6982CF2C496E0200BDB812 /* Raleway-ExtraLightItalic.ttf */,
-				0E6982D02C496E0200BDB812 /* Raleway-Italic.ttf */,
-				0E6982D12C496E0200BDB812 /* Raleway-Light.ttf */,
-				0E6982D22C496E0200BDB812 /* Raleway-LightItalic.ttf */,
-				0E6982D32C496E0200BDB812 /* Raleway-Medium.ttf */,
-				0E6982D42C496E0200BDB812 /* Raleway-MediumItalic.ttf */,
-				0E6982D52C496E0200BDB812 /* Raleway-Regular.ttf */,
-				0E6982D62C496E0200BDB812 /* Raleway-SemiBold.ttf */,
-				0E6982D72C496E0200BDB812 /* Raleway-SemiBoldItalic.ttf */,
-				0E6982D82C496E0200BDB812 /* Raleway-Thin.ttf */,
-				0E6982D92C496E0200BDB812 /* Raleway-ThinItalic.ttf */,
-			);
-			path = Raleway;
-			sourceTree = "<group>";
-		};
-		0E6983032C496E0E00BDB812 /* Roboto */ = {
-			isa = PBXGroup;
-			children = (
-				0E6982F72C496E0E00BDB812 /* Roboto-Black.ttf */,
-				0E6982F82C496E0E00BDB812 /* Roboto-BlackItalic.ttf */,
-				0E6982F92C496E0E00BDB812 /* Roboto-Bold.ttf */,
-				0E6982FA2C496E0E00BDB812 /* Roboto-BoldItalic.ttf */,
-				0E6982FB2C496E0E00BDB812 /* Roboto-Italic.ttf */,
-				0E6982FC2C496E0E00BDB812 /* Roboto-Light.ttf */,
-				0E6982FD2C496E0E00BDB812 /* Roboto-LightItalic.ttf */,
-				0E6982FE2C496E0E00BDB812 /* Roboto-Medium.ttf */,
-				0E6982FF2C496E0E00BDB812 /* Roboto-MediumItalic.ttf */,
-				0E6983002C496E0E00BDB812 /* Roboto-Regular.ttf */,
-				0E6983012C496E0E00BDB812 /* Roboto-Thin.ttf */,
-				0E6983022C496E0E00BDB812 /* Roboto-ThinItalic.ttf */,
-			);
-			path = Roboto;
-			sourceTree = "<group>";
-		};
-		0E6983242C496E1B00BDB812 /* Rubik */ = {
-			isa = PBXGroup;
-			children = (
-				0E6983112C496E1B00BDB812 /* Rubik-Black.ttf */,
-				0E6983122C496E1B00BDB812 /* Rubik-BlackItalic.ttf */,
-				0E6983132C496E1B00BDB812 /* Rubik-Bold.ttf */,
-				0E6983142C496E1B00BDB812 /* Rubik-BoldItalic.ttf */,
-				0E6983152C496E1B00BDB812 /* Rubik-ExtraBold.ttf */,
-				0E6983162C496E1B00BDB812 /* Rubik-ExtraBoldItalic.ttf */,
-				0E6983172C496E1B00BDB812 /* Rubik-Italic.ttf */,
-				0E6983182C496E1B00BDB812 /* Rubik-Light.ttf */,
-				0E6983192C496E1B00BDB812 /* Rubik-LightItalic.ttf */,
-				0E69831A2C496E1B00BDB812 /* Rubik-Medium.ttf */,
-				0E69831B2C496E1B00BDB812 /* Rubik-MediumItalic.ttf */,
-				0E69831C2C496E1B00BDB812 /* Rubik-Regular.ttf */,
-				0E69831D2C496E1B00BDB812 /* Rubik-SemiBold.ttf */,
-				0E69831E2C496E1B00BDB812 /* Rubik-SemiBoldItalic.ttf */,
-			);
-			path = Rubik;
-			sourceTree = "<group>";
-		};
-		0E6983372C496E2300BDB812 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0E6983242C496E1B00BDB812 /* Rubik */,
-				0E6983032C496E0E00BDB812 /* Roboto */,
-				0E6982DF2C496E0200BDB812 /* Raleway */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0E734B622C490E93000FB15D = {
@@ -345,12 +145,8 @@
 				0E734B6E2C490E93000FB15D /* XpehoUIApp.swift */,
 				0E734B702C490E93000FB15D /* ContentView.swift */,
 				0E99FD412C527EB4005B43FA /* Views */,
-				0E6982C32C49423700BDB812 /* Components */,
 				0E734B722C490E94000FB15D /* Assets.xcassets */,
-				0E6983372C496E2300BDB812 /* Fonts */,
 				0E734B742C490E94000FB15D /* Preview Content */,
-				0E6982C62C49427400BDB812 /* Utils.swift */,
-				0E99FD552C5297E9005B43FA /* WrappingHStack.swift */,
 			);
 			path = XpehoUI;
 			sourceTree = "<group>";
@@ -415,6 +211,7 @@
 			);
 			name = XpehoUI;
 			packageProductDependencies = (
+				0EBBF9AE2C62372200464C28 /* xpeho_ui */,
 			);
 			productName = XpehoUI;
 			productReference = 0E734B6B2C490E93000FB15D /* XpehoUI.app */;
@@ -455,6 +252,7 @@
 			packageProductDependencies = (
 				0E5996942C4A6D2C00CC495F /* SnapshotTesting */,
 				0E5996962C4A6D3100CC495F /* InlineSnapshotTesting */,
+				0E25FD722C623E2F007E2248 /* xpeho_ui */,
 			);
 			productName = XpehoUIUITests;
 			productReference = 0E734B852C490E94000FB15D /* XpehoUIUITests.xctest */;
@@ -494,6 +292,7 @@
 			mainGroup = 0E734B622C490E93000FB15D;
 			packageReferences = (
 				0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				0EBBF9AD2C62372200464C28 /* XCLocalSwiftPackageReference "../xpeho_ui" */,
 			);
 			productRefGroup = 0E734B6C2C490E93000FB15D /* Products */;
 			projectDirPath = "";
@@ -511,52 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E69830D2C496E0E00BDB812 /* Roboto-MediumItalic.ttf in Resources */,
-				0E6982E72C496E0200BDB812 /* Raleway-ExtraLightItalic.ttf in Resources */,
-				0E69830B2C496E0E00BDB812 /* Roboto-LightItalic.ttf in Resources */,
-				0E6982E12C496E0200BDB812 /* Raleway-BlackItalic.ttf in Resources */,
-				0E6983102C496E0E00BDB812 /* Roboto-ThinItalic.ttf in Resources */,
-				0E6982E82C496E0200BDB812 /* Raleway-Italic.ttf in Resources */,
-				0E69832E2C496E1B00BDB812 /* Rubik-Medium.ttf in Resources */,
-				0E6982EE2C496E0200BDB812 /* Raleway-SemiBold.ttf in Resources */,
-				0E69830F2C496E0E00BDB812 /* Roboto-Thin.ttf in Resources */,
-				0E6982ED2C496E0200BDB812 /* Raleway-Regular.ttf in Resources */,
-				0E69832D2C496E1B00BDB812 /* Rubik-LightItalic.ttf in Resources */,
-				0E69830C2C496E0E00BDB812 /* Roboto-Medium.ttf in Resources */,
-				0E6983092C496E0E00BDB812 /* Roboto-Italic.ttf in Resources */,
-				0E6983322C496E1B00BDB812 /* Rubik-SemiBoldItalic.ttf in Resources */,
-				0E6982F02C496E0200BDB812 /* Raleway-Thin.ttf in Resources */,
-				0E69830A2C496E0E00BDB812 /* Roboto-Light.ttf in Resources */,
-				0E6983312C496E1B00BDB812 /* Rubik-SemiBold.ttf in Resources */,
-				0E6983052C496E0E00BDB812 /* Roboto-Black.ttf in Resources */,
-				0E69832F2C496E1B00BDB812 /* Rubik-MediumItalic.ttf in Resources */,
-				0E6982E92C496E0200BDB812 /* Raleway-Light.ttf in Resources */,
 				0E734B762C490E94000FB15D /* Preview Assets.xcassets in Resources */,
-				0E6982E62C496E0200BDB812 /* Raleway-ExtraLight.ttf in Resources */,
-				0E6982F12C496E0200BDB812 /* Raleway-ThinItalic.ttf in Resources */,
-				0E6983072C496E0E00BDB812 /* Roboto-Bold.ttf in Resources */,
-				0E69832C2C496E1B00BDB812 /* Rubik-Light.ttf in Resources */,
 				0E734B732C490E94000FB15D /* Assets.xcassets in Resources */,
-				0E6982EF2C496E0200BDB812 /* Raleway-SemiBoldItalic.ttf in Resources */,
-				0E69830E2C496E0E00BDB812 /* Roboto-Regular.ttf in Resources */,
-				0E6983302C496E1B00BDB812 /* Rubik-Regular.ttf in Resources */,
-				0E6982EB2C496E0200BDB812 /* Raleway-Medium.ttf in Resources */,
-				0E6982E32C496E0200BDB812 /* Raleway-BoldItalic.ttf in Resources */,
-				0E6983082C496E0E00BDB812 /* Roboto-BoldItalic.ttf in Resources */,
-				0E69832B2C496E1B00BDB812 /* Rubik-Italic.ttf in Resources */,
-				0E6982E52C496E0200BDB812 /* Raleway-ExtraBoldItalic.ttf in Resources */,
-				0E6983272C496E1B00BDB812 /* Rubik-Bold.ttf in Resources */,
-				0E6982E22C496E0200BDB812 /* Raleway-Bold.ttf in Resources */,
-				0E6982EA2C496E0200BDB812 /* Raleway-LightItalic.ttf in Resources */,
-				0E6983282C496E1B00BDB812 /* Rubik-BoldItalic.ttf in Resources */,
-				0E6982EC2C496E0200BDB812 /* Raleway-MediumItalic.ttf in Resources */,
-				0E6983252C496E1B00BDB812 /* Rubik-Black.ttf in Resources */,
-				0E6983062C496E0E00BDB812 /* Roboto-BlackItalic.ttf in Resources */,
-				0E6982E02C496E0200BDB812 /* Raleway-Black.ttf in Resources */,
-				0E6983262C496E1B00BDB812 /* Rubik-BlackItalic.ttf in Resources */,
-				0E6983292C496E1B00BDB812 /* Rubik-ExtraBold.ttf in Resources */,
-				0E69832A2C496E1B00BDB812 /* Rubik-ExtraBoldItalic.ttf in Resources */,
-				0E6982E42C496E0200BDB812 /* Raleway-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,10 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3F69922C611D71009353E6 /* Roboto-Regular.ttf in Resources */,
-				0E3F69912C611D6B009353E6 /* Raleway-Medium.ttf in Resources */,
-				0E331C3D2C4FB944006A9A6B /* Rubik-SemiBold.ttf in Resources */,
-				0E331C3C2C4FB93D006A9A6B /* Raleway-Regular.ttf in Resources */,
 				0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,20 +339,12 @@
 			files = (
 				0E99FD502C52802A005B43FA /* TagPillView.swift in Sources */,
 				0E99FD442C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
-				0E3F698A2C60CA88009353E6 /* InputText.swift in Sources */,
 				0E734B712C490E93000FB15D /* ContentView.swift in Sources */,
 				0E99FD532C52804B005B43FA /* ClickyButtonView.swift in Sources */,
-				0E77D4772C50F83E0060A971 /* ChoiceSelector.swift in Sources */,
-				0E6982C52C49425300BDB812 /* ClickyButton.swift in Sources */,
 				0E734B6F2C490E93000FB15D /* XpehoUIApp.swift in Sources */,
-				0E99FD562C5297EA005B43FA /* WrappingHStack.swift in Sources */,
 				0E99FD472C527F94005B43FA /* CollapsableCardView.swift in Sources */,
-				0E99FD3A2C52435D005B43FA /* CollapsableCard.swift in Sources */,
-				0EA01BEE2C4E629000AB7A6B /* TagPill.swift in Sources */,
 				0E99FD4D2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */,
-				0E7B616B2C4E8C0000F3F905 /* FilePreviewButton.swift in Sources */,
 				0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */,
-				0E6982C72C49427400BDB812 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,24 +363,16 @@
 				0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */,
 				0E99FD452C527F23005B43FA /* ChoiceSelectorView.swift in Sources */,
 				0E99FD512C52802A005B43FA /* TagPillView.swift in Sources */,
-				0E99FD3B2C52435D005B43FA /* CollapsableCard.swift in Sources */,
-				0EA01BF32C4E828E00AB7A6B /* ClickyButton.swift in Sources */,
 				0E3F69902C611BF5009353E6 /* InputTextTests.swift in Sources */,
 				0E77D47A2C51347E0060A971 /* ChoiceSelectorTests.swift in Sources */,
-				0E59969C2C4A9B8A00CC495F /* Utils.swift in Sources */,
 				0E61C4262C4A5C59003857D0 /* ClickyButtonTests.swift in Sources */,
-				0E3F698B2C60CA88009353E6 /* InputText.swift in Sources */,
 				0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */,
 				0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */,
-				0E99FD572C5297EA005B43FA /* WrappingHStack.swift in Sources */,
-				0E77D4782C512F5E0060A971 /* ChoiceSelector.swift in Sources */,
-				0E7B616C2C4E8C2C00F3F905 /* FilePreviewButton.swift in Sources */,
 				0E99FD542C52804B005B43FA /* ClickyButtonView.swift in Sources */,
 				0E99FD482C527F94005B43FA /* CollapsableCardView.swift in Sources */,
 				0E99FD3D2C525720005B43FA /* CollapsableCardTests.swift in Sources */,
 				0E734B8C2C490E94000FB15D /* XpehoUIUITestsLaunchTests.swift in Sources */,
 				0E806DD52C4FADF500AD17D4 /* FilePreviewButtonTests.swift in Sources */,
-				0EA01BF42C4E829200AB7A6B /* TagPill.swift in Sources */,
 				0E99FD4E2C527FD6005B43FA /* FilePreviewButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -954,6 +689,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		0EBBF9AD2C62372200464C28 /* XCLocalSwiftPackageReference "../xpeho_ui" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../xpeho_ui;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -966,6 +708,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0E25FD722C623E2F007E2248 /* xpeho_ui */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = xpeho_ui;
+		};
 		0E5996942C4A6D2C00CC495F /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
@@ -975,6 +721,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = InlineSnapshotTesting;
+		};
+		0EBBF9AE2C62372200464C28 /* xpeho_ui */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = xpeho_ui;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

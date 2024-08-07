@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import xpeho_ui
 
 struct TagPillView: View {
     var body: some View {
@@ -15,18 +16,18 @@ struct TagPillView: View {
                 TagPill(
                     label: "Tag Pill Customized",
                     size: 20,
-                    backgroundColor: GREEN_DARK_COLOR
+                    backgroundColor: XPEHO_THEME.GREEN_DARK_COLOR
                 )
                 TagPill(
                     label: "Tag Pill Important",
-                    backgroundColor: RED_INFO_COLOR
+                    backgroundColor: XPEHO_THEME.RED_INFO_COLOR
                 )
                 Spacer()
             }
             .padding()
             .navigationTitle("TagPill")
         }
-        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
+        .background(XPEHO_THEME.BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 

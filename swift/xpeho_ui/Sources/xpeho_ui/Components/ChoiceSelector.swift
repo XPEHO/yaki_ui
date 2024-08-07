@@ -6,30 +6,50 @@
 //
 import SwiftUI
 
-struct ChoiceSelector: View {
-    var label: String = "Choice Selector"
-    var choicesAvailable: [String] = ["Choice 1", "Choice 2", "Choice 3", "Choice 4", "Choice 5"]
+public struct ChoiceSelector: View {
+    var label: String
+    var choicesAvailable: [String]
     
-    var size: Double = 18.0
+    var size: Double
     
-    var backgroundColor: Color = .white
-    var choiceColor: Color = CONTENT_COLOR
-    var checkIconColor: Color = XPEHO_COLOR
-    var separatorColor: Color = GRAY_LIGHT_COLOR
+    var backgroundColor: Color
+    var choiceColor: Color
+    var checkIconColor: Color
+    var separatorColor: Color
     
-    var onPress: (String) -> Void = { choice in
-        debugPrint("The choice \(choice) is pressed")
-    }
+    var onPress: (String) -> Void
 
     @State private var selectedChoice: String? = nil
 
-    var body: some View {
+    public init(
+        label: String = "Choice Selector",
+        choicesAvailable: [String] = ["Choice 1", "Choice 2", "Choice 3", "Choice 4", "Choice 5"],
+        size: Double = 18.0,
+        backgroundColor: Color = .white,
+        choiceColor: Color = XPEHO_THEME.CONTENT_COLOR,
+        checkIconColor: Color = XPEHO_THEME.XPEHO_COLOR,
+        separatorColor: Color = XPEHO_THEME.GRAY_LIGHT_COLOR,
+        onPress: @escaping (String) -> Void = { choice in
+            debugPrint("The choice \(choice) is pressed")
+        }
+    ) {
+        self.label = label
+        self.choicesAvailable = choicesAvailable
+        self.size = size
+        self.backgroundColor = backgroundColor
+        self.choiceColor = choiceColor
+        self.checkIconColor = checkIconColor
+        self.separatorColor = separatorColor
+        self.onPress = onPress
+    }
+
+    public var body: some View {
         VStack {
             ForEach(Array(choicesAvailable.enumerated()), id: \.element) { index, choice in
                 VStack {
                     HStack {
                         Text(choice)
-                            .font(.custom("Raleway-Regular", size: size))
+                            .font(.raleway(.regular, size: size))
                             .foregroundColor(choiceColor)
                         Spacer()
                         if choice == selectedChoice {

@@ -7,33 +7,51 @@
 
 import SwiftUI
 
-struct ClickyButton: View {
-    var label: String = "Clicky Button"
+public struct ClickyButton: View {
+    var label: String
     
-    var size: Double = 16
+    var size: Double
     
-    var backgroundColor: Color = XPEHO_COLOR
-    var labelColor: Color = .white
+    var backgroundColor: Color
+    var labelColor: Color
     
-    var thinMode: Bool = false
-    var isDisabled: Bool = false
+    var thinMode: Bool
+    var isDisabled: Bool
     
-    var onPress: () -> Void = {
-        debugPrint("The button is pressed")
-    }
+    var onPress: () -> Void
     
     @State private var isPressed = false
+
+    public init(
+        label: String = "Clicky Button",
+        size: Double = 16,
+        backgroundColor: Color = XPEHO_THEME.XPEHO_COLOR,
+        labelColor: Color = .white,
+        thinMode: Bool = false,
+        isDisabled: Bool = false,
+        onPress: @escaping () -> Void = {
+            debugPrint("The button is pressed")
+        }
+    ) {
+        self.label = label
+        self.size = size
+        self.backgroundColor = backgroundColor
+        self.labelColor = labelColor
+        self.thinMode = thinMode
+        self.isDisabled = isDisabled
+        self.onPress = onPress
+    }
     
-    var body: some View {
+    public var body: some View {
         Button(action: onPress) {
             Text(label)
-                .font(.custom("Rubik-SemiBold", size: size))
+                .font(.rubik(.semiBold, size: size))
                 .textCase(.uppercase)
                 .multilineTextAlignment(.center)
         }
         .padding(.horizontal, thinMode ? 50 : 32)
         .padding(.vertical, thinMode ? 12 : 16)
-        .background(isDisabled ? DISABLED_COLOR : backgroundColor)
+        .background(isDisabled ? XPEHO_THEME.DISABLED_COLOR : backgroundColor)
         .foregroundStyle(isDisabled ? Color.black.opacity(0.15) : labelColor)
         .cornerRadius(20)
         .overlay(
@@ -42,7 +60,7 @@ struct ClickyButton: View {
         )
         .background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(isDisabled ? DISABLED_COLOR : backgroundColor)
+                .fill(isDisabled ? XPEHO_THEME.DISABLED_COLOR : backgroundColor)
                 .fill(Color.black.opacity(0.15))
                 .offset(y: isPressed || isDisabled ? 0 : 4)
         )
@@ -61,7 +79,7 @@ struct ClickyButton: View {
 #Preview {
     ClickyButton(
         label: "Button Customized",
-        backgroundColor: XPEHO_COLOR,
+        backgroundColor: XPEHO_THEME.XPEHO_COLOR,
         labelColor: .white,
         isDisabled: false,
         onPress: {

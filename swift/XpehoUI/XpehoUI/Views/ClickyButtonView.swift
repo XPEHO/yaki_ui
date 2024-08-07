@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import xpeho_ui
 
 struct ClickyButtonView: View {
     var body: some View {
@@ -28,7 +29,7 @@ struct ClickyButtonView: View {
             .padding()
             .navigationTitle("ClickyButton")
         }
-        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
+        .background(XPEHO_THEME.BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 

@@ -115,7 +115,7 @@ extension WrappingHStack {
         var width: CGFloat = .zero
         var height: CGFloat = .zero
     }
-
+    
     private func arrangeRows(proposal: ProposedViewSize,
                              subviews: Subviews,
                              cache: inout Cache) -> [Row] {

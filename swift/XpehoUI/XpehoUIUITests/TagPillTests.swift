@@ -10,6 +10,7 @@ import XCTest
 @testable import XpehoUI
 
 import SnapshotTesting
+import xpeho_ui
 
 final class TagPillTests: XCTestCase {
 
@@ -18,11 +19,8 @@ final class TagPillTests: XCTestCase {
         // Setup landscape mode
         XCUIDevice.shared.orientation = .portrait
         
-        // Load custom fonts for snapshots
-        let fontNames = ["Rubik-SemiBold.ttf"]
-        for fontName in fontNames {
-            registerFont(withFilenameString: fontName)
-        }
+        // Load fonts for snapshots
+        Fonts.registerFonts()
     }
 
     // Snapshot test (Like golden test in flutter)
@@ -48,20 +46,5 @@ final class TagPillTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Tag Pill"].exists)
         XCTAssertTrue(app.staticTexts["Tag Pill Customized"].exists)
         XCTAssertTrue(app.staticTexts["Tag Pill Important"].exists)
-    }
-    
-    // Load custom font
-    func registerFont(withFilenameString filenameString: String) {
-        guard let bundlePath = Bundle(for: type(of: self)).path(forResource: filenameString, ofType: nil),
-            let fontData = NSData(contentsOfFile: bundlePath),
-            let dataProvider = CGDataProvider(data: fontData),
-            let fontRef = CGFont(dataProvider) else {
-            fatalError("Failed to load font \(filenameString)")
-        }
-
-        var errorRef: Unmanaged<CFError>? = nil
-        if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
-            print("Error registering font: maybe it's already registered.")
-        }
     }
 }

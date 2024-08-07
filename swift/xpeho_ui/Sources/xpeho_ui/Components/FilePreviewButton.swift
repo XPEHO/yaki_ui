@@ -7,33 +7,67 @@
 
 import SwiftUI
 
-struct FilePreviewButton: View {
+public struct FilePreviewButton: View {
     
-    var labelLeft: String = "FileName"
-    var labelRight: String = "FileInfo"
-    var imagePreview: Image = Image("Placeholder")
-    var pillTags: [String] = ["Tag Pill 1", "Tag Pill 2", "Tag Pill 3", "Tag Pill 4", "Tag Pill 5", "Tag Pill 6"]
-    var arrowIcon: Image = Image("Arrow-right")
+    var labelLeft: String
+    var labelRight: String
+    var imagePreview: Image
+    var pillTags: [String]
+    var arrowIcon: Image
     
-    var height: Double = 232
-    var labelSize: Double = 18
+    var height: Double
+    var labelSize: Double
     
-    var backgroundColor: Color = .white
-    var labelColor: Color = CONTENT_COLOR
-    var pillBackColor: Color = XPEHO_COLOR
-    var pillLabelColor: Color = .white
-    var arrowColor: Color = .white
+    var backgroundColor: Color
+    var labelColor: Color
+    var pillBackColor: Color
+    var pillLabelColor: Color
+    var arrowColor: Color
     
-    var isDisabled: Bool = false
-    var isLabelsAbove = true
+    var isDisabled: Bool
+    var isLabelsAbove: Bool
     
-    var onPress: () -> Void = {
-        debugPrint("The button is pressed")
-    }
+    var onPress: () -> Void
     
     @State private var isPressed = false
+
+    public init (
+        labelLeft: String = "FileName",
+        labelRight: String = "FileInfo",
+        imagePreview: Image = Assets.loadImage(named: "Placeholder"),
+        pillTags: [String] = ["Tag Pill 1", "Tag Pill 2", "Tag Pill 3", "Tag Pill 4", "Tag Pill 5", "Tag Pill 6"],
+        arrowIcon: Image = Assets.loadImage(named: "Arrow-right"),
+        height: Double = 232,
+        labelSize: Double = 18,
+        backgroundColor: Color = .white,
+        labelColor: Color = XPEHO_THEME.CONTENT_COLOR,
+        pillBackColor: Color = XPEHO_THEME.XPEHO_COLOR,
+        pillLabelColor: Color = .white,
+        arrowColor: Color = .white,
+        isDisabled: Bool = false,
+        isLabelsAbove: Bool = true,
+        onPress: @escaping () -> Void = {
+            debugPrint("The button is pressed")
+        }
+    ) {
+        self.labelLeft = labelLeft
+        self.labelRight = labelRight
+        self.imagePreview = imagePreview
+        self.pillTags = pillTags
+        self.arrowIcon = arrowIcon
+        self.height = height
+        self.labelSize = labelSize
+        self.backgroundColor = backgroundColor
+        self.labelColor = labelColor
+        self.pillBackColor = pillBackColor
+        self.pillLabelColor = pillLabelColor
+        self.arrowColor = arrowColor
+        self.isDisabled = isDisabled
+        self.isLabelsAbove = isLabelsAbove
+        self.onPress = onPress
+    }
     
-    var body: some View {
+    public var body: some View {
         Button(action: onPress) {
             VStack (spacing: 0) {
                 if isLabelsAbove {
@@ -43,7 +77,7 @@ struct FilePreviewButton: View {
                         Text(labelRight)
                     }
                     .foregroundStyle(labelColor)
-                    .font(.custom("Raleway-Regular", size: labelSize))
+                    .font(.raleway(.regular, size: labelSize))
                     .padding(12)
                 }
                 VStack {
@@ -83,8 +117,8 @@ struct FilePreviewButton: View {
                             .scaledToFill()
 
                         LinearGradient(gradient: Gradient(stops: [
-                            .init(color: CONTENT_COLOR.opacity(0), location: 0.7),
-                            .init(color: CONTENT_COLOR.opacity(1), location: 1)]),
+                            .init(color: XPEHO_THEME.CONTENT_COLOR.opacity(0), location: 0.7),
+                            .init(color: XPEHO_THEME.CONTENT_COLOR.opacity(1), location: 1)]),
                             startPoint: .top,
                             endPoint: .bottom)
                     }
@@ -96,7 +130,7 @@ struct FilePreviewButton: View {
                         Text(labelRight)
                     }
                     .foregroundStyle(labelColor)
-                    .font(.custom("Raleway-Regular", size: labelSize))
+                    .font(.raleway(.regular, size: labelSize))
                     .padding(12)
                 }
             }

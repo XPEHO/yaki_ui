@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import xpeho_ui
 
 struct ChoiceSelectorView: View {
     var body: some View {
@@ -16,7 +17,7 @@ struct ChoiceSelectorView: View {
                     label: "Choice Selector Customized",
                     choicesAvailable: ["Choice Custom 1", "Choice Custom 2", "Choice Custom 3", "Choice Custom 4", "Choice Custom 5"],
                     size: 20.0,
-                    backgroundColor: CONTENT_COLOR,
+                    backgroundColor: XPEHO_THEME.CONTENT_COLOR,
                     choiceColor: .white,
                     checkIconColor: .white,
                     separatorColor: .white,
@@ -28,7 +29,7 @@ struct ChoiceSelectorView: View {
             .padding()
             .navigationTitle("ChoiceSelector")
         }
-        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
+        .background(XPEHO_THEME.BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 

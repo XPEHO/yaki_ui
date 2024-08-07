@@ -6,48 +6,41 @@
 //
 
 import SwiftUI
+import xpeho_ui
 
 struct FilePreviewButtonView: View {
-    var imagePreview: Image = Image("Placeholder")
-    var arrowRight: Image = Image("Arrow-right")
-
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
                 FilePreviewButton(
                     labelLeft: "File Preview Button",
-                    labelRight: "",
-                    imagePreview: imagePreview,
-                    arrowIcon: arrowRight
+                    labelRight: ""
                 )
                 FilePreviewButton(
                     labelLeft: "File Preview Button Customized",
                     labelRight: "",
-                    imagePreview: imagePreview,
                     pillTags: ["Tag Pill Custom 1", "Tag Pill Custom 2", "Tag Pill Custom 3", "Tag Pill Custom 4"],
-                    arrowIcon: arrowRight,
                     height: 200,
                     labelSize: 20,
-                    backgroundColor: CONTENT_COLOR,
+                    backgroundColor: XPEHO_THEME.CONTENT_COLOR,
                     labelColor: .white,
-                    pillBackColor: RED_INFO_COLOR,
-                    arrowColor: RED_INFO_COLOR,
+                    pillBackColor: XPEHO_THEME.RED_INFO_COLOR,
+                    arrowColor: XPEHO_THEME.RED_INFO_COLOR,
                     isLabelsAbove: false,
                     onPress: testFunction
                 )
                 FilePreviewButton(
                     labelLeft: "File Preview Button Disabled",
                     labelRight: "",
-                    imagePreview: imagePreview,
-                    arrowIcon: arrowRight,
                     isDisabled: true
                 )
+                
                 Spacer()
             }
             .padding()
             .navigationTitle("FilePreviewButton")
         }
-        .background(BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
+        .background(XPEHO_THEME.BACKGROUND_COLOR.scaledToFill().edgesIgnoringSafeArea(.all))
     }
 }
 

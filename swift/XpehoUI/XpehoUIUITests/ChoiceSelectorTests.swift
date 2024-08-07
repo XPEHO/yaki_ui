@@ -10,6 +10,7 @@ import XCTest
 @testable import XpehoUI
 
 import SnapshotTesting
+import xpeho_ui
 
 final class ChoiceSelectorTests: XCTestCase {
 
@@ -18,11 +19,8 @@ final class ChoiceSelectorTests: XCTestCase {
         // Setup landscape mode
         XCUIDevice.shared.orientation = .portrait
         
-        // Load custom fonts for snapshots
-        let fontNames = ["Raleway-Regular.ttf"]
-        for fontName in fontNames {
-            registerFont(withFilenameString: fontName)
-        }
+        // Load fonts for snapshots
+        Fonts.registerFonts()
     }
 
     // Snapshot test (Like golden test in flutter)
@@ -53,19 +51,5 @@ final class ChoiceSelectorTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Choice Selector"].exists)
         XCTAssertTrue(app.staticTexts["Choice Selector Customized"].exists)
     }
-    
-    // Load custom font
-    func registerFont(withFilenameString filenameString: String) {
-        guard let bundlePath = Bundle(for: type(of: self)).path(forResource: filenameString, ofType: nil),
-            let fontData = NSData(contentsOfFile: bundlePath),
-            let dataProvider = CGDataProvider(data: fontData),
-            let fontRef = CGFont(dataProvider) else {
-            fatalError("Failed to load font \(filenameString)")
-        }
 
-        var errorRef: Unmanaged<CFError>? = nil
-        if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
-            print("Error registering font: maybe it's already registered.")
-        }
-    }
 }
