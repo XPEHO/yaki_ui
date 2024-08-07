@@ -10,6 +10,7 @@ import XCTest
 @testable import XpehoUI
 
 import SnapshotTesting
+import xpeho_ui
 
 final class InputTextTests: XCTestCase {
 
@@ -18,34 +19,17 @@ final class InputTextTests: XCTestCase {
         // Setup landscape mode
         XCUIDevice.shared.orientation = .portrait
         
-        // Load custom fonts for snapshots
-        let fontNames = ["Raleway-Medium.ttf", "Roboto-Regular.ttf"]
-        for fontName in fontNames {
-            registerFont(withFilenameString: fontName)
-        }
+        // Load fonts for snapshots
+        Fonts.registerFonts()
     }
 
     // Snapshot test (Like golden test in flutter)
     func testInputTextSnapshot() {
-        var inputTextView = InputTextView()
-        
-        // Load eye icon for snapshots
-        if let eyeIconUIImage = loadImageFromTestAssets(named: "Eye") {
-            let eyeIconImage = Image(uiImage: eyeIconUIImage)
-            inputTextView.eyeIcon = eyeIconImage
-        }
-        
-        // Load base icon for snapshots
-        if let baseIconUIImage = loadImageFromTestAssets(named: "Briefcase") {
-            let baseIconImage = Image(uiImage: baseIconUIImage)
-            inputTextView.baseIcon = baseIconImage
-        }
-
-        let viewController = inputTextView.toViewController()
+        let viewController = InputTextView().toViewController()
 
         viewController.view.frame = CGRect(x: 0, y: 0, width: 400, height: 600)
         viewController.view.layoutIfNeeded()
-        
+            
         assertSnapshot(
             of: viewController,
             as: .image
@@ -71,27 +55,5 @@ final class InputTextTests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Input Text Customed"].exists)
         XCTAssertTrue(app.staticTexts["Input Text Customed With Input"].exists)
         XCTAssertTrue(app.staticTexts["Input Text Hiddenable Customed With Input"].exists)
-    }
-    
-    // Load custom font
-    func registerFont(withFilenameString filenameString: String) {
-        guard let bundlePath = Bundle(for: type(of: self)).path(forResource: filenameString, ofType: nil),
-            let fontData = NSData(contentsOfFile: bundlePath),
-            let dataProvider = CGDataProvider(data: fontData),
-            let fontRef = CGFont(dataProvider) else {
-            fatalError("Failed to load font \(filenameString)")
-        }
-
-        var errorRef: Unmanaged<CFError>? = nil
-        if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
-            print("Error registering font: maybe it's already registered.")
-        }
-    }
-    
-    // Load image from test assets
-    func loadImageFromTestAssets(named imageName: String) -> UIImage? {
-        // Charger l'image depuis le bundle de test
-        let bundle = Bundle(for: type(of: self))
-        return UIImage(named: imageName, in: bundle, compatibleWith: nil)
     }
 }

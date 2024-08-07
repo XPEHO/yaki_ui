@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import xpeho_ui
 
 @main
 struct XpehoUIApp: App {
+    
+    init() {
+        Fonts.registerFonts()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

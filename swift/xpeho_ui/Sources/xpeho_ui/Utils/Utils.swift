@@ -9,17 +9,19 @@ import Foundation
 import SwiftUI
 
 // Constants
-let XPEHO_COLOR: Color = Color(hex: 0xA0CE4E)
-let XPEHO_DARK_COLOR: Color = Color(hex: 0x88AF41)
-let GREEN_DARK_COLOR: Color = Color(hex: 0x3F6D34)
-let RED_INFO_COLOR: Color = Color(hex: 0xD25656)
-let DISABLED_COLOR: Color = Color(hex: 0xE6ECEF)
-let CONTENT_COLOR: Color = Color(hex: 0x212121)
-let BACKGROUND_COLOR: Color = Color(hex: 0xF2F6F9)
-let GRAY_LIGHT_COLOR: Color = Color(hex: 0xEEEEEE)
+public struct XPEHO_THEME {
+    public static let XPEHO_COLOR: Color = Color(hex: 0xA0CE4E)
+    public static let XPEHO_DARK_COLOR: Color = Color(hex: 0x88AF41)
+    public static let GREEN_DARK_COLOR: Color = Color(hex: 0x3F6D34)
+    public static let RED_INFO_COLOR: Color = Color(hex: 0xD25656)
+    public static let DISABLED_COLOR: Color = Color(hex: 0xE6ECEF)
+    public static let CONTENT_COLOR: Color = Color(hex: 0x212121)
+    public static let BACKGROUND_COLOR: Color = Color(hex: 0xF2F6F9)
+    public static let GRAY_LIGHT_COLOR: Color = Color(hex: 0xEEEEEE)
+}
 
 // Handle hexadecimal for colors
-extension Color {
+public extension Color {
     init(hex: UInt, alpha: Double = 1) {
         self.init(
             .sRGB,
@@ -32,11 +34,11 @@ extension Color {
 }
 
 // Handle press and release actions for buttons
-struct PressActions: ViewModifier {
+public struct PressActions: ViewModifier {
     var onPress: () -> Void
     var onRelease: () -> Void
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .simultaneousGesture(
                 DragGesture(minimumDistance: 0)
@@ -50,7 +52,7 @@ struct PressActions: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     func pressAction(onPress: @escaping (() -> Void), onRelease: @escaping (() -> Void)) -> some View {
         modifier(PressActions(onPress: {
             onPress()
@@ -61,8 +63,8 @@ extension View {
 }
 
 // Remove button default animations
-struct NoTapAnimationStyle: PrimitiveButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
+public struct NoTapAnimationStyle: PrimitiveButtonStyle {
+    public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             // Make the whole button surface tappable. Without this only content in the label is tappable and not whitespace. Order is important so add it before the tap gesture
             .contentShape(Rectangle())
@@ -70,8 +72,11 @@ struct NoTapAnimationStyle: PrimitiveButtonStyle {
     }
 }
 
-// Converter to view vontroller for snapshot testing
-extension View {
+#if canImport(UIKit)
+import UIKit
+
+// Converter to view controller for snapshot testing
+public extension View {
     func toViewController() -> UIViewController {
         let vc = UIHostingController(rootView: self)
         vc.view.frame = UIScreen.main.bounds
@@ -80,11 +85,33 @@ extension View {
 }
 
 // Calculating the width of a string using a font
-extension String {
+public extension String {
     func widthByFont(usingFont font: UIFont) -> CGFloat {
         let fontAttributes = [NSAttributedString.Key.font: font]
         let size = self.size(withAttributes: fontAttributes)
         return size.width
     }
 }
+
+#elseif canImport(AppKit)
+import AppKit
+
+// Converter to view controller for snapshot testing
+public extension View {
+    func toViewController() -> NSViewController {
+        let vc = NSHostingController(rootView: self)
+        vc.view.frame = NSScreen.main?.frame ?? .zero
+        return vc
+    }
+}
+
+// Calculating the width of a string using a font
+public extension String {
+    func widthByFont(usingFont font: NSFont) -> CGFloat {
+        let fontAttributes = [NSAttributedString.Key.font: font]
+        let size = self.size(withAttributes: fontAttributes)
+        return size.width
+    }
+}
+#endif
 

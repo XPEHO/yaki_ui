@@ -10,6 +10,7 @@ import XCTest
 @testable import XpehoUI
 
 import SnapshotTesting
+import xpeho_ui
 
 final class ClickyButtonTests: XCTestCase {
 
@@ -18,11 +19,8 @@ final class ClickyButtonTests: XCTestCase {
         // Setup landscape mode
         XCUIDevice.shared.orientation = .portrait
         
-        // Load custom fonts for snapshots
-        let fontNames = ["Rubik-SemiBold.ttf"]
-        for fontName in fontNames {
-            registerFont(withFilenameString: fontName)
-        }
+        // Load fonts for snapshots
+        Fonts.registerFonts()
     }
     
     // Snapshot test (Like golden test in flutter)
@@ -34,7 +32,7 @@ final class ClickyButtonTests: XCTestCase {
     }
 
     // Component test
-    func testClickyButtonCanBeCustomized() throws {
+        func testClickyButtonCanBeCustomized() throws {
         let app = XCUIApplication()
         app.launch()
         
@@ -53,21 +51,6 @@ final class ClickyButtonTests: XCTestCase {
         XCTAssertTrue(app.buttons["Clicky Button"].isEnabled, "The button should be enabled.")
         XCTAssertTrue(app.buttons["Clicky Button Customized"].isEnabled, "The button should be enabled.")
         XCTAssertFalse(app.buttons["Clicky Button Disabled"].isEnabled, "The button should be disabled.")        
-    }
-    
-    // Load custom font
-    func registerFont(withFilenameString filenameString: String) {
-        guard let bundlePath = Bundle(for: type(of: self)).path(forResource: filenameString, ofType: nil),
-            let fontData = NSData(contentsOfFile: bundlePath),
-            let dataProvider = CGDataProvider(data: fontData),
-            let fontRef = CGFont(dataProvider) else {
-            fatalError("Failed to load font \(filenameString)")
-        }
-
-        var errorRef: Unmanaged<CFError>? = nil
-        if CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false {
-            print("Error registering font: maybe it's already registered.")
-        }
     }
 
 }
