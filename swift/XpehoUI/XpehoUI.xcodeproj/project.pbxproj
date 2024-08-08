@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E25FD732C623E2F007E2248 /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E25FD722C623E2F007E2248 /* xpeho_ui */; };
+		0E2EB7012C64CF4F00874A5C /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2EB7002C64CF4F00874A5C /* xpeho_ui */; };
+		0E2EB7032C64CF6000874A5C /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2EB7022C64CF6000874A5C /* xpeho_ui */; };
 		0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B722C490E94000FB15D /* Assets.xcassets */; };
 		0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
 		0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
@@ -36,7 +37,6 @@
 		0E99FD542C52804B005B43FA /* ClickyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99FD522C52804B005B43FA /* ClickyButtonView.swift */; };
 		0EA01BF22C4E828B00AB7A6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E734B702C490E93000FB15D /* ContentView.swift */; };
 		0EA01BF62C4E82C900AB7A6B /* TagPillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA01BF52C4E82C900AB7A6B /* TagPillTests.swift */; };
-		0EBBF9AF2C62372200464C28 /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBBF9AE2C62372200464C28 /* xpeho_ui */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBBF9AF2C62372200464C28 /* xpeho_ui in Frameworks */,
+				0E2EB7012C64CF4F00874A5C /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 			files = (
 				0E5996972C4A6D3100CC495F /* InlineSnapshotTesting in Frameworks */,
 				0E5996952C4A6D2C00CC495F /* SnapshotTesting in Frameworks */,
-				0E25FD732C623E2F007E2248 /* xpeho_ui in Frameworks */,
+				0E2EB7032C64CF6000874A5C /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 			);
 			name = XpehoUI;
 			packageProductDependencies = (
-				0EBBF9AE2C62372200464C28 /* xpeho_ui */,
+				0E2EB7002C64CF4F00874A5C /* xpeho_ui */,
 			);
 			productName = XpehoUI;
 			productReference = 0E734B6B2C490E93000FB15D /* XpehoUI.app */;
@@ -252,7 +252,7 @@
 			packageProductDependencies = (
 				0E5996942C4A6D2C00CC495F /* SnapshotTesting */,
 				0E5996962C4A6D3100CC495F /* InlineSnapshotTesting */,
-				0E25FD722C623E2F007E2248 /* xpeho_ui */,
+				0E2EB7022C64CF6000874A5C /* xpeho_ui */,
 			);
 			productName = XpehoUIUITests;
 			productReference = 0E734B852C490E94000FB15D /* XpehoUIUITests.xctest */;
@@ -292,7 +292,7 @@
 			mainGroup = 0E734B622C490E93000FB15D;
 			packageReferences = (
 				0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
-				0EBBF9AD2C62372200464C28 /* XCLocalSwiftPackageReference "../xpeho_ui" */,
+				0E2EB6FF2C64CF4F00874A5C /* XCLocalSwiftPackageReference "../../../xpeho_ui_swift" */,
 			);
 			productRefGroup = 0E734B6C2C490E93000FB15D /* Products */;
 			projectDirPath = "";
@@ -690,9 +690,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		0EBBF9AD2C62372200464C28 /* XCLocalSwiftPackageReference "../xpeho_ui" */ = {
+		0E2EB6FF2C64CF4F00874A5C /* XCLocalSwiftPackageReference "../../../xpeho_ui_swift" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../xpeho_ui;
+			relativePath = ../../../xpeho_ui_swift;
 		};
 /* End XCLocalSwiftPackageReference section */
 
@@ -708,7 +708,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E25FD722C623E2F007E2248 /* xpeho_ui */ = {
+		0E2EB7002C64CF4F00874A5C /* xpeho_ui */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = xpeho_ui;
+		};
+		0E2EB7022C64CF6000874A5C /* xpeho_ui */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = xpeho_ui;
 		};
@@ -721,10 +725,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E61C4272C4A66DA003857D0 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = InlineSnapshotTesting;
-		};
-		0EBBF9AE2C62372200464C28 /* xpeho_ui */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = xpeho_ui;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
