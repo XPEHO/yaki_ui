@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2EB7012C64CF4F00874A5C /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2EB7002C64CF4F00874A5C /* xpeho_ui */; };
-		0E2EB7032C64CF6000874A5C /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2EB7022C64CF6000874A5C /* xpeho_ui */; };
+		0E08EADD2C734065002F260B /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E08EADC2C734065002F260B /* xpeho_ui */; };
+		0E08EADF2C734072002F260B /* xpeho_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 0E08EADE2C734072002F260B /* xpeho_ui */; };
 		0E331C372C4FB638006A9A6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E734B722C490E94000FB15D /* Assets.xcassets */; };
 		0E3F698D2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
 		0E3F698E2C6116BE009353E6 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F698C2C6116BE009353E6 /* InputTextView.swift */; };
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2EB7012C64CF4F00874A5C /* xpeho_ui in Frameworks */,
+				0E08EADD2C734065002F260B /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 			files = (
 				0E5996972C4A6D3100CC495F /* InlineSnapshotTesting in Frameworks */,
 				0E5996952C4A6D2C00CC495F /* SnapshotTesting in Frameworks */,
-				0E2EB7032C64CF6000874A5C /* xpeho_ui in Frameworks */,
+				0E08EADF2C734072002F260B /* xpeho_ui in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 			);
 			name = XpehoUI;
 			packageProductDependencies = (
-				0E2EB7002C64CF4F00874A5C /* xpeho_ui */,
+				0E08EADC2C734065002F260B /* xpeho_ui */,
 			);
 			productName = XpehoUI;
 			productReference = 0E734B6B2C490E93000FB15D /* XpehoUI.app */;
@@ -252,7 +252,7 @@
 			packageProductDependencies = (
 				0E5996942C4A6D2C00CC495F /* SnapshotTesting */,
 				0E5996962C4A6D3100CC495F /* InlineSnapshotTesting */,
-				0E2EB7022C64CF6000874A5C /* xpeho_ui */,
+				0E08EADE2C734072002F260B /* xpeho_ui */,
 			);
 			productName = XpehoUIUITests;
 			productReference = 0E734B852C490E94000FB15D /* XpehoUIUITests.xctest */;
@@ -708,11 +708,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E2EB7002C64CF4F00874A5C /* xpeho_ui */ = {
+		0E08EADC2C734065002F260B /* xpeho_ui */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = xpeho_ui;
 		};
-		0E2EB7022C64CF6000874A5C /* xpeho_ui */ = {
+		0E08EADE2C734072002F260B /* xpeho_ui */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = xpeho_ui;
 		};
