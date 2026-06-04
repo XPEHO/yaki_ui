@@ -40,8 +40,8 @@ class _SwapState extends State<Swap> {
       value: _activated,
       onChanged: _onSwapChange,
       thumbColor: widget.thumbColor,
-      activeColor: widget.backgroundColor,
-      trackColor: kBorderIconChip,
+      activeTrackColor: widget.backgroundColor,
+      inactiveTrackColor: kBorderIconChip,
     );
   }
 

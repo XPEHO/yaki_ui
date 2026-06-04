@@ -109,8 +109,9 @@ class _InputTextState extends State<InputText> {
           ),
           labelText: widget.label,
           labelStyle: TextStyle(
-            color:
-                (focusNode.hasFocus) ? kTextColor.withOpacity(0.5) : kTextColor,
+            color: (focusNode.hasFocus)
+                ? kTextColor.withAlpha((0.5 * 255).round())
+                : kTextColor,
             fontSize: 16,
             fontWeight: FontWeight.w600,
             fontFamily: 'SF Pro Rounded',

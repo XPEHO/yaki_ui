@@ -8,3 +8,4 @@ const Color kTextColor = Color(0xFF0F1013);
 const Color kSecondaryTextColor = Color(0xFFF4F4F4);
 const Color kSubtitleTextColor = Color(0xFF7D818C);
 const Color kBorderIconChip = Color(0xFFE7ECEF);
+const Color kDisabledColor = Color.fromRGBO(0, 0, 0, 0.15);
