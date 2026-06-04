@@ -171,16 +171,19 @@ class DatePickerCardState extends State<DatePickerCard> {
                 thickness: 1.0,
               ),
             if (_isCalendarVisible)
-              AnimatedOpacity(
-                opacity: _isCalendartOpacityVisible ? 1 : 0,
-                duration:
-                    const Duration(milliseconds: calendarAnimOpacityDuration),
-                curve: Curves.easeIn,
-                child: CalendarDatePicker(
-                  initialDate: _selectedDate,
-                  firstDate: widget.earliestSelectableDate,
-                  lastDate: DateTime(DateTime.now().year + 1),
-                  onDateChanged: (DateTime newDate) => _onDateChanged(newDate),
+              Flexible(
+                child: AnimatedOpacity(
+                  opacity: _isCalendartOpacityVisible ? 1 : 0,
+                  duration:
+                      const Duration(milliseconds: calendarAnimOpacityDuration),
+                  curve: Curves.easeIn,
+                  child: CalendarDatePicker(
+                    initialDate: _selectedDate,
+                    firstDate: widget.earliestSelectableDate,
+                    lastDate: DateTime(DateTime.now().year + 1),
+                    onDateChanged: (DateTime newDate) =>
+                        _onDateChanged(newDate),
+                  ),
                 ),
               ),
             if (_isCalendarVisible)

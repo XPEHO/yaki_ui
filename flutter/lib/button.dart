@@ -92,20 +92,20 @@ class _ButtonState extends State<Button> {
                 : const Color(0xffE6ECEF),
             borderRadius: BorderRadius.circular(16),
             border: Border(
-              top: BorderSide(
-                color: Colors.black.withOpacity(0.15),
+              top: const BorderSide(
+                color: kDisabledColor,
                 width: 2,
               ),
               bottom: BorderSide(
-                color: Colors.black.withOpacity(0.15),
+                color: kDisabledColor,
                 width: _pressed ? 2 : 8,
               ),
-              left: BorderSide(
-                color: Colors.black.withOpacity(0.15),
+              left: const BorderSide(
+                color: kDisabledColor,
                 width: 2,
               ),
-              right: BorderSide(
-                color: Colors.black.withOpacity(0.15),
+              right: const BorderSide(
+                color: kDisabledColor,
                 width: 2,
               ),
             ),
@@ -117,7 +117,7 @@ class _ButtonState extends State<Button> {
                     style: TextStyle(
                       color: widget.onPressed != null
                           ? widget.fontColor
-                          : Colors.black.withOpacity(0.15),
+                          : kDisabledColor,
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                       fontFamily: 'SF Pro Rounded',
