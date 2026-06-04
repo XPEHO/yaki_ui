@@ -11,8 +11,10 @@ class InputText extends StatefulWidget {
     required this.controller,
     this.validator,
     this.onChange,
-    this.readOnly =
-        true, //By default, the value can be modified. Add the possibility of setting enabled false. This means you can't change the value.
+    this.onFieldSubmitted,
+    this.textInputAction,
+    this.readOnly = true,
+    this.focusNode,
   });
 
   final InputTextType type;
@@ -20,7 +22,10 @@ class InputText extends StatefulWidget {
   final TextEditingController controller;
   final String? Function(String?)? validator;
   final void Function(String)? onChange;
+  final void Function(String)? onFieldSubmitted;
+  final TextInputAction? textInputAction;
   final bool readOnly;
+  final FocusNode? focusNode;
 
   @override
   State<InputText> createState() => _InputTextState();
@@ -28,14 +33,26 @@ class InputText extends StatefulWidget {
 
 class _InputTextState extends State<InputText> {
   bool passwordInvisible = true;
-  FocusNode focusNode = FocusNode();
+  late FocusNode focusNode;
+  late FocusNode iconButtonFocusNode;
 
   @override
   void initState() {
     super.initState();
+    focusNode = widget.focusNode ?? FocusNode();
     focusNode.addListener(() {
       setState(() {});
     });
+    iconButtonFocusNode = FocusNode(skipTraversal: true);
+  }
+
+  @override
+  void dispose() {
+    iconButtonFocusNode.dispose();
+    if (widget.focusNode == null) {
+      focusNode.dispose();
+    }
+    super.dispose();
   }
 
   @override
@@ -56,6 +73,7 @@ class _InputTextState extends State<InputText> {
       child: TextFormField(
         validator: widget.validator,
         onChanged: widget.onChange,
+        onFieldSubmitted: widget.onFieldSubmitted,
         readOnly: widget.readOnly,
         focusNode: focusNode,
         controller: widget.controller,
@@ -63,11 +81,16 @@ class _InputTextState extends State<InputText> {
             (widget.type == InputTextType.password) ? passwordInvisible : false,
         obscuringCharacter: '●',
         keyboardType: _getKeyboardByType(widget.type),
+        textInputAction: widget.textInputAction ??
+            (widget.type == InputTextType.password
+                ? TextInputAction.done
+                : TextInputAction.next),
         decoration: InputDecoration(
           fillColor: Colors.white,
           filled: true,
           suffixIcon: (widget.type == InputTextType.password)
               ? IconButton(
+                  focusNode: iconButtonFocusNode,
                   icon: Icon((passwordInvisible)
                       ? Icons.visibility_outlined
                       : Icons.visibility_off_outlined),
@@ -109,8 +132,6 @@ class _InputTextState extends State<InputText> {
         return TextInputType.emailAddress;
       case InputTextType.password:
         return TextInputType.text;
-      default:
-        return null;
     }
   }
 }
